@@ -1,5 +1,6 @@
 baseURL = 'http://mudox.github.io'
 languageCode = 'en-us'
+hasCJKLanguage = true
 
 title = 'Mudox'
 theme = 'natrium'
@@ -7,7 +8,9 @@ theme = 'natrium'
 enableGitInfo = true
 
 pygmentsCodefences = true
-pygmentsStyle = "native"
+#pygmentsStyle = "native"
+#pygmentsStyle = "monokai"
+pygmentsStyle = "dracula"
 
 [permalinks]
     post = "/:slug/"

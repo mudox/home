@@ -7,6 +7,22 @@ toc   = 'true'
 +++
 
 Introduction of versatile RxSwift operators library.
-<--more--!>
+<!--more-->
 
-TBD
+Use `Driver` triats and `flatMap` operator.
+
+```swift
+import RxSwift
+import RxCocoa
+
+let observable = Driver.just(1)
+  .flatMap { num -> Driver<Bool> in
+    return validate(num)
+  }
+  .flatMap { num -> Driver<String> in
+    return request(num)
+  }
+  .flatMap { num -> Driver<()> in
+    return postValidate(num)
+  }
+```
