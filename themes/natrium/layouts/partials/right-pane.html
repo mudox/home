@@ -1,0 +1,11 @@
+{{ if ne .Params.toc "false" }}
+<aside class="right-pane">
+    <header>
+        <h2>
+            <i class="fas fa-list"></i>
+            <!--Contents-->
+        </h2>
+    </header>
+    {{.TableOfContents}}
+</aside>
+{{ end }}
