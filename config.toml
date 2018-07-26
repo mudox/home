@@ -4,6 +4,8 @@ languageCode = 'en-us'
 title = 'Mudox'
 theme = 'natrium'
 
+enableGitInfo = true
+
 pygmentsCodefences = true
 pygmentsStyle = "native"
 

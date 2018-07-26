@@ -3,20 +3,20 @@
 <main class="content">
 
     <div class="list">
-        {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}    
+        {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}
 
         <!--title & count-->
         <h2 class="list-title">
             {{ .Key }}
             <span class="count">{{ .Pages | len }}</span>
         </h2>
-        
+
         <!--list content-->
         {{ range .Pages.ByLastmod }}
-            {{ partial "list-item.html" . }}
-            {{ end }}
+        {{ partial "list-item.html" . }}
         {{ end }}
-    </div>  
+        {{ end }}
+    </div>
 
     {{ partial "pagination.html" . }}
 
