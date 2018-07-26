@@ -1,0 +1,40 @@
+{{ $user := .Get 0 }}
+{{ $repo := .Get 1 }}
+{{ $name := .Get 2 }}
+
+<div class="github-buttons">
+
+    <!--Title-->
+    <a class="github-repo-title" href="https://github.com/{{ $user }}/{{ $repo }}">
+        {{ $name }}
+    </a>
+
+    <br>
+    <!--Watch button-->
+    <a class="github-button" 
+       href="https://github.com/{{ $user }}/{{ $repo }}/subscription" 
+       data-show-count="true" 
+       data-icon="octicon-eye"
+       aria-label="Watch {{ $user }}/{{ $repo }} on GitHub">Watch
+    </a>
+
+    <!--Star button-->
+    <a class="github-button" 
+       href="https://github.com/{{ $user }}/{{ $repo }}" 
+       data-show-count="true" 
+       data-icon="octicon-star"
+       aria-label="Star {{ $user }}/{{ $repo }} on GitHub">Star
+    </a>
+
+    <!--Fork button-->
+    <a class="github-button" 
+       href="https://github.com/{{ $user }}/{{ $repo }}/fork" 
+       data-show-count="true" 
+       data-icon="octicon-repo-forked"
+       aria-label="Fork {{ $user }}/{{ $repo }} on GitHub">Fork
+    </a>
+
+    <!--Description-->
+    <div class="github-repo-description">{{ .Inner }}</div>
+
+</div>

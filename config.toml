@@ -23,19 +23,19 @@ pygmentsStyle = "dracula"
 # Main menu
 
 [[menu.main]]
-    name = "Resume"
+    name = "RESUME"
     pre = "<i class='fas fa-user-circle'></i>"
     url = "/resume"
     weight = -110
 
 [[menu.main]]
-    name = "Projects"
+    name = "PROJECTS"
     pre = "<i class='fas fa-rocket'></i>"
     url = "/my-projects"
     weight = -110
 
 [[menu.main]]
-    name = "Tags"
+    name = "TAGS"
     pre = "<i class='fas fa-hashtag'></i>"
     url = "/tags"
     weight = -120

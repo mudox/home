@@ -29,11 +29,13 @@ Realm's tech articles about iOS devs.
 
 # Swift
 
-[Dollar]  
+{{< github-buttons "ankurp" "Dollar" "Dollar" >}}  
 A functional tool-belt for Swift Language.
+{{< /github-buttons >}}
 
-[Swiftz]  
+{{< github-buttons "typelift" "swiftz" "Swiftz" >}}  
 Swiftz is a Swift library for functional programming.
+{{< /github-buttons >}}
 
 # Tool
 

@@ -14,9 +14,9 @@
 {{ if eq .URL "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
-  {{ if .Description }}
-  <meta property="description" content="{{ .Description }}">
-  {{ end }}
+{{ if .Description }}
+<meta property="description" content="{{ .Description }}">
+{{ end }}
 {{ end }}
 
 {{ if .Keywords }}
@@ -46,3 +46,8 @@
 <!--JQuery-->
 <script src='/js/jquery-3.3.1.js'></script>
 <script src='/js/toc.js'></script>
+
+<!--GitHub buttons-->
+{{ if .HasShortcode "github-buttons" }}
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+{{ end }}

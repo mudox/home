@@ -191,20 +191,36 @@ Quote break.
 boy let's keep writing to make sure this is long enough to actually wrap for
 everyone. Oh, you can *put* **Markdown** into a blockquote.
 
+# Shortcodes
+
+## Youtube
+
+Use the `youtube` shortcode.
+
+{{< youtube id="Z2Uu2rYFlPQ" autoplay="true" >}}
+
+## Cross reference
+
+__Click__ the URLs to check if the shortcode works.
+
+* [Absolute permalink to: iOS Awesome List]({{< ref "/post/my-ios-awesome-list.md" >}})
+
+* [Relative permalink to: iOS Awesome List]({{< relref "my-ios-awesome-list.md" >}})
+
 # Other
 
 Below is a `<hr>`
 
 ***
 
-Below is another `<hr>`
-
-A Youtube video?
+A Youtube video using raw HTML syntax.
 
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Z2Uu2rYFlPQ?rel=0"
   frameborder="0" allow="autoplay; encrypted-media"
   allowfullscreen></iframe>
+
+Below is another `<hr>`
 
 ---
 
