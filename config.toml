@@ -24,25 +24,25 @@ pygmentsStyle = "dracula"
 
 [[menu.main]]
     name = "Resume"
-    pre = "<i class='fas fa-user-circle fa-fw'></i>"
+    pre = "<i class='fas fa-user-circle'></i>"
     url = "/resume"
     weight = -110
 
 [[menu.main]]
     name = "Projects"
-    pre = "<i class='fas fa-rocket fa-fw'></i>"
+    pre = "<i class='fas fa-rocket'></i>"
     url = "/my-projects"
     weight = -110
 
 [[menu.main]]
     name = "Tags"
-    pre = "<i class='fas fa-hashtag fa-fw'></i>"
+    pre = "<i class='fas fa-hashtag'></i>"
     url = "/tags"
     weight = -120
 
 [[menu.main]]
     name = ""
-    pre = "<i class='fab fa-github fa-fw'></i>"
+    pre = "<i class='fab fa-github'></i>"
     url = "https://github.com/mudox"
     weight = -90
 
