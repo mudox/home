@@ -44,7 +44,10 @@ pygmentsStyle = "native"
 # Site parameters
 
 [params]
-    description = ''
+    description = 'Homepage of Mudox'
+
+    [params.favicon]
+        url = "favicon.jpg"
 
     [params.logo]
         url = "logo.png"
