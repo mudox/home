@@ -1,0 +1,53 @@
+baseURL = 'http://mudox.github.io'
+languageCode = 'en-us'
+
+title = 'Mudox'
+theme = 'natrium'
+
+pygmentsCodefences = true
+pygmentsStyle = "native"
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+# Main menu
+
+[[menu.main]]
+    name = "Resume"
+    pre = "<i class='fas fa-user-circle fa-fw'></i>"
+    url = "/resume"
+    weight = -110
+
+[[menu.main]]
+    name = "Projects"
+    pre = "<i class='fas fa-rocket fa-fw'></i>"
+    url = "/my-projects"
+    weight = -110
+
+[[menu.main]]
+    name = "Tags"
+    pre = "<i class='fas fa-hashtag fa-fw'></i>"
+    url = "/tags"
+    weight = -120
+
+[[menu.main]]
+    name = ""
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    url = "https://github.com/mudox"
+    weight = -90
+
+# Site parameters
+
+[params]
+    description = ''
+
+    [params.logo]
+        url = "logo.png"
+        width = 50
+        height = 50
+        alt = "Logo"
