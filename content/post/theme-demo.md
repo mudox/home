@@ -4,11 +4,10 @@ date  = 2018-07-26T19:00:55+08:00
 draft = true
 tags  = ['Demo', 'Markdown', 'Web']
 toc   = 'true'
+description = '''
+Page to showcase the theme backing this site. Also for testing purpose.
+'''
 +++
-
-Page to showcase the theme backing this site.
-Also for testing purpose.
-<!--more-->
 
 # Heading #1
 
