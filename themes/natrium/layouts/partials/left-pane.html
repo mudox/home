@@ -1,9 +1,10 @@
 {{ if ne .Params.toc "false" }}
-<aside class="left-pane">
+<aside class="aside-pane left-pane">
     <header>
         <h2>
+            <hr>
+            <span>TAGS</span>
             <i class="fas fa-tags"></i>
-            <!--<a id="tag-list-title" href="/tags">Tags</a>-->
         </h2>
     </header>
     <ul class="tag-list">
@@ -11,9 +12,8 @@
         <li>
             {{ range $index, $tag := .Params.tags }}
             <!--{{ if gt $index 0 }}{{ end }}-->
-            <a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-            <br>
-            {{ end }}
+            <a href="{{ " tags/ " | relURL }}{{ . | urlize }}">{{ . }}</a>
+            <br> {{ end }}
         </li>
         {{ end }}
     </ul>
