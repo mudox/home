@@ -1,19 +1,17 @@
 <nav class="nav">
-    <ul class="nav-left">
-        <li>
-            <a href="{{ .Site.BaseURL }}" class="nav-logo">
-                <img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}"
-                     width="{{ .Site.Params.logo.width }}"
-                     height="{{ .Site.Params.logo.height }}"
+    <a href="{{ .Site.BaseURL }}" class="nav-logo">
+        <ul class="nav-left">
+            <li>
+                <img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}" 
+                     width="{{ .Site.Params.logo.width }}" 
+                     height="{{ .Site.Params.logo.height }}" 
                      alt="{{ .Site.Params.logo.alt }}">
-            </a>
-        </li>
-        <li>
-            <a href="{{ .Site.BaseURL }}" class="nav-logo">
+            </li>
+            <li>
                 <h1>MUDOX</h1>
-            </a>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </a>
     <ul class="nav-links">
         {{ range .Site.Menus.main }}
         <li>

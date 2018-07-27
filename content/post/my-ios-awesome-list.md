@@ -10,363 +10,326 @@ use in iOS development.
 '''
 +++
 
-# Sites
-
-[Swift Topics on GitHub]  
-An offcial index of popular resources about Swift on GitHub.
-
-[iOS - 掘金]  
-高质量技术文英译中站点。
-
-[Cocoacasts]  
-High quality, easy to follow iOS tutorials.
-
-[Raywenderlich]  
-Famous mobile developing tutorials sites.
-
-[Realm Academy]  
-Realm's tech articles about iOS devs.
-
 # Swift
 
-{{< github-buttons "ankurp" "Dollar" "Dollar" >}}  
+{{< github-buttons "ankurp" "Dollar" "Dollar" >}}
 A functional tool-belt for Swift Language.
 {{< /github-buttons >}}
 
-{{< github-buttons "typelift" "swiftz" "Swiftz" >}}  
+{{< github-buttons "typelift" "swiftz" "Swiftz" >}}
 Swiftz is a Swift library for functional programming.
 {{< /github-buttons >}}
 
 # Tool
 
-[jazzy]  
+{{< github-buttons "realm" "jazzy" "Jazzy" >}}
 Soulful docs for Swift & Objective-C.
+{{< /github-buttons >}}
 
-[SwiftLint]  
+{{< github-buttons "realm" "swiftlint" "SwiftLint" >}}
 A tool to enforce Swift style and conventions.
+{{< /github-buttons >}}
 
-[Swimat]  
-Swift source code formatter.
+{{< github-buttons "jintin" "swimat" "Swimat" >}}
+Swift source code formatter. Provide Xcode integration, very handy.
+{{< /github-buttons >}}
 
-[Injection for Xcode]  
+
+{{< github-buttons "johnno1962" "injectionforxcode" "Injection for Xcode" >}}
 Runtime Code Injection for Objective-C & Swift.
+{{< /github-buttons >}}
 
-[Chisel]  
+{{< github-buttons "facebook" "chisel" "Chisel" >}}
 A collection of LLDB commands to assist debugging iOS apps.
+{{< /github-buttons >}}
 
-[Fastlane]  
+{{< github-buttons "fastlane" "fastlane" "Fastlane" >}}
 The easiest way to automate building and releasing your iOS and Android apps.
+{{< /github-buttons >}}
 
-[Nomad CLI]  
-A group of command line utitlies facilitating iOS development.
-
-[xctool]  
+{{< github-buttons "facebook" "xctool" "xctool" >}}
 An extension for Apple's xcodebuild that makes it easier to test iOS and macOS apps.
+{{< /github-buttons >}}
 
-[xcbuild]  
+{{< github-buttons "facebook" "xcbuilt" "xcbuilt" >}}
 Xcode-compatible build tool.
+{{< /github-buttons >}}
 
-[xcpretty]  
+{{< github-buttons "supermarin" "xcpretty" "xcpretty" >}}
 Flexible and fast xcodebuild formatter.
+{{< /github-buttons >}}
 
 # Testing
 
-[Quick]  
+{{< github-buttons "quick" "quick" "Quick" >}}
 BDD testing framework.
+{{< /github-buttons >}}
 
-[Nimble]  
+{{< github-buttons "quick" "nimble" "Nimble" >}}
 Matcher library that replaces XCTest `XCTAssert` family.
+{{< /github-buttons >}}
 
-[RxNimble]  
+{{< github-buttons "rxswiftcommunity" "rxnimble" "RxNimble" >}}
 Simplify expectation matching for RxBlocking.
+{{< /github-buttons >}}
 
-[RxTest]  
+{{< github-buttons "rxswift" "rxswift" "RxSwift" >}}
 RxSwift testing framework, testing `Observable` operators, bundled with [RxSwift].
+{{< /github-buttons >}}
 
-[RxBlocking]  
-RxSwift testing framework, testing `Observable` operators, bundled with [RxSwift].
-
-[OHHTTPStubs]  
+{{< github-buttons "alisoftware" "ohhttpstub" "OHHTTPStub" >}}
 Network stubbing library.
+{{< /github-buttons >}}
 
-[SwiftCheck]  
+{{< github-buttons "typelift" "swiftcheck" "SwiftCheck" >}}
 QuickCheck for Swift.
+{{< /github-buttons >}}
 
-[Swinject]  
+{{< github-buttons "swinject" "swinject" "Swinject" >}}
 Dependency injection framework for Swift with iOS/macOS/Linux.
+{{< /github-buttons >}}
 
-[EarlGrey]  
+{{< github-buttons "google" "earlgrey" "EarlGrey" >}}
 iOS UI Automation Test Framework.
+{{< /github-buttons >}}
 
-[iOSSnapshotTestCase]  
+{{< github-buttons "uber" "ios-snapshot-test-case" "iOSSnapshotTestCase" >}}
 Presentation test based on Image diff.
+{{< /github-buttons >}}
 
 # Networking
 
-[Alamofire]  
+{{< github-buttons "alamofire" "alamofire" "Alamofire" >}}
 Provides a Swifty, modern-feeling wrapper for URLSession.
+{{< /github-buttons >}}
 
-[RxAlamofire]  
+{{< github-buttons "rxswiftcommunity" "rxalamofire" "RxAlamofire" >}}
 RxSwift community extension for [Alamofire].
+{{< /github-buttons >}}
 
-[Moya]  
+{{< github-buttons "moya" "moya" "Moya" >}}
 Wraps Alamofire to hide HTTP URLs and parameters.
+{{< /github-buttons >}}
 
 # Data
-
-[Disk]  
+{{< github-buttons "saoudrizwan" "disk" "Disk" >}}
 Simplify data access and persist by abstract away `FileManager`, data serialization logics.
+{{< /github-buttons >}}
 
-[SwiftyUserDefaults]  
+{{< github-buttons "radex" "swiftuserdefaults" "SwiftyUserDefaults" >}}
 Modern Swift API for `UserDefaults` with typed, auto-completed key and settable subscription
 operators.
+{{< /github-buttons >}}
 
-[SwiftyJSON]  
+{{< github-buttons "swiftyjson" "swiftyjson" "SwiftyJSON" >}}
 The better way to deal with JSON data in Swift.
+{{< /github-buttons >}}
 
-[Kanna]  
+{{< github-buttons "tid-kijyun" "kanna" "Kanna" >}}
 XML/HTML parser for Swift.
+{{< /github-buttons >}}
 
 ## Realm
 
-[Realm]  
-Modern, swifty Core Data thrid-party alternative.
+<!--[Realm](https://realm.io)-->
+<!--Modern, swifty Core Data thrid-party alternative.-->
 
-[RxRealm]  
+{{< github-buttons "rxswiftcommunity" "rxrealm" "RxRealm" >}}
 RxSwift extension for RealmSwift.
+{{< /github-buttons >}}
 
-[RxRealmDataSources]  
-RxRealm versoin of [RxDataSources].
+{{< github-buttons "rxswiftcommunity" "rxrealmdatasources" "RxRealmDataSources" >}}
+RxRealm versoin of RxDataSources.
+{{< /github-buttons >}}
 
 # UI
 
-[Bartinter]  
+{{< github-buttons "maximkotliar" "bartinter" "Bartinter" >}}
 Dynamically changes status bar style depending on content behind it.
+{{< /github-buttons >}}
 
-[IQKeybaordManager]  
+{{< github-buttons "hackiftekhar" "iqkeyboardmanager" "IQKeybaordManager" >}}
 Codeless drop-in universal library allows to prevent issues of keyboard
 sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup
 required and much more.
+{{< /github-buttons >}}
 
 ## Text
 
-[StyledTextKit]  
+{{< github-buttons "githawkapp" "styledtextkit" "StyledTextKit" >}}
 Declarative building and fast rendering attributed string library.
+{{< /github-buttons >}}
 
-[SwiftRichString]  
+{{< github-buttons "malcommac" "swiftrichstring" "SwiftRichString" >}}
 Swifty syntax sugar for constructing `NSAttributedString`.
+{{< /github-buttons >}}
 
 ## Graphics
 
-[Slope]  
+{{< github-buttons "mergesort" "slope" "Slope" >}}
 A simpler way to implement simple gradients on iOS.
+{{< /github-buttons >}}
 
-[Texture]  
+{{< github-buttons "texturegroup" "texture" "Texture" >}}
 Smooth asynchronous user interfaces for iOS apps. Formally __AsyncDisplayKit__.
+{{< /github-buttons >}}
 
-[GPUImage3]  
+{{< github-buttons "bradlarson" "gpuimage3" "GPUImage3" >}}
 GPUImage 3 is a BSD-licensed Swift framework for GPU-accelerated video and image processing using Metal.
+{{< /github-buttons >}}
 
 # View
 
-[TagListView]  
+{{< github-buttons "elaworkshop" "taglistview" "TagListView" >}}
 Simple and highly customizable iOS tag list view, in Swift.
+{{< /github-buttons >}}
 
-[SwiftEntryKit]  
+{{< github-buttons "huri000" "swiftentrykit" "SwiftEntryKit" >}}
 Top / bottom banner, center alert / action sheet box of modern styles.
+{{< /github-buttons >}}
 
-[Charts]  
+{{< github-buttons "danielgindi" "charts" "Charts" >}}
 Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.
+{{< /github-buttons >}}
 
-[iCarousel]  
+{{< github-buttons "nicklockwood" "icarousel" "iCarousel" >}}
 A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS
+{{< /github-buttons >}}
 
-[Sheeeeeeeeet]  
+{{< github-buttons "danielsaidi" "sheeeeeeeeet" "Sheeeeeeeeet" >}}
 A Swift library for custom action sheets.
+{{< /github-buttons >}}
 
-[M13Checkbox]  
+{{< github-buttons "marxon13" "m13checkbox" "M13Checkbox" >}}
 A customizeable checkbox for iOS.
+{{< /github-buttons >}}
 
-[Folding Cell]  
+{{< github-buttons "ramotion" "folding" "Folding Cell" >}}
 Click the cell, it expand to details with fashion.
+{{< /github-buttons >}}
 
-[MJRefresh]  
+{{< github-buttons "codermjlee" "mjrefresh" "MJRefresh" >}}
 The refresh control with 1w+ stars on GitHub.
+{{< /github-buttons >}}
 
-[MBProgressHUD]  
+{{< github-buttons "jdg" "mbprogresshud" "MBProgressHUD" >}}
 One of the most popular HUD implementations.
+{{< /github-buttons >}}
 
-[NVActivityIndicatorView]  
+{{< github-buttons "ninjaprox" "nvactivityindicatorview" "NVActivityIndicatorView" >}}
 A collection of awesome loading animations
+{{< /github-buttons >}}
 
-[M13ProgressSuite]  
+{{< github-buttons "marxon13" "m13progresssuite" "M13ProgressSuite" >}}
 A suite containing many tools to display progress information on iOS.
+{{< /github-buttons >}}
 
 ## Layout
 
-[LayoutFrameworkBenchmark]  
+{{< github-buttons "layoutbox" "layoutframeworkbenchmark" "LayoutFrameworkBenchmark" >}}
 It lists out and compares all popular layout frameworks, can find other layout solutions in this repo.
+{{< /github-buttons >}}
 
-[SnapKit]  
+{{< github-buttons "snapkit" "snapkit" "SnapKit" >}}
 Just swfity wrapper over Auto Layout API.
+{{< /github-buttons >}}
 
-[PinLayout]  
+{{< github-buttons "mirego" "pinlayout" "PinLayout" >}}
 Very fast, `layoutSubviews` based layout system.
+{{< /github-buttons >}}
 
 ## Animation
 
-[Sica]  
+{{< github-buttons "cats-oss" "sica" "Sica" >}}
 Simple Interface Core Animation. Run type-safe animation sequencially or parallelly.
+{{< /github-buttons >}}
 
-[Spring]  
+{{< github-buttons "mengto" "spring" "Spring" >}}
 A library to simplify iOS animations in Swift.
+{{< /github-buttons >}}
 
-[ElasticTransition]  
+{{< github-buttons "lkzhao" "elastictransition" "ElasticTransition" >}}
 A UIKit custom transition that simulates an elastic drag.
+{{< /github-buttons >}}
 
-[pop]  
+{{< github-buttons "facebook" "pop" "pop" >}}
 An extensible iOS and OS X animation library, useful for physics-based interactions.
+{{< /github-buttons >}}
 
 # View Controller
 
-[Eureka]  
+{{< github-buttons "xmartlabs" "eureka" "Eureka" >}}
 Form interface builder based on `UITableView`.
+{{< /github-buttons >}}
 
-[Hero]  
+{{< github-buttons "lkzhao" "hero" "Hero" >}}
 Elegant transition library.
+{{< /github-buttons >}}
 
 ## Multimedia
 
-[TOCropViewController]  
+{{< github-buttons "timoliver" "tocropviewcontroller" "TOCropViewController" >}}
 A view controller that allows users to crop UIImage objects.
+{{< /github-buttons >}}
 
-[YPImagePicker]  
+{{< github-buttons "yummypets" "ypimagepicker" "YPImagePicker" >}}
 Instagram-like image picker & filters for iOS.
+{{< /github-buttons >}}
 
 # Architecture
 
-[ReactorKit]  
+{{< github-buttons "reactorkit" "reactorkit" "ReactorKit" >}}
 A framework for a reactive and unidirectional Swift application architecture
+{{< /github-buttons >}}
 
 ## RxSwift
 
-[RxSwift]  
+{{< github-buttons "rxswiftcommunity" "rxswift" "RxSwift" >}}
 RxSwift + RxCocoa + RxTest + RxBlocking.
+{{< /github-buttons >}}
 
-[RxSwiftExt]  
+{{< github-buttons "rxswiftcommunity" "rxswiftext" "RxSwiftExt" >}}
 Provides many useful operators.
+{{< /github-buttons >}}
 
-[RxOptional]  
+{{< github-buttons "rxswiftcommunity" "rxoptional" "RxOptional" >}}
 RxSwift extensions for Swift optionals and "Occupiable" types.
+{{< /github-buttons >}}
 
-[RxGesture]  
+{{< github-buttons "rxswiftcommunity" "rxgesture" "RxGesture" >}}
 RxSwift extension for `UIGestureRecognizer`.
+{{< /github-buttons >}}
 
-[Action]  
+{{< github-buttons "rxswiftcommunity" "action" "Action" >}}
 Abstracts actions to be performed in RxSwift.
+{{< /github-buttons >}}
 
-[RxNimble]  
+{{< github-buttons "rxswiftcommunity" "rxnimble" "RxNimble" >}}
 Simplify expectation matching for RxBlocking.
+{{< /github-buttons >}}
 
-[RxAnimated]  
+{{< github-buttons "rxswiftcommunity" "rxanimated" "RxAnimated" >}}
 Animated RxCocoa bindings.
+{{< /github-buttons >}}
 
-[RxTheme]  
+{{< github-buttons "rxswiftcommunity" "rxtheme" "RxTheme" >}}
 Theme management based on Rx.
+{{< /github-buttons >}}
 
-[RxDataSources]  
+{{< github-buttons "rxswiftcommunity" "rxdatasoures" "RxDataSources" >}}
 Reactive data sources (sections, animated updates, editing ...).
+{{< /github-buttons >}}
 
-[RxFlow]  
+{{< github-buttons "rxswiftcommunity" "rxflow" "RxFlow" >}}
 Reactive scene transition.
+{{< /github-buttons >}}
 
-[RxCoordinator]  
+{{< github-buttons "quickbirdstudios" "rxcoordinator" "RxCoordinator" >}}
 Reactive navigation library for iOS based on the coordinator pattern.
+{{< /github-buttons >}}
 
 # Misc
 
-[Open Source iOS Apps]  
+{{< github-buttons "dkhamsing" "open" "Open Source iOS Apps" >}}
 Collaborative List of Open-Source iOS Apps.
-
-[Action]: https://github.com/RxSwiftCommunity/Action
-[Alamofire]: https://github.com/Alamofire/Alamofire
-[Disk]: https://github.com/saoudrizwan/Disk
-[Eureka]: https://github.com/xmartlabs/Eureka
-[Folding Cell]: https://github.com/Ramotion/folding-cell
-[iCarousel]: https://github.com/nicklockwood/iCarousel
-[IQKeybaordManager]: https://github.com/hackiftekhar/IQKeyboardManager
-[LayoutFrameworkBenchmark]: https://github.com/layoutBox/LayoutFrameworkBenchmark
-[MBProgressHUD]: https://github.com/jdg/MBProgressHUD
-[Moya]: https://github.com/Moya/Moya
-[NVActivityIndicatorView]: https://github.com/ninjaprox/NVActivityIndicatorView
-[Nimble]: https://github.com/Quick/Nimble
-[OHHTTPStubs]: https://github.com/AliSoftware/OHHTTPStubs
-[PinLayout]: https://github.com/mirego/PinLayout
-[Quick]: https://github.com/Quick/Quick
-[ReactorKit]: https://github.com/ReactorKit/ReactorKit
-[Realm]:  https://realm.io
-[RxAlamofire]: https://github.com/RxSwiftCommunity/RxAlamofire
-[RxAnimated]: https://github.com/RxSwiftCommunity/RxAnimated
-[RxBlocking]: https://github.com/RxSwiftCommunity/RxSwift
-[RxCocoa]: https://github.com/RxSwiftCommunity/RxSwift
-[RxDataSources]: https://github.com/RxSwiftCommunity/RxDataSoures
-[RxFlow]: https://github.com/RxSwiftCommunity/RxFlow
-[RxGesture]: https://github.com/RxSwiftCommunity/RxGesture
-[RxNimble]: https://github.com/RxSwiftCommunity/RxNimble
-[RxOptional]: https://github.com/RxSwiftCommunity/RxOptional
-[RxRealmDataSources]: https://github.com/RxSwiftCommunity/RxRealmDataSources
-[RxRealm]: https://github.com/RxSwiftCommunity/RxRealm
-[RxSwiftExt]: https://github.com/RxSwiftCommunity/RxSwiftExt
-[RxSwift]: https://github.com/RxSwiftCommunity/RxSwift
-[RxTest]: https://github.com/RxSwiftCommunity/RxSwift
-[RxTheme]: https://github.com/RxSwiftCommunity/RxTheme
-[Siesta]: https://bustoutsolutions.github.io/siesta
-[SnapKit]: https://github.com/SnapKit/SnapKit
-[SwiftEntryKit]: https://github.com/huri000/SwiftEntryKit
-[SwiftRichString]: https://github.com/malcommac/SwiftRichString.git
-[SwiftyUserDefaults]: https://github.com/radex/SwiftyUserDefaults
-[Swinject]: https://github.com/Swinject/Swinject
-[iCarousel]: https://github.com/nicklockwood/iCarousel
-[iOSSnapshotTestCase]: https://github.com/uber/ios-snapshot-test-case
-[SwiftyJSON]: https://github.com/SwiftyJSON/SwiftyJSON#subscript
-[TOCropViewController]: https://github.com/TimOliver/TOCropViewController
-[Hero]: https://github.com/lkzhao/Hero
-[Spring]: https://github.com/MengTo/Spring
-[Charts]: https://github.com/danielgindi/Charts
-[ElasticTransition]: https://github.com/lkzhao/ElasticTransition
-[MJRefresh]: https://github.com/CoderMJLee/MJRefresh
-[Sheeeeeeeeet]: https://github.com/danielsaidi/Sheeeeeeeeet
-[YPImagePicker]: https://github.com/Yummypets/YPImagePicker
-[Swift Topics on GitHub]: https://github.com/topics/swift
-[iOS - 掘金]: https://juejin.im/welcome/ios
-[Cocoacasts]: https://cocoacasts.com
-[Raywenderlich]: https://www.raywenderlich.com
-[SwiftLint]: https://github.com/realm/SwiftLint
-[Swimat]: https://github.com/Jintin/Swimat
-[Dollar]: https://github.com/ankurp/Dollar
-[Realm Academy]: https://academy.realm.io/section/apple
-[pop]: https://github.com/facebook/pop
-[Texture]: https://github.com/texturegroup/texture
-[M13ProgressSuite]: https://github.com/Marxon13/M13ProgressSuite
-[M13Checkbox]: https://github.com/Marxon13/M13Checkbox
-[SwiftCheck]: https://github.com/typelift/SwiftCheck
-[EarlGrey]: https://github.com/google/EarlGrey
-[Injection for Xcode]: https://github.com/johnno1962/injectionforxcode
-[Chisel]: https://github.com/facebook/chisel
-[Fastlane]: https://github.com/fastlane/fastlane
-[Nomad CLI]: https://github.com/nomad
-[Kanna]: https://github.com/tid-kijyun/Kanna
-[xctool]: https://github.com/facebook/xctool
-[xcpretty]: https://github.com/supermarin/xcpretty
-[xcbuild]: https://github.com/facebook/xcbuild
-[jazzy]: https://github.com/realm/jazzy
-[URLNavigator]: https://github.com/devxoul/URLNavigator
-[Swiftz]: https://github.com/typelift/swiftz
-[Bartinter]: https://github.com/MaximKotliar/Bartinter
-[GPUImage3]: https://github.com/BradLarson/GPUImage3
-[RxCoordinator]: https://github.com/quickbirdstudios/RxCoordinator
-[Sica]: https://github.com/cats-oss/Sica
-[TagListView]: https://github.com/ElaWorkshop/TagListView
-[Slope]: https://github.com/mergesort/Slope
-[Open Source iOS Apps]: https://github.com/dkhamsing/open-source-ios-apps
-[StyledTextKit]: https://github.com/GitHawkApp/StyledTextKit
+{{< /github-buttons >}}

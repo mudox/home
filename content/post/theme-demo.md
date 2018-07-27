@@ -197,7 +197,7 @@ everyone. Oh, you can *put* **Markdown** into a blockquote.
 
 Use the `youtube` shortcode.
 
-{{< youtube id="Z2Uu2rYFlPQ" autoplay="true" >}}
+{{< youtube id="Z2Uu2rYFlPQ" autoplay="false" >}}
 
 ## Cross reference
 
