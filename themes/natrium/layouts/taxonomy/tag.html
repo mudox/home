@@ -9,11 +9,11 @@
         </header>
 
         <ul class="tag-article-list-body">
+            {{ range .Paginator.Pages }}
             <li class="list-item">
-                {{ range .Paginator.Pages }}
-                    {{ partial "tag-article-list-item.html" . }}
-                {{ end }}
+                {{ partial "tag-article-list-item.html" . }}
             </li>
+            {{ end }}
         </ul>
     </article>
 
