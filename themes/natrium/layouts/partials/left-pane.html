@@ -1,9 +1,15 @@
 <aside class="aside-pane left-pane">
 
-    {{ partial "pane-tag-list.html" . }}
+    <section>
+        {{ partial "pane-tag-list.html" . }}
+    </section>
+    
+    <section>
+        {{ partial "recent-updated.html" . }}
+    </section>
 
-    {{ partial "recent-updated.html" }}
-
-    {{ partial "pane-nav.html" . }}
+    <section>
+        {{ partial "pane-nav.html" . }}
+    </section>
 
 </aside>
