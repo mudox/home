@@ -474,7 +474,7 @@ div.github-buttons {
   pre {
     margin: 0 6px;
     line-height: 1.2rem;
-    box-shadow: 2px 3px 3px 1px #000000d9;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
   }
 
   .header {
