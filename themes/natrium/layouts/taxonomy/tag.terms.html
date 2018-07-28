@@ -2,8 +2,8 @@
 
 <main class="content">
 
-    <div class="tag-terms list">
-        <h2 class="tag-terms-title list-title">{{ i18n "tags" }}</h2>
+    <div class="list tag-terms">
+        <h2 class="list-title tag-terms-title">{{ i18n "tags" }}</h2>
         {{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
         {{ $fontUnit := "rem" }}
         {{ $largestFontSize := 2.5 }}
