@@ -8,8 +8,6 @@ theme = 'natrium'
 enableGitInfo = true
 
 pygmentsCodefences = true
-#pygmentsStyle = "native"
-#pygmentsStyle = "monokai"
 pygmentsStyle = "dracula"
 
 [permalinks]
@@ -17,7 +15,6 @@ pygmentsStyle = "dracula"
     page = "/:slug/"
 
 [taxonomies]
-    category = "categories"
     tag = "tags"
 
 # Main menu
