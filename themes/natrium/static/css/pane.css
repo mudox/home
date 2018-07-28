@@ -83,12 +83,13 @@
     margin-top: 40px;
   }
 
-  .left-pane-nav h2:first-of-type {
-    color: #222;
-  }
-
   .left-pane-nav h2 {
     color: #aaa;
+    transition: color 300ms;
+  }
+
+  .left-pane-nav h2:hover {
+    color: #666;
   }
 
   .tag-list {
