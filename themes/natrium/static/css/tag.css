@@ -12,18 +12,20 @@
   padding-bottom: 10px;
 }
 
-.tag-cloud-item {
+.tag-cloud-body {
   margin: 0;
   padding: 0;
+
+  text-align: center;
 }
 
-.tag-cloud-item li {
+.tag-cloud-body li {
   display: inline-block;
   list-style: none;
   padding: 0 15px 15px 0;
 }
 
-.tag-cloud-item a {
+.tag-cloud-body a {
   text-decoration: none;
   font-family: 'Merriweather', serif;
   font-weight: bold;
@@ -31,8 +33,8 @@
   transition: color 300ms;
 }
 
-.tag-cloud-item a:hover,
-.tag-cloud-item a:active,
+.tag-cloud-body a:hover,
+.tag-cloud-body a:active,
 {
   color: #ccc;
 }
