@@ -2,23 +2,24 @@
 
 <main class="content">
 
-    <div class="list">
+    <div class="list home-article-list">
         {{ range (.Paginate (.Data.Pages.GroupByDate "2006 Jan")).PageGroups }}
+        <section>
+            <!--Title & count-->
+            <h2 class="list-title">
+                {{ .Key }}
+                <span class="count">{{ .Pages | len }}</span>
+            </h2>
 
-        <!--Title & count-->
-        <h2 class="list-title">
-            {{ .Key }}
-            <span class="count">{{ .Pages | len }}</span>
-        </h2>
-
-        <!--List-->
-        <ul class="list-body">
-            {{ range .Pages.ByDate.Reverse }}
+            <!--List-->
+            <ul class="list-body">
+                {{ range .Pages.ByDate.Reverse }}
                 <li class="list-item">
                     {{ partial "home-article-list-item.html" . }}
                 </li>
-            {{ end }}
-        </ul>
+                {{ end }}
+            </ul>
+        </section>
 
         {{ end }}
     </div>
