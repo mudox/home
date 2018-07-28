@@ -1,55 +1,9 @@
-{{ if ne .Params.toc "false" }}
 <aside class="aside-pane left-pane">
 
-    <!--
-        Tag list
-    -->
+    {{ partial "pane-tag-list.html" . }}
 
-    <div class="tag-list">
-        <header>
-            <h2>
-                <span>TAGS</span>
-                <i class="fas fa-tags"></i>
-            </h2>
-        </header>
-        <ul class="tag-list">
-            {{ if .Params.tags }}
-            <li>
-                {{ range $index, $tag := .Params.tags }}
-                <!--{{ if gt $index 0 }}{{ end }}-->
-                <a href="{{ " tags/ " | relURL }}{{ . | urlize }}">{{ . }}</a>
-                <br> {{ end }}
-            </li>
-            {{ end }}
-        </ul>
-    </div>
+    {{ partial "recent-updated.html" }}
 
-    <!--
-        Navigation menu
-        It is hidden when viewport scoll to top.
-    -->
-
-    <div class="left-pane-nav">
-        <li>
-            <a href="/">
-                <h2>
-                    <span>Home</span>
-                    <i class="fas fa-home"></i>
-                </h2>
-            </a>
-        </li>
-
-        {{ range .Site.Menus.main }}
-        <li>
-            {{ $name := .Name }}
-            <a href="{{ .URL }}">
-                <h2>
-                    <span>{{ $name }}</span> {{ .Pre }}
-                </h2>
-            </a>
-        </li>
-        {{ end }}
-    </div>
+    {{ partial "pane-nav.html" . }}
 
 </aside>
-{{ end }}

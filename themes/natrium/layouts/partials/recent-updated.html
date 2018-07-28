@@ -1,0 +1,18 @@
+<div class="recent-updated">
+    <header class="recent-updated-title">
+        <h2>
+            <span>Recent Updated</span>
+            <i class="fas fa-calendar-alt"></i>
+        </h2>
+    </header>
+    <ul class="recent-updated-body">
+        {{ if .Params.tags }}
+        <li>
+            {{ range $index, $tag := .Params.tags }}
+            <!--{{ if gt $index 0 }}{{ end }}-->
+            <a href="{{ " tags/ " | relURL }}{{ . | urlize }}">{{ . }}</a>
+            <br> {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>

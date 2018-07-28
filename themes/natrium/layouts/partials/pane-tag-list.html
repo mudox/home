@@ -1,0 +1,18 @@
+<div class="pane-tag-list">
+    <header class="pane-tag-list-title">
+        <h2>
+            <span>TAGS</span>
+            <i class="fas fa-tags"></i>
+        </h2>
+    </header>
+    <ul class="pane-tag-list-body">
+        {{ if .Params.tags }}
+        <li>
+            {{ range $index, $tag := .Params.tags }}
+            <!--{{ if gt $index 0 }}{{ end }}-->
+            <a href="{{ " tags/ " | relURL }}{{ . | urlize }}">{{ . }}</a>
+            <br> {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>

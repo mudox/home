@@ -1,0 +1,21 @@
+<div class="pane-nav">
+    <li>
+        <a href="/">
+            <h2>
+                <span>Home</span>
+                <i class="fas fa-home"></i>
+            </h2>
+        </a>
+    </li>
+
+    {{ range .Site.Menus.main }}
+    <li>
+        {{ $name := .Name }}
+        <a href="{{ .URL }}">
+            <h2>
+                <span>{{ $name }}</span> {{ .Pre }}
+            </h2>
+        </a>
+    </li>
+    {{ end }}
+</div>

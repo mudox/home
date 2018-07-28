@@ -5,16 +5,20 @@
     <div class="list">
         {{ range (.Paginate (.Data.Pages.GroupByDate "2006 Jan")).PageGroups }}
 
-            <!--Title & count-->
-            <h2 class="list-title">
-                {{ .Key }}
-                <span class="count">{{ .Pages | len }}</span>
-            </h2>
+        <!--Title & count-->
+        <h2 class="list-title">
+            {{ .Key }}
+            <span class="count">{{ .Pages | len }}</span>
+        </h2>
 
-            <!--List-->
+        <!--List-->
+        <ul class="list-body">
             {{ range .Pages.ByDate.Reverse }}
-                {{ partial "home-article-list-item.html" . }}
+                <li class="list-item">
+                    {{ partial "home-article-list-item.html" . }}
+                </li>
             {{ end }}
+        </ul>
 
         {{ end }}
     </div>

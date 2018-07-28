@@ -2,16 +2,22 @@
 
 <main class="content" role="main">
 
-  <div class="list">
-    <h2 class="list-title">{{ .Title }}</h2>
-    {{ range .Paginator.Pages }}
-     
-    {{ partial "list-item.html" . }}
+    <article class="tag-article-list list">
 
-    {{ end }}
-   </div>
+        <header>
+            <h2 class="tag-article-list-title list-title">{{ .Title }}</h2>
+        </header>
 
-  {{ partial "pagination.html" . }}
+        <ul class="tag-article-list-body">
+            <li class="list-item">
+                {{ range .Paginator.Pages }}
+                    {{ partial "tag-article-list-item.html" . }}
+                {{ end }}
+            </li>
+        </ul>
+    </article>
+
+    {{ partial "pagination.html" . }}
 
 </main>
 
