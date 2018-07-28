@@ -1,18 +1,22 @@
 <nav class="nav">
-    <a href="{{ .Site.BaseURL }}" class="nav-logo">
-        <ul class="nav-left">
-            <li>
-                <img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}" 
-                     width="{{ .Site.Params.logo.width }}" 
-                     height="{{ .Site.Params.logo.height }}" 
-                     alt="{{ .Site.Params.logo.alt }}">
-            </li>
-            <li>
-                <h1>MUDOX</h1>
-            </li>
-        </ul>
+
+    <!--
+        Left part:
+        1. Logo 
+        2. My name
+    -->
+
+    <a class="nav-left" href="{{ .Site.BaseURL }}">
+        <img class="nav-logo" src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}">
+        <h1 class="nav-title">MUDOX</h1>
     </a>
-    <ul class="nav-links">
+
+    <!--
+        Right part:
+        1. Main men
+    -->
+
+    <ul class="nav-right">
         {{ range .Site.Menus.main }}
         <li>
             <a href="{{ .URL }}">
