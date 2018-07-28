@@ -27,7 +27,7 @@
   .aside-pane h2 {
     font-size: .8rem;
 
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .aside-pane header h2 span {
@@ -52,7 +52,7 @@
   }
 
   .aside-pane section {
-    margin: 0 0 30px 0;
+    margin: 0 0 35px 0;
   }
 
 }
@@ -72,17 +72,15 @@
     padding-right: 0;
   }
 
-  .pane-nav h2 {
-    transition: color 300ms;
-
-    color: #aaa;
-  }
-
   .pane-nav h2:hover {
     color: #666;
   }
 
   .pane-tag-list {
+    margin: 0;
+  }
+
+  .left-pane section ul {
     margin: 0;
   }
 }
