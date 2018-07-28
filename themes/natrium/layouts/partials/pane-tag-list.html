@@ -7,12 +7,11 @@
     </header>
     <ul class="pane-tag-list-body">
         {{ if .Params.tags }}
-        <li>
-            {{ range $index, $tag := .Params.tags }}
-            <!--{{ if gt $index 0 }}{{ end }}-->
-            <a href="{{ " tags/ " | relURL }}{{ . | urlize }}">{{ . }}</a>
-            <br> {{ end }}
-        </li>
+            {{ range $index, $tagName := .Params.tags }}
+                <li>
+                    <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
+                </li>
+            {{ end }}
         {{ end }}
     </ul>
 </div>
