@@ -21,7 +21,9 @@
         <!--Date-->
         {{ if eq .Section "post" }}
         <time>
-            <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
+            <span class="article-date">
+                {{ .Lastmod.Format "Updated: 2006-01-02"}}
+            </span>
         </time>
         {{ end }}
 

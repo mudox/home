@@ -3,18 +3,19 @@
 <main class="content">
 
     <div class="list">
-        {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}
+        {{ range (.Paginate (.Data.Pages.GroupByDate "2006 Jan")).PageGroups }}
 
-        <!--title & count-->
-        <h2 class="list-title">
-            {{ .Key }}
-            <span class="count">{{ .Pages | len }}</span>
-        </h2>
+            <!--Title & count-->
+            <h2 class="list-title">
+                {{ .Key }}
+                <span class="count">{{ .Pages | len }}</span>
+            </h2>
 
-        <!--list content-->
-        {{ range .Pages.ByLastmod }}
-        {{ partial "list-item.html" . }}
-        {{ end }}
+            <!--List-->
+            {{ range .Pages.ByDate.Reverse }}
+                {{ partial "home-article-list-item.html" . }}
+            {{ end }}
+
         {{ end }}
     </div>
 
