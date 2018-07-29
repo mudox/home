@@ -2,7 +2,7 @@
 title       = "Auto Highlighting Toc"
 date        = 2017-12-28T08:45:42+08:00
 draft       = true
-tags        = ['Web', 'JavaScript', 'Snippets']
+tags        = ['Web', 'JavaScript', 'Snippets', 'Site Notes']
 toc         = 'true'
 description = '''
 HowTo: highlight current title in TOC (Table Of Contents) as the main article
@@ -14,10 +14,6 @@ scrolls.
 
 The static site generator [Hugo] I used in for this site auto-generates [TOC]
 for each article. The rendered TOC html DOM structure is like:
-
-It basically scans the article body part for headings (`h1 h2 h3 h4 ...`), each
-of which was rendered with an `id` attribute. For each heading Hugo adds a `li`
-item in TOC at appropriate level.
 
 ```html
 <aside class="aside-pane right-pane">
@@ -42,6 +38,10 @@ item in TOC at appropriate level.
     </nav>
 </aside>
 ```
+
+It basically scans the article body part for headings (`h1 h2 h3 h4 ...`), each
+of which was rendered with an `id` attribute. For each heading Hugo adds a `li`
+item in TOC at appropriate level.
 
 # Steps
 

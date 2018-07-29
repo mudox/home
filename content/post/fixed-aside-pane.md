@@ -2,7 +2,7 @@
 title       = "Fixed Aside Pane"
 date        = 2018-05-13T08:45:12+08:00
 draft       = true
-tags        = ['Web', 'CSS', 'Snippets']
+tags        = ['Web', 'CSS', 'Snippets', 'Site Notes']
 toc         = 'true'
 description = '''
 HowTo: implement left and right side pane in a web page, fixed when the center
