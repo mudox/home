@@ -2,14 +2,14 @@
     <header class="recent-updated-title">
         <h2>
             <span>UPDATED</span>
-            <i class="fas fa-calendar-alt"></i>
+            <i class="fas fa-calendar-alt fa-fw"></i>
         </h2>
     </header>
     <ul class="recent-updated-body">
         {{ range first 4 .Site.RegularPages.ByDate.Reverse }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
         {{ end }}
     </ul>
 </div>

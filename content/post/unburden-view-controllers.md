@@ -36,7 +36,7 @@ layer. They look stylish or wired ..., behaves modernly or oddly .... However in
 essence, they may all started from the same pain - fat view controllers,
 with the same purpose - unburden view controllers.
 
-# Dissect Massive View Controller
+# Diagnosis And Treatment
 
 Here list out responsibilities a massive view controller might have taken and
 some principals or solutions that can resolve them.

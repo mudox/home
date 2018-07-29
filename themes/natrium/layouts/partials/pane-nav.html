@@ -2,7 +2,7 @@
     <header>
         <h2>
             <span>MENU</span>
-            <i class="fas fa-home"></i>
+            <i class="fas fa-home fa-fw" style="transform: scale(0.95);"></i>
         </h2>
     </header>
     <ul class="pane-nav-body">
@@ -13,9 +13,7 @@
         </li>
         {{ range .Site.Menus.main }}
         <li>
-            <a href="{{ .URL }}">
-                {{ .Name }}
-            </a>
+            <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
     </ul>
