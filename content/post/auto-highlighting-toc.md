@@ -16,7 +16,7 @@ The static site generator [Hugo] I used in for this site auto-generates [TOC]
 for each article. The rendered TOC html DOM structure is like:
 
 ```html
-<aside class="aside-pane right-pane">
+<aside class="sidebar right-pane">
     <header>
         <h2>
             <i class="fas fa-list"></i>

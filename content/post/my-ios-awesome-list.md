@@ -6,7 +6,7 @@ tags  = ['iOS', 'Swift', 'Awesome', 'Objective-C']
 toc   = 'true'
 description = '''
 The frameworks, libraries, tool and learning resources I collected and commonly
-use in iOS development.
+used in iOS development.
 '''
 +++
 
