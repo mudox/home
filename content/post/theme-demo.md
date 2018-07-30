@@ -262,6 +262,17 @@ Use the `youtube` shortcode.
 
 -   [Relative permalink to: iOS Awesome List]\({{&lt; relref "my-ios-awesome-list.md" >}})
 
+# Embeding
+
+## CodePen code
+
+<p data-height="275" data-theme-id="0" data-slug-hash="BPJdar" data-default-tab="css,result" data-user="mudox" data-pen-title="BPJdar" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/mudox/pen/BPJdar/">BPJdar</a> by Mudox (<a href="https://codepen.io/mudox">@mudox</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## JSFiddle code
+
+<script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
+
 # Other
 
 Below is a `<hr>`

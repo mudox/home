@@ -5,8 +5,9 @@ draft       = true
 tags        = ['Site Notes', 'Web']
 toc         = 'true'
 description = '''
-I am not a professional web developer. Here records all my gains during
-building the site.
+I am not a professional web developer. I will keep building this site in my
+casual time as well as learning some basic web skills as much as I could. Here
+records my designing decisions and gains during building the site.
 '''
 +++
 
@@ -198,11 +199,7 @@ For simplicity, I only use tags.
 `margin-left` controls indentation of lists.
 
 [hugo]: http://gohugo.io
-
 [neovim]: https://github.com/neovim/neovim
-
 [tmux]: https://github.com/tmux/tmux
-
 [iterm 2]: https://www.iterm2.com/
-
 [emmet]: https://emmet.io
