@@ -1,20 +1,20 @@
-<div class="left-sidebar-menu">
-    <header>
-        <h2>
-            <span>MENU</span>
-            <i class="fas fa-home fa-fw"></i>
-        </h2>
-    </header>
+<header>
+    <h2>
+        <span>MENU</span>
+        <i class="fas fa-home fa-fw"></i>
+    </h2>
+</header>
+<nav>
     <ul>
         <li>
             <a href="/">
-                Home
-            </a>
+            Home
+        </a>
         </li>
         {{ range .Site.Menus.main }}
-        <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
+            <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
         {{ end }}
     </ul>
-</div>
+</nav>

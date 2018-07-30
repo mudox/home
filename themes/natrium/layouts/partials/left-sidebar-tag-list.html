@@ -5,11 +5,13 @@
         </i>
     </h2>
 </header>
-<ul>
-    <!--Default tag is `Untagged`-->
-    {{ range $index, $tagName := .Params.tags }}
-        <li>
-            <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
-        </li>
-    {{ end }}
-</ul>
+<nav>
+    <ul>
+        <!--Default tag is `Untagged`-->
+        {{ range $index, $tagName := .Params.tags }}
+            <li>
+                <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>

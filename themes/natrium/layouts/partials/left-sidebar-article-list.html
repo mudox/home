@@ -4,10 +4,12 @@
         <i class="fas fa-calendar-alt fa-fw"></i>
     </h2>
 </header>
-<ul>
-    {{ range first 4 .Site.RegularPages.ByDate.Reverse }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-    {{ end }}
-</ul>
+<nav>
+    <ul>
+        {{ range first 4 .Site.RegularPages.ByDate.Reverse }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>
