@@ -38,7 +38,7 @@ The main content area are divide horizontally into 3 columns:
     3.  Navigation menu
 2.  Right sidebar shows table of contents of current article
 
-Document body layout:
+## Document body frame
 
 ```html
 <body>
@@ -61,7 +61,15 @@ Document body layout:
 </body>
 ```
 
-Navigation bar layout:
+## Navigation bar layout
+
+This area has 2 parts:
+
+1. Left `<nav>` floats left, show site logo and title.  
+    It use flexbox layout to center the logo image and title vertically
+    `position: flex; align-item: center;`
+
+2. Right `<nav>` aligns text to right, shows site main menu.
 
 ```html
 <nav>
@@ -71,18 +79,22 @@ Navigation bar layout:
         <h1></h1>
     </a>
 </nav>
-<ul>
-    <!--4 menu links-->
-    <li>
-        <a href="">
-            <i></i>
-            <span></span>
-        </a>
-    </li>
-</ul>
+<nav>
+    <ul>
+        <!--4 menu links-->
+        <li>
+            <a href="">
+                <i></i>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+<nav>
 ```
 
-Left sidebar frame:
+## Left sidebar frame
+
+The area is divided into `<section>`s which is used to add spacing style.
 
 ```html
 <aside class="sidebar left-sidebar">
@@ -98,7 +110,7 @@ Left sidebar frame:
 </aside>
 ```
 
-Left sidebar navigation section frame:
+## Left sidebar navigation section frame
 
 ```html
 <header>
@@ -115,7 +127,7 @@ Left sidebar navigation section frame:
 </ul>
 ```
 
-Right sidebar:
+## Right sidebar
 
 Similar to the left sidebar, but with `right-sidebar` class assigned to the top
 `<aside>` element.
@@ -132,7 +144,7 @@ Similar to the left sidebar, but with `right-sidebar` class assigned to the top
 </aside>
 ```
 
-Main content area:
+## Main content area
 
 ```html
 <article class="article">
