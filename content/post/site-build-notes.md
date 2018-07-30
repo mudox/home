@@ -86,15 +86,15 @@ Left sidebar frame:
 
 ```html
 <aside class="sidebar left-sidebar">
-    <nav  class="left-sidebar-tag-list">
+    <section  class="left-sidebar-tag-list">
         <!--tag list partial-->
-    </nav>
-    <nav class="left-sidebar-article-list">
+    </section>
+    <section class="left-sidebar-article-list">
         <!--article list partial-->
-    </nav>
-    <nav class="left-sidebar-menu">
+    </section>
+    <section class="left-sidebar-menu">
         <!--menu partial-->
-    </nav>
+    </section>
 </aside>
 ```
 
@@ -117,7 +117,7 @@ Left sidebar navigation section frame:
 
 Right sidebar:
 
-Similar to the left sidebar, but with `right-sidebar` assign to the top
+Similar to the left sidebar, but with `right-sidebar` class assigned to the top
 `<aside>` element.
 
 ```html
