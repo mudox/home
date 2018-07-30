@@ -8,6 +8,10 @@
 
     overflow-y: hidden;
 
+    /*
+     * 350px: the `max-width` of .content element.
+     * 70px: spacing between sidebar and main content area.
+     */
     width: calc(50vw - 350px - 70px);
     max-width: calc(50vw - 350px - 70px);
     height: 70%;
@@ -19,13 +23,14 @@
   }
 
   .sidebar li {
-    font-size: .75rem;
-
+    margin-top: 6px;
+    line-height: 13px;
+    font-size: 11px;
     list-style: none;
   }
 
   .sidebar h2 {
-    font-size: .8rem;
+    font-size: 12px;
 
     margin-bottom: 5px;
   }
@@ -35,8 +40,6 @@
   }
 
   .sidebar a {
-    padding-bottom: 1.8px;
-
     transition: border-color, color 300ms;
     text-decoration: none;
 
@@ -53,6 +56,10 @@
 
   .sidebar section {
     margin: 0 0 35px 0;
+  }
+
+  .sidebar nav {
+    margin: 12px 0 0;
   }
 
 }
@@ -77,10 +84,6 @@
   }
 
   .left-sidebar-tag-list {
-    margin: 0;
-  }
-
-  .left-sidebar section ul {
     margin: 0;
   }
 
