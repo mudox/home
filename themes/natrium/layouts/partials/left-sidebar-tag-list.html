@@ -1,18 +1,15 @@
-<div class="pane-tag-list">
-    <header class="pane-tag-list-title">
-        <h2>
-            <span>TAGS</span>
-            <i class="fas fa-tag fa-fw">
-            </i>
-        </h2>
-    </header>
-    <ul class="pane-tag-list-body">
-        {{ if .Params.tags }}
-            {{ range $index, $tagName := .Params.tags }}
-                <li>
-                    <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-</div>
+<header>
+    <h2>
+        <span>TAGS</span>
+        <i class="fas fa-tag fa-fw">
+        </i>
+    </h2>
+</header>
+<ul>
+    <!--Default tag is `Untagged`-->
+    {{ range $index, $tagName := .Params.tags }}
+        <li>
+            <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
+        </li>
+    {{ end }}
+</ul>
