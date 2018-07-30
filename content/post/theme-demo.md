@@ -44,10 +44,63 @@ facilisis metus sed diam commodo tristique.
 
 #### Heading #4
 
-Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have
-it, simply because it is pain..."
-"
+Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+adipisci velit..." "There is no one who loves pain itself, who seeks after it
+and wants to have it, simply because it is pain..."
+
+# Lists
+
+Ordered list
+
+1.  **Strong Title** immediately followed by text
+    Nam non pharetra lectus, gravida lacinia eros. Ut eleifend enim pulvinar
+    est luctus posuere non id leo. Vivamus nibh libero, rutrum eu pretium ac,
+    scelerisque ac risus. Fusce aliquam porta elementum. Quisque non nisi at
+    nisl facilisis porttitor iaculis eu sapien. Ut congue lacinia posuere.
+    Proin
+
+    1.  Ordered list #1 with DOM strucure `ul>(li)*2`
+    2.  Ordered list #2 with DOM strucure `ul>(li)*2`
+
+2.  _Itatic Title_ followed by lines  
+      ipsum quia dolor sit amet, consectetur
+      ipsum dolor sit amet, consectetur
+      ipsum quia dolor
+
+    -   Unordered list #1 with each `<li>` wrapped within a `<p>`  
+        DOM structure: `ul>(li>p)*2`
+
+    -   Unordered list #2 with each `<li>` wrapped within a `<p>`  
+        DOM structure: `ul>(li>p)*2`
+
+3.  Ordered list #1
+
+4.  Ordered list #2
+
+Unordered list
+
+-   **Strong Title** immediately followed by text
+    Nam non pharetra lectus, gravida lacinia eros. Ut eleifend enim pulvinar
+    est luctus posuere non id leo. Vivamus nibh libero, rutrum eu pretium ac,
+    scelerisque ac risus. Fusce aliquam porta elementum. Quisque non nisi at
+    nisl facilisis porttitor iaculis eu sapien. Ut congue lacinia posuere.
+    Proin
+
+    1.  Ordered list #1
+    2.  Ordered list #2
+
+-   _Itatic Title_ followed by lines  
+    ipsum quia dolor sit amet, consectetur
+    ipsum dolor sit amet, consectetur
+    ipsum quia dolor
+
+    -   Unordered list #1
+    -   Unordered list #2
+
+
+-   Unordered list #1
+
+-   Unordered list #2
 
 # Code
 
@@ -75,10 +128,10 @@ let observable = Driver.just(1)
 
 ## Javascript
 
-Use shortcode ` { { < highlight >  } }`, turn on line number with custom start
+Use shortcode `{ { < highlight >  } }`, turn on line number with custom start
 number, and line highlighting.
 
-{{< highlight javascript "linenos=inline,hl_lines=3 8-12,linenostart=199" >}}
+{{&lt; highlight javascript "linenos=inline,hl_lines=3 8-12,linenostart=199" >}}
 $(document).ready(function() {
   $(window).scroll(function() {
     $("#TableOfContents a").removeClass("current")
@@ -93,7 +146,7 @@ function tocItem(anchor) {
 function heading(anchor) {
   return $("[id=" + anchor.substr(1) + "]")
 }
-{{< / highlight >}}
+{{&lt; / highlight >}}
 
 ## Python
 
@@ -141,20 +194,20 @@ func GetTitleFunc(style string) func(s string) string {
 
 | Head Column #1  | Head Column #2        | Head Column #3  |
 | --------------- | --------------------- | --------------- |
-| normal text     | *emphasis*            | **strong text** |
+| normal text     | _emphasis_            | **strong text** |
 | `inlined code`  | <u>underline text</u> | [link](#)       |
 | ~~strike line~~ | Cell                  | Cell            |
-| normal text     | *emphasis*            | **strong text** |
+| normal text     | _emphasis_            | **strong text** |
 | `inlined code`  | <u>underline text</u> | [link](#)       |
 | ~~strike line~~ | Cell                  | Cell            |
 
 Use markdown to control cell text alignment.
 
-| Default aligned | Centered      | Right-aligned  |
-| :-------------- |:-------------:| --------------:|
-| col 3 is        | right-aligned | $1600          |
-| col 2 is        | centered      |   $12          |
-| zebra stripes   | are neat      |    $1          |
+| Default aligned |    Centered   | Right-aligned |
+| :-------------- | :-----------: | ------------: |
+| col 3 is        | right-aligned |         $1600 |
+| col 2 is        |    centered   |           $12 |
+| zebra stripes   |    are neat   |            $1 |
 
 # Link
 
@@ -162,7 +215,7 @@ Use markdown to control cell text alignment.
 
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[I'm a reference-style link][arbitrary case-insensitive reference text]
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
@@ -171,13 +224,15 @@ Use markdown to control cell text alignment.
 Or leave it empty and use the [link text itself].
 
 URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
+<http://www.example.com> or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
+
 [1]: http://slashdot.org
+
 [link text itself]: http://www.reddit.com
 
 # Blockquotes
@@ -188,8 +243,8 @@ Some text to show that the reference links can follow later.
 Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh
-boy let's keep writing to make sure this is long enough to actually wrap for
-everyone. Oh, you can *put* **Markdown** into a blockquote.
+> boy let's keep writing to make sure this is long enough to actually wrap for
+> everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 # Shortcodes
 
@@ -197,21 +252,21 @@ everyone. Oh, you can *put* **Markdown** into a blockquote.
 
 Use the `youtube` shortcode.
 
-{{< youtube id="Z2Uu2rYFlPQ" autoplay="false" >}}
+{{&lt; youtube id="Z2Uu2rYFlPQ" autoplay="false" >}}
 
 ## Cross reference
 
-__Click__ the URLs to check if the shortcode works.
+**Click** the URLs to check if the shortcode works.
 
-* [Absolute permalink to: iOS Awesome List]({{< ref "/post/my-ios-awesome-list.md" >}})
+-   [Absolute permalink to: iOS Awesome List]\({{&lt; ref "/post/my-ios-awesome-list.md" >}})
 
-* [Relative permalink to: iOS Awesome List]({{< relref "my-ios-awesome-list.md" >}})
+-   [Relative permalink to: iOS Awesome List]\({{&lt; relref "my-ios-awesome-list.md" >}})
 
 # Other
 
 Below is a `<hr>`
 
-***
+* * *
 
 A Youtube video using raw HTML syntax.
 
@@ -222,5 +277,4 @@ A Youtube video using raw HTML syntax.
 
 Below is another `<hr>`
 
----
-
+* * *
