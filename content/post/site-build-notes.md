@@ -74,7 +74,7 @@ This area has 2 parts:
 
 ```html
 <nav>
-    <a class="nav-right" href="">
+    <a class="top-navbar-right" href="">
         <!--my avatar-->
         <img src="" alt="">
         <h1></h1>

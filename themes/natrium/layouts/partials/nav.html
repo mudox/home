@@ -1,29 +1,36 @@
-<nav class="nav">
+<nav class="top-navbar">
 
     <!--
         Left part:
-        1. Logo 
-        2. My name
+        1. Site logo 
+        2. Site title
     -->
 
-    <a class="nav-left" href="{{ .Site.BaseURL }}">
-        <img class="nav-logo" src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}">
-        <h1 class="nav-title">MUDOX</h1>
-    </a>
+    <section class="top-navbar-left">
+        <a href="{{ .Site.BaseURL }}">
+            <img class="nav-logo" src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}">
+        </a>
+        <a href="{{ .Site.BaseURL }}">
+            <h1 class="navbar-title">{{ upper .Site.Title }}</h1>
+            <!--<h1 class="navbar-title-alt">HOME</h1>-->
+        </a>
+    </section>
 
     <!--
-        Right part:
-        1. Main men
+        Right part: Site main menu
     -->
 
-    <ul class="nav-right">
-        {{ range .Site.Menus.main }}
-        <li>
-            <a href="{{ .URL }}">
-                {{ .Pre }}
-                <span>{{ upper .Name }}</span>
-            </a>
-        </li>
-        {{ end }}
-    </ul>
+    <section class="top-navbar-right">
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span>{{ upper .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+
 </nav>
