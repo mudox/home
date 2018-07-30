@@ -33,7 +33,7 @@ pygmentsStyle = "dracula"
 
 [[menu.main]]
     name = "Tags"
-    pre = "<i class='fas fa-hashtag'></i>"
+    pre = "<i class='fas fa-tag'></i>"
     url = "/tags"
     weight = -120
 
