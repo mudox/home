@@ -41,7 +41,7 @@ with the same purpose - unburden view controllers.
 Here list out responsibilities a massive view controller might have taken and
 some principals or solutions that can resolve them.
 
-## 1. Interact with data
+## Interact with data
 
 - Observe for data model changes
 
@@ -94,7 +94,7 @@ During the app lifetime, app might access various kind data from various sources
   Define `UserSerivce` to manage user authentication and user info storage.
   Define `UserPreferencesSerivce` to manage user preference.
 
-## 2. Manage views
+## Manage views
 
 - Manipulate subview hierarchy
 
@@ -132,7 +132,7 @@ defines reactive data source types for views such as `UITableView`,
 at the beginning (often in `viewDidLoad` method), and then bind them to the
 views. And everything works.
 
-## 3. Manage scene navigation
+## Manage scene navigation
 
 - Spawn other view controllers
 
@@ -202,7 +202,7 @@ Swift community has provided some coordinators implementations:
 Or you can implement them manually, they are simple role in the architecture,
 no need make them complicated in my opinion.
 
-## 4. One view controller manages the whole interface
+## One view controller manages the whole interface
 
 A non-trivial app often features a very rich home interface.
 
@@ -220,7 +220,7 @@ controller containment API for developers to handle this need.
 See [View Controller Containment] for a good introduction.
 
 
-## 5. Other stuffs that should not fall into view controller
+## Other stuffs that should not fall into view controller
 
 - Playing media files
 

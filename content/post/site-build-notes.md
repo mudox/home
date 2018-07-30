@@ -73,14 +73,17 @@ This area has 2 parts:
 2. Right `<nav>` aligns text to right, shows site main menu.
 
 ```html
-<nav>
-    <a class="top-navbar-right" href="">
-        <!--my avatar-->
+<section class="top-navbar-left">
+    <a href="">
+        <!--Site logo-->
         <img src="" alt="">
+    </a>
+    <a href="">
+        <!--Site title-->
         <h1></h1>
     </a>
-</nav>
-<nav>
+</section>
+<section class="top-navbar-right">">
     <ul>
         <!--4 menu links-->
         <li>
@@ -90,7 +93,7 @@ This area has 2 parts:
             </a>
         </li>
     </ul>
-<nav>
+<section>
 ```
 
 ## Left sidebar frame
