@@ -204,8 +204,7 @@ no need make them complicated in my opinion.
 
 ## 4. One view controller manages the whole interface
 
-A non-trivial app often features a very rich home interface by using
-technologies like sliding tabs.
+A non-trivial app often features a very rich home interface.
 
 As a result, the view controller should create a whole lot of subviews, manage
 every aspect of them.
