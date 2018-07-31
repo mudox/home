@@ -1,15 +1,14 @@
-<header>
-    <h2>
-        <span>PINNED</span>
-        <i class="fas fa-thumbtack fa-fw"></i>
-    </h2>
-</header>
-<nav>
+{{ $related := .Site.RegularPages.Related . | first 4 }}
+{{ with $related }}
+    <header>
+        <h2>
+            <span>See Also</span>
+            <i class="fas fa-arrow-circle-right fa-fw"></i>
+        </h2>
+    </header>
     <ul>
-        {{ range where .Site.RegularPages "Params.pinned" "true" }}
-            <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
+        {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
     </ul>
-</nav>
+{{ end }}
