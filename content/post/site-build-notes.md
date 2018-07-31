@@ -154,9 +154,13 @@ Similar to the left sidebar, but with `right-sidebar` class assigned to the top
             <span></span>
         </h2>
     </header>
-    {{.TableOfContents}}
+    <nav>
+        <!--...-->
+    </nav>
 </aside>
 ```
+
+The `nav` element are used to add top margin under header.
 
 ## Main content area
 

@@ -6,9 +6,11 @@
             <i class="fas fa-arrow-circle-right fa-fw"></i>
         </h2>
     </header>
-    <ul>
-        {{ range . }}
+    <nav>
+        <ul>
+            {{ range . }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
+            {{ end }}
+        </ul>
+    </nav>
 {{ end }}
