@@ -11,48 +11,81 @@ pygmentsCodefences = true
 pygmentsStyle = "dracula"
 
 [permalinks]
-    post = "/:slug/"
-    page = "/:slug/"
+post = "/:slug/"
+page = "/:slug/"
 
 [taxonomies]
-    tag = "tags"
+tag = "tags"
 
-# Main menu
+# See Also {{{
+
+[related]
+# Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+threshold = 80
+# To get stable "See also" sections we, by default, exclude newer related pages.
+includeNewer = true
+# Will lower case keywords in both queries and in the indexes.
+toLower = false
+
+[[related.indices]]
+name = "keywords"
+weight = 150
+[[related.indices]]
+name  = "tags"
+weight = 100
+[[related.indices]]
+name  = "author"
+toLower = true
+weight = 30
+[[related.indices]]
+name  = "date"
+weight = 10
+pattern = "2006"
+
+# }}}
+
+# Main menu {{{
 
 [[menu.main]]
-    name = "Resume"
-    pre = "<i class='fas fa-user-circle'></i>"
-    url = "/resume"
-    weight = -110
+name = "Resume"
+pre = "<i class='fas fa-user-circle'></i>"
+url = "/resume"
+weight = -110
 
 [[menu.main]]
-    name = "Projects"
-    pre = "<i class='fas fa-rocket'></i>"
-    url = "/my-projects"
-    weight = -110
+name = "Projects"
+pre = "<i class='fas fa-rocket'></i>"
+url = "/my-projects"
+weight = -110
 
 [[menu.main]]
-    name = "Tags"
-    pre = "<i class='fas fa-tag'></i>"
-    url = "/tags"
-    weight = -120
+name = "Tags"
+pre = "<i class='fas fa-tag'></i>"
+url = "/tags"
+weight = -120
 
 [[menu.main]]
-    name = "Github"
-    pre = "<i class='fab fa-github'></i>"
-    url = "https://github.com/mudox"
-    weight = -90
+name = "Github"
+pre = "<i class='fab fa-github'></i>"
+url = "https://github.com/mudox"
+weight = -90
 
-# Site parameters
+# }}}
+
+# Site Parameters {{{
 
 [params]
-    description = 'Homepage of Mudox'
+description = 'Homepage of Mudox'
 
-    [params.favicon]
-        url = "favicon.jpg"
+[params.favicon]
+url = "favicon.jpg"
 
-    [params.logo]
-        url = "logo.png"
-        width = 50
-        height = 50
-        alt = "Logo"
+[params.logo]
+url = "logo.png"
+width = 50
+height = 50
+alt = "Logo"
+
+# }}}
+
+# vim: fdm=marker

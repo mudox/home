@@ -114,11 +114,15 @@ The area is divided into `<section>`s, I add spacing style on them.
     <section class="left-sidebar-article-list">
         <!--article list partial-->
     </section>
-    <section class="sidebar-menu">
-        <!--menu partial-->
+    <section class="stage1">
+        <section class="related-article-list"></section>
+        <section class="sidebar-menu"></section>
     </section>
 </aside>
 ```
+
+The `.stage` is use for script `nav.js` to aternate the `.related-article-list`
+section and `.sidebar-menu` section when user scrolls the page up and down.
 
 ### Section frame
 
@@ -209,9 +213,9 @@ For simplicity, I only use tags.
 
 All tag name use normal casing like `iOS`, `Swift` etc.
 
-# Howtos
+# HowTos
 
-This section contains some implementation details of componets of the sites.
+This section contains the knowledge I'v larned during the site buiding process.
 
 <i class='fas fa-question fa-fw'></i>
 How to style a `<hr>`\
@@ -246,9 +250,26 @@ Wrap each of them into `<div class="embded-media-box">`. For example:
 </div>
 ```
 
+# Issues And Solutions
+
+Here are the issues I encounted and the solution I came out.
+
+<i class='fas fa-exclamation fa-fw'></i>
+Live reload does not bring the latest change to broswer?\
+<i class='fas fa-lightbulb fa-fw'></i>
+Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
+__Disable cache__ box. Keep the window open during the testing.
+
+
+<i class='fas fa-exclamation fa-fw'></i>
+Sometime only the currently opened page got latest change to (e.g. css, js files ...), if I jump to other pages, reloading page or clear the browser cache does not work.\
+<i class='fas fa-lightbulb fa-fw'></i>
+Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
+
 # References
 
 [MDN Web Docs]
+[Hugo]
 
 [hugo]: http://gohugo.io
 [neovim]: https://github.com/neovim/neovim
@@ -258,3 +279,4 @@ Wrap each of them into `<div class="embded-media-box">`. For example:
 [Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
 [Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}
 [MDN Web Docs]: https://developer.mozilla.org
+[Hugo]: https://gohugo.io
