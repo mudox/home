@@ -1,5 +1,5 @@
 +++
-title       = "Fixed Aside Pane"
+title       = "Fixed Sidebar"
 date        = 2018-05-13T08:45:12+08:00
 draft       = true
 tags        = ['Web', 'CSS', 'Snippets', 'Site Notes']

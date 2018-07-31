@@ -1,5 +1,5 @@
 +++
-title       = "Auto Highlighting Toc"
+title       = "Auto Highlighting TOC"
 date        = 2018-07-24T08:45:42+08:00
 draft       = true
 tags        = ['Web', 'JavaScript', 'Snippets', 'Site Notes']

@@ -4,6 +4,7 @@ date        = 2018-07-30T04:39:04+08:00
 draft       = true
 tags        = ['Site Notes', 'Web']
 toc         = 'true'
+pinned      = 'true'
 description = '''
 I am not a professional web developer. I will keep building this site in my
 casual time as well as learning some basic web skills as much as I could. Here
@@ -13,11 +14,16 @@ records my designing decisions and gains during building the site.
 
 # Tools
 
-I use the popular static site generator - [Hugo] which is fast as well as
-versatile. Its live reloading feature is amazing. Almost all working is done by
-a text editor.
+I use the popular static site generator - [Hugo] which is known as programmer'
+s site generator. It renders site fast as well as provides rich set of
+flexibility for user to tweak every aspect of the site.
 
-All text files are edited in the [Neovim] + [Tmux] + [iTerm 2] combination.
+Hugo's live reloading feature reload currently opened site page to show how
+your changes in the source files would affect the page. Suppose you have 2
+display monitors, one for editor, the other shows the browser ...
+
+Hugo does not require any special web editor or IDE, I accomplished almost all
+job with the [Neovim] + [Tmux] + [iTerm 2] combination.
 
 [Emmet] is a powerful web snippets expander to boost my html writing speed.
 
@@ -98,7 +104,7 @@ This area has 2 parts:
 
 ## Left sidebar frame
 
-The area is divided into `<section>`s which is used to add spacing style.
+The area is divided into `<section>`s, I add spacing style on them.
 
 ```html
 <aside class="sidebar left-sidebar">
@@ -114,7 +120,7 @@ The area is divided into `<section>`s which is used to add spacing style.
 </aside>
 ```
 
-## Left sidebar navigation section frame
+### Section frame
 
 ```html
 <header>
@@ -158,7 +164,7 @@ Similar to the left sidebar, but with `right-sidebar` class assigned to the top
     {{ partial "left-sidebar.html" . }}
 
     <!--Right sidebar-->
-    <!--Show TOC if front matter `toc` not equal to `false`-->
+    <!--Show TOC if front matter `toc` is not equal to `false`-->
     {{ partial "right-sidebar.html" . }}
 
     <!--Title-->
@@ -189,20 +195,77 @@ Similar to the left sidebar, but with `right-sidebar` class assigned to the top
 
 ## Sections
 
-There is only 1 section - **post**.
+There are 3 sections currently.
+
+1. __Post section__ This is the main seciton of the site, almost all article go under it.
+
+2. __Project section__ All my project introduction and demo articles go under this section.
+
+3. __Resume section__ My resume, it only has a `_index.md` article.
 
 ## Taxonomies
 
 For simplicity, I only use tags.
 
-# CSS
+All tag name use normal casing like `iOS`, `Swift` etc.
 
-# Howto
+# Howtos
 
-`margin-left` controls indentation of lists.
+This section contains some implementation details of componets of the sites.
+
+<i class='fas fa-question-circle'></i>
+How to style a `<hr>`
+
+<i class='fas fa-lightbulb'></i>
+The horzontal ruler element is just block element element with no inner content
+(text). By default, their `border-bottom` is styled in be a 1px solid black
+line.
+
+---
+
+<i class='fas fa-question-circle'></i>
+How to controls indentation of `<ul>`, `<ol>` lists?  
+<i class='fas fa-lightbulb'></i>
+Change their `padding-left` CSS property.
+
+---
+
+<i class='fas fa-question-circle'></i>
+How to hightlight cooresponding item in the TOC when viewports scrolling.
+
+<i class='fas fa-lightbulb'></i>
+See article [Auto-highlighting TOC].
+
+---
+
+<i class='fas fa-question-circle'></i>
+How to implement fixed sidebar on both sides of the main article showing tag
+list, recently updated article list, TOC ...?
+
+<i class='fas fa-lightbulb'></i>
+See article [Fixed Sidebar].
+
+---
+
+<i class='fas fa-question-circle'></i>
+How to resize medias, like youtube video, JSFiddle and CodePen code box?
+
+<i class='fas fa-lightbulb'></i>
+Wrap each of them into `<div class="embded-media-box">`.
+
+```html
+<div class="embeded-media-box">
+    <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
+</div>
+```
+
+# References
+
 
 [hugo]: http://gohugo.io
 [neovim]: https://github.com/neovim/neovim
 [tmux]: https://github.com/tmux/tmux
 [iterm 2]: https://www.iterm2.com/
 [emmet]: https://emmet.io
+[Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
+[Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}

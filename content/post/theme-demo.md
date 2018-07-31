@@ -4,6 +4,7 @@ date        = 2017-12-07T19:00:55+08:00
 draft       = true
 tags        = ['Demo', 'Markdown', 'Web']
 toc         = 'true'
+pinned      = 'true'
 description = '''
 Page to showcase the theme backing this site. Also for testing purpose.
 '''
@@ -131,7 +132,7 @@ let observable = Driver.just(1)
 Use shortcode `{ { < highlight >  } }`, turn on line number with custom start
 number, and line highlighting.
 
-{{&lt; highlight javascript "linenos=inline,hl_lines=3 8-12,linenostart=199" >}}
+{{< highlight javascript "linenos=inline,hl_lines=3 8-12,linenostart=199" >}}
 $(document).ready(function() {
   $(window).scroll(function() {
     $("#TableOfContents a").removeClass("current")
@@ -146,7 +147,7 @@ function tocItem(anchor) {
 function heading(anchor) {
   return $("[id=" + anchor.substr(1) + "]")
 }
-{{&lt; / highlight >}}
+{{< /highlight >}}
 
 ## Python
 
@@ -266,12 +267,31 @@ Use the `youtube` shortcode.
 
 ## CodePen code
 
+<div class="embeded-code-box">
 <p data-height="275" data-theme-id="0" data-slug-hash="BPJdar" data-default-tab="css,result" data-user="mudox" data-pen-title="BPJdar" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/mudox/pen/BPJdar/">BPJdar</a> by Mudox (<a href="https://codepen.io/mudox">@mudox</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+Compare with locally rendered code box using code fence syntax.
+
+```Python
+import os, sys
+from . import util
+
+func foo():
+    for x in range(1, 101):
+	start_index_fizz = (x % 3) * 4
+	f = "fizz"[start_index_fizz::]
+	start_index_buzz = (x % 5) * 4
+	b = "buzz"[start_index_buzz::]
+	print ((f + b) or x)
+```
 
 ## JSFiddle code
 
+<div class="embeded-code-box">
 <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
+</div>
 
 # Other
 

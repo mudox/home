@@ -2,8 +2,9 @@
 title       = "Unburden View Controller"
 date        = 2018-07-29T04:57:59+08:00
 draft       = true
-tags        = ['View Controller', 'Swift', 'iOS', 'App Architecture']
+tags        = ['View Controller', 'iOS', 'App Architecture']
 toc         = 'true'
+pinned      = 'true'
 description = '''
 In iOS app development, view controllers often take too much responsibilities
 which results in big view controller source file compared to other components
@@ -36,7 +37,83 @@ layer. They look stylish or wired ..., behaves modernly or oddly .... However in
 essence, they may all started from the same pain - fat view controllers,
 with the same purpose - unburden view controllers.
 
-# Diagnosis And Treatment
+# The Principles
+
+Although I can end almost all these kind of talks about app architecture by
+putting up the almighty [SOLID] principle which, in my opinion, are rather
+abstract and vague for beginners. I would like to provide some more catchy
+principles for newcomers into the app architecture realm.
+
+## Simple types
+
+This includes 2 points:
+
+1. __Types not inherited from those complicated classes__
+
+    In object-oritent programming, subclassing is the dominant code reusing
+    method. Whenever I wanted to add some code, the fist step come into my head
+    is _subclassing something_ ...
+
+    In iOS developing, we often subclass UIKIt provided classes like `UIView`,
+    `UIViewController`. These class are already overstuffed by Apple, both
+    `UIView` and `UIViewController` has 40+ various kind of memebers, not even
+    mention what them inherit from superclasses `UIResponder`, `NSObject`.
+
+    Your subclasses of those framework provided classes is already too
+    complicated to test, maintain ... Every single line changing to the
+    subclass just makes you wondering how would the superclass affect my code.
+
+1. __Types that manage less states__
+
+    The more states attached to type, the more complex and harder to maintain
+    it would become. The reason behind is the [combinatorial explosion]
+    problem.
+
+
+
+## Less code
+
+Evey single line of code logic, especially those crafted manually on you own,
+may introduces bugs, and even worse, the interaction between code lines would
+introduces extra bugs. Sounds scaring? It is the life.
+
+Hence for a given component, implement by reusing as much as possible. Discover
+and invoke a battle-tested library or framework heavily reduce your codebase
+footprint as well as increase your production quality. It is so important
+that I even think that 80% of an professional coder's working time should be
+investigated into it.
+
+## One way data flow
+
+Let take a very common code snippet for example:
+
+{{< highlight swift "linenos=inline,hl_lines=5 9" >}}
+func table(_ table: UITableView, didSelectRowAt rowIndex: Int) {
+    let object = self.dataSource[indexPath]
+
+    // model layer  <--  [data]         view layer
+    object.selected = !object.selected
+
+    // model layer       [data]   -->   view layer
+    if let cell = tableView.cellForRow(at: indexPath) {
+        cell.accessoryType = (object.selected) ? .checkmark : .none
+    }
+}
+{{< /highlight >}}
+
+This kind of codes frequently appears from beginner's tutorials and their
+projects. The method changes the data modal (line #5) as well as updates the
+view display (line #9) which means the data within a single method flow to both
+the data model and view layer.
+
+As the model strcuture and UI interaction logic grows, there would be more and
+more of this sort of two-way data flow codes scattered around your source file.
+You are almost destined to be beaten by your code at some point in future.
+Even a simple reactor of the model or UI comes with great pains like finding
+where is the changed part be used in the code, and you end up wondering where
+am I? how could I write these kind of shit?
+
+# Diagnosis & Treatment
 
 Here list out responsibilities a massive view controller might have taken and
 some principals or solutions that can resolve them.
@@ -68,7 +145,7 @@ some principals or solutions that can resolve them.
 
 Introduce __MVVM__ pattern.
 
-The key point of MVVM is the new role - __view mdoel__ added between the view
+The key point of MVVM is the new role - __view model__ added between the view
 controller and the data model. In MVVM, it is view models instead of view
 controllers who directly interact with the data model.
 
@@ -119,7 +196,7 @@ During the app lifetime, app might access various kind data from various sources
     scattered in view controller source files which add up a significant number
     of code lines into the source files.
 
-### Solution:
+### Solution
 
 The first 2 responsibilities are definitely view controller's duty. For
 communicating with subviews, we can introducing specifically defined type(s) to
@@ -245,3 +322,5 @@ These features should all tuck into specific classes named like `...Manager` or 
 [URLNavigator]: https://github.com/devxoul/URLNavigator
 [RxFlow]: https://github.com/RxSwiftCommunity/RxFlow
 [RxCoordinator]: https://github.com/quickbirdstudios/RxCoordinator
+[SOLID]: https://en.wikipedia.org/wiki/SOLID
+[combinatorial explosion]: https://en.wikipedia.org/wiki/Combinatorial_explosion
