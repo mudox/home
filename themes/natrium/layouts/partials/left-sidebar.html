@@ -1,15 +1,19 @@
 <aside class="sidebar left-sidebar">
 
-    <section  class="left-sidebar-tag-list">
-        {{ partial "left-sidebar-tag-list.html" . }}
+    <section  class="article-tag-list">
+        {{ partial "article-tag-list.html" . }}
     </section>
     
-    <section class="left-sidebar-article-list">
-        {{ partial "left-sidebar-article-list.html" . }}
+    <section class="pinned-article-list">
+        {{ partial "pinned-article-list.html" . }}
     </section>
 
-    <section class="left-sidebar-menu">
-        {{ partial "left-sidebar-menu.html" . }}
+    <section class="updated-article-list">
+        {{ partial "updated-article-list.html" . }}
+    </section>
+
+    <section class="sidebar-menu">
+        {{ partial "sidebar-menu.html" . }}
     </section>
 
 </aside>

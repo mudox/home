@@ -1,0 +1,15 @@
+<header>
+    <h2>
+        <span>PINNED</span>
+        <i class="fas fa-thumbtack fa-fw"></i>
+    </h2>
+</header>
+<nav>
+    <ul>
+        {{ range where .Site.RegularPages "Params.pinned" "true" }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>

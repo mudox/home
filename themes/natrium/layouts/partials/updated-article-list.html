@@ -6,7 +6,7 @@
 </header>
 <nav>
     <ul>
-        {{ range first 4 .Site.RegularPages.ByDate.Reverse }}
+        {{ range first 6 .Site.RegularPages.ByDate.Reverse }}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </li>
