@@ -12,8 +12,14 @@
         {{ partial "updated-article-list.html" . }}
     </section>
 
-    <section class="sidebar-menu">
-        {{ partial "sidebar-menu.html" . }}
+    <section class="animating-container">
+        <section class="related-article-list">
+            {{ partial "related-article-list.html" . }}
+        </section>
+
+        <section class="sidebar-menu">
+            {{ partial "sidebar-menu.html" . }}
+        </section>
     </section>
 
 </aside>
