@@ -155,7 +155,7 @@ function heading(anchor) {
 import os, sys
 from . import util
 
-func foo():
+def foo():
     for x in range(1, 101):
 	start_index_fizz = (x % 3) * 4
 	f = "fizz"[start_index_fizz::]
@@ -253,32 +253,35 @@ Quote break.
 
 Use the `youtube` shortcode.
 
-{{&lt; youtube id="Z2Uu2rYFlPQ" autoplay="false" >}}
+<div class="embded-media-box">
+{{< youtube id="Z2Uu2rYFlPQ" autoplay="false" >}}
+</div>
 
 ## Cross reference
 
 **Click** the URLs to check if the shortcode works.
 
--   [Absolute permalink to: iOS Awesome List]\({{&lt; ref "/post/my-ios-awesome-list.md" >}})
+-   [Absolute permalink to: iOS Awesome List]({{< ref "/post/my-ios-awesome-list.md" >}})
 
--   [Relative permalink to: iOS Awesome List]\({{&lt; relref "my-ios-awesome-list.md" >}})
+-   [Relative permalink to: iOS Awesome List]({{< relref "my-ios-awesome-list.md" >}})
 
 # Embeding
 
 ## CodePen code
 
-<div class="embeded-code-box">
+<div class="embded-media-box">
 <p data-height="275" data-theme-id="0" data-slug-hash="BPJdar" data-default-tab="css,result" data-user="mudox" data-pen-title="BPJdar" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/mudox/pen/BPJdar/">BPJdar</a> by Mudox (<a href="https://codepen.io/mudox">@mudox</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
 
-Compare with locally rendered code box using code fence syntax.
+Compare with locally rendered code box using code fence syntax. Left and
+rigtht sides are aligned to the local code box.
 
 ```Python
 import os, sys
 from . import util
 
-func foo():
+def foo():
     for x in range(1, 101):
 	start_index_fizz = (x % 3) * 4
 	f = "fizz"[start_index_fizz::]
@@ -289,23 +292,8 @@ func foo():
 
 ## JSFiddle code
 
-<div class="embeded-code-box">
+Left and rigtht sides are aligned to the local code box.
+
+<div class="embded-media-box">
 <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
 </div>
-
-# Other
-
-Below is a `<hr>`
-
-* * *
-
-A Youtube video using raw HTML syntax.
-
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/Z2Uu2rYFlPQ?rel=0"
-  frameborder="0" allow="autoplay; encrypted-media"
-  allowfullscreen></iframe>
-
-Below is another `<hr>`
-
-* * *

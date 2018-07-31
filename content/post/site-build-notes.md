@@ -72,11 +72,11 @@ The main content area are divide horizontally into 3 columns:
 
 This area has 2 parts:
 
-1. Left `<nav>` floats left, show site logo and title.  
+1.  Left `<nav>` floats left, show site logo and title.  
     It use flexbox layout to center the logo image and title vertically
     `position: flex; align-item: center;`
 
-2. Right `<nav>` aligns text to right, shows site main menu.
+2.  Right `<nav>` aligns text to right, shows site main menu.
 
 ```html
 <section class="top-navbar-left">
@@ -114,7 +114,7 @@ The area is divided into `<section>`s, I add spacing style on them.
     <section class="left-sidebar-article-list">
         <!--article list partial-->
     </section>
-    <section class="left-sidebar-menu">
+    <section class="sidebar-menu">
         <!--menu partial-->
     </section>
 </aside>
@@ -197,11 +197,11 @@ Similar to the left sidebar, but with `right-sidebar` class assigned to the top
 
 There are 3 sections currently.
 
-1. __Post section__ This is the main seciton of the site, almost all article go under it.
+1.  **Post section** This is the main seciton of the site, almost all article go under it.
 
-2. __Project section__ All my project introduction and demo articles go under this section.
+2.  **Project section** All my project introduction and demo articles go under this section.
 
-3. __Resume section__ My resume, it only has a `_index.md` article.
+3.  **Resume section** My resume, it only has a `_index.md` article.
 
 ## Taxonomies
 
@@ -213,45 +213,32 @@ All tag name use normal casing like `iOS`, `Swift` etc.
 
 This section contains some implementation details of componets of the sites.
 
-<i class='fas fa-question-circle'></i>
-How to style a `<hr>`
-
-<i class='fas fa-lightbulb'></i>
-The horzontal ruler element is just block element element with no inner content
+<i class='fas fa-question fa-fw'></i>
+How to style a `<hr>`\
+<i class='fas fa-lightbulb fa-fw'></i>
+The horzontal ruler element is just a block element element with no inner content
 (text). By default, their `border-bottom` is styled in be a 1px solid black
 line.
 
----
-
-<i class='fas fa-question-circle'></i>
-How to controls indentation of `<ul>`, `<ol>` lists?  
-<i class='fas fa-lightbulb'></i>
+<i class='fas fa-question fa-fw'></i>
+How to controls indentation of `<ul>`, `<ol>` lists?\
+<i class='fas fa-lightbulb fa-fw'></i>
 Change their `padding-left` CSS property.
 
----
-
-<i class='fas fa-question-circle'></i>
-How to hightlight cooresponding item in the TOC when viewports scrolling.
-
-<i class='fas fa-lightbulb'></i>
+<i class='fas fa-question fa-fw'></i>
+How to hightlight cooresponding item in the TOC when viewports scrolling.\
+<i class='fas fa-lightbulb fa-fw'></i>
 See article [Auto-highlighting TOC].
 
----
-
-<i class='fas fa-question-circle'></i>
-How to implement fixed sidebar on both sides of the main article showing tag
-list, recently updated article list, TOC ...?
-
-<i class='fas fa-lightbulb'></i>
+<i class='fas fa-question fa-fw'></i>
+How to implement fixed sidebar that stay within the viewport while the main area is scrolls?\
+<i class='fas fa-lightbulb fa-fw'></i>
 See article [Fixed Sidebar].
 
----
-
-<i class='fas fa-question-circle'></i>
-How to resize medias, like youtube video, JSFiddle and CodePen code box?
-
-<i class='fas fa-lightbulb'></i>
-Wrap each of them into `<div class="embded-media-box">`.
+<i class='fas fa-question fa-fw'></i>
+How to resize embeded medias, like YouTube video, JSFiddle and CodePen code box?\
+<i class='fas fa-lightbulb fa-fw'></i>
+Wrap each of them into `<div class="embded-media-box">`. For example:
 
 ```html
 <div class="embeded-media-box">
@@ -261,6 +248,7 @@ Wrap each of them into `<div class="embded-media-box">`.
 
 # References
 
+[MDN Web Docs]
 
 [hugo]: http://gohugo.io
 [neovim]: https://github.com/neovim/neovim
@@ -269,3 +257,4 @@ Wrap each of them into `<div class="embded-media-box">`.
 [emmet]: https://emmet.io
 [Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
 [Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}
+[MDN Web Docs]: https://developer.mozilla.org
