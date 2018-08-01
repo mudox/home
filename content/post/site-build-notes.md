@@ -219,7 +219,7 @@ For simplicity, I only use tags.
 
 All tag name use normal casing like `iOS`, `Swift` etc.
 
-# Howto
+# Howtos
 
 This section contains the knowledge I've learned during the site building process.
 
@@ -268,9 +268,20 @@ __Disable cache__ box. Keep the window open during the testing.
 
 
 <i class='fas fa-exclamation fa-fw'></i>
-Sometime only the currently opened page got latest change to (e.g. css, js files ...), if I jump to other pages, reloading page or clear the browser cache does not work.\
+Sometime only the currently opened page got latest change to (e.g. css, js
+files ...), if I jump to other pages, reloading page or clear the browser cache
+does not work.\
 <i class='fas fa-lightbulb fa-fw'></i>
 Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
+
+<i class='fas fa-exclamation fa-fw'></i>
+The `tags` folder got ignored by git somehow?\
+<i class='fas fa-lightbulb fa-fw'></i>
+Check following files for anywhere mentions `tags`:
+
+1.  `.gitignore` at the project root directory (the path where project's `.git` folder lies).
+1.  `.git/info/exclude` just like `.gitignore` but is not tracked by git.
+1.  Global ignore file, type `git config --get core.excludesfile` to see it.
 
 # References
 
