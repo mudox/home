@@ -14,20 +14,22 @@ records my designing decisions and gains during building the site.
 
 # Tools
 
-I use the popular static site generator - [Hugo] which is known as programmer'
-s site generator. It renders site fast as well as provides rich set of
-flexibility for user to tweak every aspect of the site.
-
-Hugo's live reloading feature reload currently opened site page to show how
+__[Hugo]__ is the static site generator I use which is known as programmer' s
+site generator. It renders site fast as well as provides rich set of
+flexibility for user to tweak every aspect of the site.\
+Its live reloading feature reload currently opened site page to show how
 your changes in the source files would affect the page. Suppose you have 2
 display monitors, one for editor, the other shows the browser ...
 
-Hugo does not require any special web editor or IDE, I accomplished almost all
-job with the [Neovim] + [Tmux] + [iTerm 2] combination.
+__Neovim + Tmux + iTerm2__ provides the "IDE" environment. Hugo does not
+require any special web editor or IDE, I accomplished almost all job with this
+tool combination.
 
-[Emmet] is a powerful web snippets expander to boost my html writing speed.
+__[FontAwesome]__ provides all the fancy yet free icons in the site.
 
-Code formatter
+__[Emmet]__ is a powerful web snippets expander to boost my html writing speed.
+
+__[SCSS]__ is my choose of CSS preprocessor.
 
 # Basic Page DOM
 
@@ -121,7 +123,7 @@ The area is divided into `<section>`s, I add spacing style on them.
 </aside>
 ```
 
-The `.stage` is use for script `nav.js` to aternate the `.related-article-list`
+The `.stage` is use for script `nav.js` to alternate the `.related-article-list`
 section and `.sidebar-menu` section when user scrolls the page up and down.
 
 ### Section frame
@@ -217,14 +219,14 @@ For simplicity, I only use tags.
 
 All tag name use normal casing like `iOS`, `Swift` etc.
 
-# HowTos
+# Howto
 
-This section contains the knowledge I'v larned during the site buiding process.
+This section contains the knowledge I've learned during the site building process.
 
 <i class='fas fa-question fa-fw'></i>
 How to style a `<hr>`\
 <i class='fas fa-lightbulb fa-fw'></i>
-The horzontal ruler element is just a block element element with no inner content
+The horizontal ruler element is just a block element element with no inner content
 (text). By default, their `border-bottom` is styled in be a 1px solid black
 line.
 
@@ -234,7 +236,7 @@ How to controls indentation of `<ul>`, `<ol>` lists?\
 Change their `padding-left` CSS property.
 
 <i class='fas fa-question fa-fw'></i>
-How to hightlight cooresponding item in the TOC when viewports scrolling.\
+How to highlight corresponding item in the TOC when viewport scrolling.\
 <i class='fas fa-lightbulb fa-fw'></i>
 See article [Auto-highlighting TOC].
 
@@ -244,7 +246,7 @@ How to implement fixed sidebar that stay within the viewport while the main area
 See article [Fixed Sidebar].
 
 <i class='fas fa-question fa-fw'></i>
-How to resize embeded medias, like YouTube video, JSFiddle and CodePen code box?\
+How to resize embedded medias, like YouTube video, JSFiddle and CodePen code box?\
 <i class='fas fa-lightbulb fa-fw'></i>
 Wrap each of them into `<div class="embded-media-box">`. For example:
 
@@ -256,10 +258,10 @@ Wrap each of them into `<div class="embded-media-box">`. For example:
 
 # Issues And Solutions
 
-Here are the issues I encounted and the solution I came out.
+Here are the issues I encountered and the solution I came out.
 
 <i class='fas fa-exclamation fa-fw'></i>
-Live reload does not bring the latest change to broswer?\
+Live reload does not bring the latest change to browser?\
 <i class='fas fa-lightbulb fa-fw'></i>
 Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
 __Disable cache__ box. Keep the window open during the testing.
@@ -284,3 +286,5 @@ Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
 [Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}
 [MDN Web Docs]: https://developer.mozilla.org
 [Hugo]: https://gohugo.io
+[FontAwesome]: https://fontawesome.com
+[SCSS]: https://sass-lang.com
