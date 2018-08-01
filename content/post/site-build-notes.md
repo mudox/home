@@ -6,9 +6,9 @@ tags        = ['Site Notes', 'Web']
 toc         = 'true'
 pinned      = 'true'
 description = '''
-I am not a professional web developer. I will keep building this site in my
-casual time as well as learning some basic web skills as much as I could. Here
-records my designing decisions and gains during building the site.
+I am not a professional web developer. I've been building this site in my
+casual time as well as learning some basic web skills. Here records my
+designing decisions and gains during building the site.
 '''
 +++
 
@@ -70,7 +70,7 @@ The main content area are divide horizontally into 3 columns:
 </body>
 ```
 
-## Navigation bar layout
+## Navigation bar
 
 This area has 2 parts:
 
@@ -81,27 +81,32 @@ This area has 2 parts:
 2.  Right `<nav>` aligns text to right, shows site main menu.
 
 ```html
-<section class="top-navbar-left">
-    <a href="">
-        <!--Site logo-->
-        <img src="" alt="">
-    </a>
-    <a href="">
-        <!--Site title-->
-        <h1></h1>
-    </a>
-</section>
-<section class="top-navbar-right">">
-    <ul>
-        <!--4 menu links-->
-        <li>
-            <a href="">
-                <i></i>
-                <span></span>
-            </a>
-        </li>
-    </ul>
-<section>
+<nav>
+    <!--Align left-->
+    <section class="top-navbar-left">
+        <a href="">
+            <!--Site logo-->
+            <img src="" alt="">
+        </a>
+        <a href="">
+            <!--Site title-->
+            <h1></h1>
+        </a>
+    </section>
+
+    <!--Align right-->
+    <section class="top-navbar-right">">
+        <ul>
+            <!--4 menu links-->
+            <li>
+                <a href="">
+                    <i></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    <section>
+</nav>
 ```
 
 ## Left sidebar frame
@@ -223,31 +228,32 @@ All tag name use normal casing like `iOS`, `Swift` etc.
 
 This section contains the knowledge I've learned during the site building process.
 
-<i class='fas fa-question fa-fw'></i>
+---
+
 How to style a `<hr>`\
-<i class='fas fa-lightbulb fa-fw'></i>
 The horizontal ruler element is just a block element element with no inner content
 (text). By default, their `border-bottom` is styled in be a 1px solid black
 line.
 
-<i class='fas fa-question fa-fw'></i>
+---
+
 How to controls indentation of `<ul>`, `<ol>` lists?\
-<i class='fas fa-lightbulb fa-fw'></i>
 Change their `padding-left` CSS property.
 
-<i class='fas fa-question fa-fw'></i>
+---
+
 How to highlight corresponding item in the TOC when viewport scrolling.\
-<i class='fas fa-lightbulb fa-fw'></i>
 See article [Auto-highlighting TOC].
 
-<i class='fas fa-question fa-fw'></i>
+---
+
 How to implement fixed sidebar that stay within the viewport while the main area is scrolls?\
-<i class='fas fa-lightbulb fa-fw'></i>
 See article [Fixed Sidebar].
 
-<i class='fas fa-question fa-fw'></i>
-How to resize embedded medias, like YouTube video, JSFiddle and CodePen code box?\
-<i class='fas fa-lightbulb fa-fw'></i>
+---
+
+How to align the sides of embedded medias, like YouTube video, JSFiddle and
+CodePen code box to navtive code box?\
 Wrap each of them into `<div class="embded-media-box">`. For example:
 
 ```html
@@ -255,28 +261,32 @@ Wrap each of them into `<div class="embded-media-box">`. For example:
     <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
 </div>
 ```
+---
+
+How to speed up page loading?\
+Use [Hugo Pipes] to minify and bundle assets which can reduces the size of data
+tansfered as well as the number of requests.
 
 # Issues And Solutions
 
 Here are the issues I encountered and the solution I came out.
 
-<i class='fas fa-exclamation fa-fw'></i>
+---
+
 Live reload does not bring the latest change to browser?\
-<i class='fas fa-lightbulb fa-fw'></i>
 Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
 __Disable cache__ box. Keep the window open during the testing.
 
+---
 
-<i class='fas fa-exclamation fa-fw'></i>
 Sometime only the currently opened page got latest change to (e.g. css, js
 files ...), if I jump to other pages, reloading page or clear the browser cache
 does not work.\
-<i class='fas fa-lightbulb fa-fw'></i>
 Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
 
-<i class='fas fa-exclamation fa-fw'></i>
+---
+
 The `tags` folder got ignored by git somehow?\
-<i class='fas fa-lightbulb fa-fw'></i>
 Check following files for anywhere mentions `tags`:
 
 1.  `.gitignore` at the project root directory (the path where project's `.git` folder lies).
@@ -299,3 +309,4 @@ Check following files for anywhere mentions `tags`:
 [Hugo]: https://gohugo.io
 [FontAwesome]: https://fontawesome.com
 [SCSS]: https://sass-lang.com
+[Hugo Pipes]: https://gohugo.io/hugo-pipes/introduction
