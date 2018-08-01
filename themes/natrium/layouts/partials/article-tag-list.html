@@ -8,9 +8,9 @@
 <nav>
     <ul>
         <!--Default tag is `Untagged`-->
-        {{ range $index, $tagName := .Params.tags }}
+        {{ range .Params.tags }}
             <li>
-                <a href="/tags/{{ lower $tagName }}">{{ . }}</a>
+                <a href="/tags/{{ . | lower | urlize }}">{{ . }}</a>
             </li>
         {{ end }}
     </ul>
