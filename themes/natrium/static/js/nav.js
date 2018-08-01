@@ -14,37 +14,33 @@ $(document).ready(function() {
   })
 });
 
-var lastYOffset;
-let yThreshHold = 10;
+var lastWindowScrollY = 0;
 
 function showHideLeftSidebarSections() {
-  var stage = $('.left-sidebar .stage1')
+  let stage = $('.left-sidebar .stage1')
+  let lastY = lastWindowScrollY;
+  let y = window.scrollY
+  lastWindowScrollY = y;
 
-  if (window.pageYOffset > lastYOffset) {
-    if (shown == 'sidebarMenu') {
-      return
-    }
-    stage.fadeOut('fast', function() {
-      stage.empty();
-      stage.append(sidebarMenu);
-      stage.fadeIn('fast');
+  if (y > lastY) {
+    if (shown != 'sidebarMenu') {
       shown = 'sidebarMenu';
-    })
-  } else if (window.pageYOffset < lastYOffset) {
-    if (shown == 'seeAlso') {
-      return
+      stage.fadeOut('fast', function() {
+        stage.empty();
+        stage.append(sidebarMenu);
+        stage.fadeIn('fast');
+      })
     }
-    stage.fadeOut('fast', function() {
-      stage.empty();
-      stage.append(seeAlso);
-      stage.fadeIn('fast');
-      shown = 'seeAlso';
-    })
   } else {
-    // noop
+    if (shown != 'seeAlso') {
+      shown = 'seeAlso';
+      stage.fadeOut('fast', function() {
+        stage.empty();
+        stage.append(seeAlso);
+        stage.fadeIn('fast');
+      })
+    }
   }
-
-  lastYOffset = window.pageYOffset;
 }
 
 function scrollPanes() {
@@ -56,7 +52,7 @@ function scrollPanes() {
   var yEnd = window.innerHeight;
   var yRange = (yEnd - yStart);
 
-  var y = window.pageYOffset;
+  var y = window.scrollY;
 
   var newTop;
   if (y < yStart) {
