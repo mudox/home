@@ -50,7 +50,7 @@ fixed in the viewport.
     3.  Navigation menu
 2.  Right sidebar shows table of contents of current article
 
-## Document body frame
+## Document body
 
 ```html
 <body>
@@ -112,21 +112,28 @@ This area has 2 parts:
 </nav>
 ```
 
-## Left sidebar frame
+## Left sidebar
 
 The area is divided into `<section>`s, I add spacing style on them.
 
 ```html
 <aside class="sidebar left-sidebar">
-    <section  class="left-sidebar-tag-list">
-        <!--tag list partial-->
+    <section  class="article-tag-list">
+        ...
     </section>
-    <section class="left-sidebar-article-list">
-        <!--article list partial-->
+    <section class="pinned-article-list">
+        ...
+    </section>
+    <section class="updated-article-list">
+        ...
     </section>
     <section class="stage1">
-        <section class="related-article-list"></section>
-        <section class="sidebar-menu"></section>
+        <section class="related-article-list">
+            ...
+        </section>
+        <section class="sidebar-menu">
+            ...
+        </section>
     </section>
 </aside>
 ```
@@ -134,7 +141,7 @@ The area is divided into `<section>`s, I add spacing style on them.
 The `.stage` is use for script `nav.js` to alternate the `.related-article-list`
 section and `.sidebar-menu` section when user scrolls the page up and down.
 
-### Section frame
+Frame of the section:
 
 ```html
 <header>
@@ -325,6 +332,16 @@ The `line-height` value of containing block element specifies the lower bound
 of included inline elements. Set the `line-height` on the wrapping `<pre>`
 element instead.
 
+---
+
+The sidebar position adjustment script run weirdly in Safari.
+
+It is a bug of Safari. Disabling scrolling inertia in _Preferences ->
+Accessibility -> Mouse & Trackpad -> Trackpad options ... -> Scrolling_
+suppresses this bug, but the system scrolling experience is totally changed.
+
+Currently, I added a `isSafari` check [from StackOverflow](https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769) in `scrollPanes` function which
+immediately return on Safari.
 
 # References
 
