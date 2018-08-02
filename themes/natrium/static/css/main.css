@@ -1,3 +1,7 @@
+body {
+  overflow-wrap: break-word;
+}
+
 ol,
 ul {
   margin: 0;
