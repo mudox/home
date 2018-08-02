@@ -58,7 +58,7 @@ pre {
     pre {
         // box
         border-radius: 0;
-        margin: 0 10px 0 6px;
+        @extend %inset-box;
 
         // text
         line-height: 1.1em;
