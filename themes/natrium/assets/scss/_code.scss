@@ -1,0 +1,70 @@
+code {
+    // text
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    -webkit-hyphens: none;
+    hyphens: none;
+
+    // color
+    color: black;
+    background: #f0f0f0;
+
+    // box
+    margin: 0;
+    padding: 0;
+}
+
+// inline code
+p code {
+    // box
+    border-radius: 3px;
+    padding: 1px 3px;
+}
+
+pre {
+    // box
+    padding: 8px 12px;
+    border-radius: 3px;
+    overflow-x: auto;
+
+    // color
+    background: #202020;
+
+    code {
+        // color
+        color: white;
+        background: transparent;
+
+        // let containing <pre> do spacing
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 700px) {
+    p code {
+        // text
+        font-size: .7rem;
+
+        // position
+        position: relative;
+        bottom: 1px;
+
+        // box
+        padding: 1px 2px 1px;
+    }
+
+    .embded-media-box,
+    pre {
+        // box
+        border-radius: 0;
+        margin: 0 10px 0 6px;
+
+        // text
+        line-height: 1.1em;
+
+        code {
+            font-size: .7rem;
+        }
+    }
+}
