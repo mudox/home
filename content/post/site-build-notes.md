@@ -14,32 +14,35 @@ designing decisions and gains during building the site.
 
 # Tools
 
-__[Hugo]__ is the static site generator I use which is known as programmer' s
-site generator. It renders site fast as well as provides rich set of
-flexibility for user to tweak every aspect of the site.\
-Its live reloading feature reload currently opened site page to show how
-your changes in the source files would affect the page. Suppose you have 2
+__[Hugo]__ is the static site generator I use. It is known as programmer' s
+site generator. It renders fast while providing sufficient flexibility for users
+to tweak every aspect of the site.
+
+Its live reloading feature reloads currently opened page to immediately reflect
+your changes made in the source files. Suppose you have 2
 display monitors, one for editor, the other shows the browser ...
 
-__Neovim + Tmux + iTerm2__ provides the "IDE" environment. Hugo does not
-require any special web editor or IDE, I accomplished almost all job with this
+__[Neovim] + [Tmux] + [iTerm2]__ provides the "IDE" environment. Hugo does not
+require any special web editor or IDE, I accomplished almost all jobs with this
 tool combination.
 
 __[FontAwesome]__ provides all the fancy yet free icons in the site.
 
 __[Emmet]__ is a powerful web snippets expander to boost my html writing speed.
 
-__[SCSS]__ is my choose of CSS preprocessor.
+__[SCSS]__ is my choose of CSS preprocessor, with [Hugo Pipes] feature automate the
+preprocessing.
 
 # Basic Page DOM
 
-Vertically divided into 3 rows:
+I use 3 row layout for article page's base horizontal layout.
 
 1.  Top navigation bar showing site logo and site main menu.
 2.  Middle is the main content area.
 3.  Bottom is a footer showing site information.
 
-The main content area are divide horizontally into 3 columns:
+The middle main content area employ 3 column layout, with both sidebar column
+fixed in the viewport.
 
 1.  Left sidebar shows
     1.  Article tag list
@@ -212,7 +215,7 @@ The `nav` element are used to add top margin under header.
 
 There are 3 sections currently.
 
-1.  **Post section** This is the main seciton of the site, almost all article go under it.
+1.  **Post section** This is the main section of the site, almost all article go under it.
 
 2.  **Project section** All my project introduction and demo articles go under this section.
 
@@ -224,48 +227,65 @@ For simplicity, I only use tags.
 
 All tag name use normal casing like `iOS`, `Swift` etc.
 
-# Howtos
+# Style Sheet
+
+## Code
+
+The site use 3 kinds of code related element:
+
+1. __Inline code__ bare `<code>` embedded with other element like `<p>`
+2. __Code box__  block `div.highlighting > pre > code` which can be introduced
+   using markdown code fence syntax, or Hugo shortcode `highlight`.
+3. __Embedded code media__ like those from [JSFiddle], [CodePen] etc.
+
+# How-To
 
 This section contains the knowledge I've learned during the site building process.
 
 ---
 
-How to style a `<hr>`\
-The horizontal ruler element is just a block element element with no inner content
-(text). By default, their `border-bottom` is styled in be a 1px solid black
+How to style a `<hr>`
+
+The horizontal ruler element is just a ordinary block element with no inner content
+(text). By default, their `border-bottom` is styled in be a `1px solid black`
 line.
 
 ---
 
-How to controls indentation of `<ul>`, `<ol>` lists?\
+How to controls indentation of `<ul>`, `<ol>` lists?
+
 Change their `padding-left` CSS property.
 
 ---
 
-How to highlight corresponding item in the TOC when viewport scrolling.\
+How to highlight corresponding item in the TOC when viewport scrolling.
+
 See article [Auto-highlighting TOC].
 
 ---
 
-How to implement fixed sidebar that stay within the viewport while the main area is scrolls?\
+How to implement fixed sidebar that stay within the viewport while the main area is scrolls?
+
 See article [Fixed Sidebar].
 
 ---
 
 How to align the sides of embedded medias, like YouTube video, JSFiddle and
-CodePen code box to navtive code box?\
-Wrap each of them into `<div class="embded-media-box">`. For example:
+CodePen code box to native code box?
+
+Wrap each of them into `<div class="embedded-media-box">`. For example:
 
 ```html
-<div class="embeded-media-box">
+<div class="embedded-media-box">
     <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
 </div>
 ```
 ---
 
-How to speed up page loading?\
+How to speed up page loading?
+
 Use [Hugo Pipes] to minify and bundle assets which can reduces the size of data
-tansfered as well as the number of requests.
+transferred as well as the number of requests.
 
 # Issues And Solutions
 
@@ -273,7 +293,8 @@ Here are the issues I encountered and the solution I came out.
 
 ---
 
-Live reload does not bring the latest change to browser?\
+Live reload does not bring the latest change to browser?
+
 Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
 __Disable cache__ box. Keep the window open during the testing.
 
@@ -281,27 +302,39 @@ __Disable cache__ box. Keep the window open during the testing.
 
 Sometime only the currently opened page got latest change to (e.g. css, js
 files ...), if I jump to other pages, reloading page or clear the browser cache
-does not work.\
+does not work.
+
 Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
 
 ---
 
-The `tags` folder got ignored by git somehow?\
+The `tags` folder got ignored by git somehow?
+
 Check following files for anywhere mentions `tags`:
 
 1.  `.gitignore` at the project root directory (the path where project's `.git` folder lies).
 1.  `.git/info/exclude` just like `.gitignore` but is not tracked by git.
 1.  Global ignore file, type `git config --get core.excludesfile` to see it.
 
+---
+
+Why the `line-height` of `pre code` can not be further decreased under certain
+limit?
+
+The `line-height` value of containing block element specifies the lower bound
+of included inline elements. Set the `line-height` on the wrapping `<pre>`
+element instead.
+
+
 # References
 
 [MDN Web Docs]
 [Hugo]
 
-[hugo]: http://gohugo.io
-[neovim]: https://github.com/neovim/neovim
-[tmux]: https://github.com/tmux/tmux
-[iterm 2]: https://www.iterm2.com/
+[Hugo]: http://gohugo.io
+[Neovim]: https://github.com/neovim/neovim
+[Tmux]: https://github.com/tmux/tmux
+[iTerm2]: https://www.iterm2.com/
 [emmet]: https://emmet.io
 [Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
 [Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}
@@ -310,3 +343,5 @@ Check following files for anywhere mentions `tags`:
 [FontAwesome]: https://fontawesome.com
 [SCSS]: https://sass-lang.com
 [Hugo Pipes]: https://gohugo.io/hugo-pipes/introduction
+[JSFiddle]: jsfiddle.net
+[CodePen]: https://codepen.io
