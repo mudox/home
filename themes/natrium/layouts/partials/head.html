@@ -4,11 +4,19 @@
 {{ .Hugo.Generator }}
 
 {{ if eq .URL "/" }}
-    <title>{{ .Title }}</title>
+    {{ if .Site.IsServer }}
+        <title>{{ .Title }} (Dev)</title>
+    {{ else }}
+        <title>{{ .Title }}</title>
+    {{ end }}
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:type" content="website">
 {{ else }}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ if .Site.IsServer }}
+        <title>{{ .Title }} - {{ .Site.Title }} (Dev)</title>
+    {{ else }}
+        <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ end }}
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 
