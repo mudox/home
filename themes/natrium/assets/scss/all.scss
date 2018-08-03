@@ -11,8 +11,6 @@ $box-margin-right: 6px;
     }
 }
 
-@import "main";
-
 @import "top-navbar";
 @import "sidebar";
 
@@ -22,3 +20,6 @@ $box-margin-right: 6px;
 @import "tag";
 
 @import "home";
+
+@import "main";
+
