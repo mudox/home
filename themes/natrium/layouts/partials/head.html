@@ -40,20 +40,20 @@
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/top-navbar.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/sidebar.css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/tag.css">
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/list.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/table.css">
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/home.css">
 
-<!-->>>-->
-
+<!--SCSS assets pipe-->
 {{ $style := resources.Get "scss/all.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<!-->>>-->
+
 
 <!-- Script <<<-->
 
