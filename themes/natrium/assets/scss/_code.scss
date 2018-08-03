@@ -41,7 +41,7 @@ pre {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: $media-min-width) {
     p code {
         // text
         font-size: .7rem;

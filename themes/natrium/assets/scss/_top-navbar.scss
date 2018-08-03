@@ -67,7 +67,7 @@
 }
 
 .top-navbar-right li {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 1.4em;
   list-style: none;
 }
 
@@ -94,7 +94,7 @@
   top: 1px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: $media-min-width) {
   .top-navbar-right li {
     margin-left: 12px;
   }

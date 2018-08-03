@@ -294,6 +294,25 @@ How to speed up page loading?
 Use [Hugo Pipes] to minify and bundle assets which can reduces the size of data
 transferred as well as the number of requests.
 
+---
+
+How test site on Microsoft Edge browser on macOS?
+
+Suppose your hosting macOS was assigned IP address '192.168.0.100', and `hugo
+server` use port number '1313'.
+
+1. Install [Parallel Desktop.app].
+
+1. In 'Install Assistant' insterfce, choose 'Free Systems -> Modern.IE Test
+   Environment -> Microsoft Edge on Windows 10'  option, which would install a
+   trival version of Windows 10 operating system with Edge browser intalled.
+
+1. Re-run `hugo server` command with option `--bind='192.168.0.100'
+   --baseURL='192.168.0.100'`.
+
+1. Open `http://192.168.0.100:1313` in the Edge browsser.
+
+
 # Issues And Solutions
 
 Here are the issues I encountered and the solution I came out.
@@ -362,3 +381,4 @@ immediately return on Safari.
 [Hugo Pipes]: https://gohugo.io/hugo-pipes/introduction
 [JSFiddle]: jsfiddle.net
 [CodePen]: https://codepen.io
+[Parallel Desktop.app]: https://www.parallels.com/products/desktop

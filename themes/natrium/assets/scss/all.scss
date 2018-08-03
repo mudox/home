@@ -1,7 +1,9 @@
+$media-min-width: 600px;
+
 $box-margin-left: 10px;
 $box-margin-right: 6px;
 
-@media (min-width: 700px) {
+@media (min-width: $media-min-width) {
     %inset-box {
         box-sizing: border-box;
         margin: 0 10px 0 6px;
@@ -9,8 +11,14 @@ $box-margin-right: 6px;
     }
 }
 
+@import "main";
+
+@import "top-navbar";
+@import "sidebar";
+
+@import "list";
 @import "code";
 @import "table";
-@import "sidebar";
 @import "tag";
-@import "top-navbar";
+
+@import "home";

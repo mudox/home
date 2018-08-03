@@ -33,20 +33,14 @@
 
 <!-- CSS <<<-->
 
+<!--Normalize-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
+
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
-
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/top-navbar.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/tag.css">
-
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/list.css">
-
+<!--Fonts-->
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
-
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/home.css">
 
 <!--SCSS assets pipe-->
 {{ $style := resources.Get "scss/all.scss" | toCSS | minify | fingerprint }}

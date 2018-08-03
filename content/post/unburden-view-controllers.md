@@ -69,8 +69,6 @@ This includes 2 points:
     it would become. The reason behind is the [combinatorial explosion]
     problem.
 
-
-
 ## Less code
 
 Evey single line of code logic, especially those crafted manually on you own,
@@ -305,7 +303,8 @@ See [View Controller Containment] for a good introduction.
 
 - Manage user notification
 
-These features should all tuck into specific classes named like `...Manager` or `...Servcie`.
+They all deserve a specific custom class / struct named like `...Service`,
+`...Manager`, `...Agent` etc.
 
 # References
 
