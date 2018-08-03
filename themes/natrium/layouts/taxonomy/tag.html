@@ -2,7 +2,7 @@
 
 <main class="content" role="main">
 
-    <article class="article-list">
+    <article class="article-list al-centered">
 
         <header>
             <h2>{{ .Title }}</h2>
@@ -10,9 +10,10 @@
 
         <ul>
             {{ range .Paginator.Pages }}
-            <li>
-                {{ partial "tag-cloud-item.html" . }}
-            </li>
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <time>{{ .Date.Format "2006-01-02, Mon" }}</time>
+                </li>
             {{ end }}
         </ul>
     </article>

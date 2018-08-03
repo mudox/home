@@ -19,7 +19,6 @@
                 // text
                 font-size: 1.15rem;
                 color: #222;
-                display: inline-block;
                 white-space: nowrap;
 
                 // underline
@@ -37,8 +36,37 @@
             time {
                 font-size: .8rem;
                 color: #ccc;
-                float: right;
             }
+        }
+    }
+}
+
+.al-justified {
+    a {
+        display: inline-block;
+    }
+
+    time {
+        float: right;
+    }
+}
+
+.al-centered {
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        text-align: center;
+    }
+
+    time {
+        text-align: center;
+
+        padding: 0 {
+            top: 0.2em;
         }
     }
 }
