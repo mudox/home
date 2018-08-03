@@ -296,21 +296,21 @@ transferred as well as the number of requests.
 
 ---
 
-How test site on Microsoft Edge browser on macOS?
+How to test site on Microsoft Edge browser on macOS?
 
 Suppose your hosting macOS was assigned IP address '192.168.0.100', and `hugo
 server` use port number '1313'.
 
 1. Install [Parallel Desktop.app].
 
-1. In 'Install Assistant' insterfce, choose 'Free Systems -> Modern.IE Test
+1. In 'Install Assistant' interface, choose 'Free Systems -> Modern.IE Test
    Environment -> Microsoft Edge on Windows 10'  option, which would install a
-   trival version of Windows 10 operating system with Edge browser intalled.
+   trivial version of Windows 10 operating system with Edge browser installed.
 
 1. Re-run `hugo server` command with option `--bind='192.168.0.100'
    --baseURL='192.168.0.100'`.
 
-1. Open `http://192.168.0.100:1313` in the Edge browsser.
+1. Open `http://192.168.0.100:1313` in the Edge browser.
 
 
 # Issues And Solutions
@@ -361,6 +361,15 @@ suppresses this bug, but the system scrolling experience is totally changed.
 
 Currently, I added a `isSafari` check [from StackOverflow](https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769) in `scrollPanes` function which
 immediately return on Safari.
+
+---
+
+Hugo server failed generating the site with error log __unexpected EOF__.
+
+It is usually due to the hugo template parser did not finish parsing the target
+template file, on such case I often check the source template file to see if
+there is unbalanced `{{ end }}`. For example missing `{{ end }}` for `{{ block
+"main" . }}` ...
 
 # References
 
