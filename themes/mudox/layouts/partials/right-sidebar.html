@@ -1,15 +1,14 @@
-<div class="sidebar-content-frame">
+ {{ if ne .Params.toc "false" }}
+    <section>
 
-    {{ if ne .Params.toc "false" }}
-        <section>
-            <header>
-                <h2>
-                    <i class="fas fa-list fa-fw"></i>
-                    <span>CONENTS</span>
-                </h2>
-            </header>
-            {{.TableOfContents}}
-        </section>
-    {{ end }}
+        <header>
+            <h2>
+                <i class="fas fa-list fa-fw"></i>
+                <span>CONENTS</span>
+            </h2>
+        </header>
 
-</div>
+        {{.TableOfContents}}
+
+    </section>
+{{ end }}
