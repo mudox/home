@@ -1,38 +1,6 @@
-$sidebar-spacing: 0.7em;
-
 /*sidebar {{{*/
 
 @media (min-width: $media-min-width) {
-    .left-sidebar {
-        @extend .sidebar;
-    }
-
-    .right-sidebar {
-        @extend .sidebar;
-    }
-
-    .sidebar-content-frame {
-        // sticky
-        //position: -webkit-sticky;
-        //position: sticky;
-        //top: 4em;
-        margin-top: 4em;
-
-        // box
-        max-height: 85vh;
-        padding: 0 {
-            left: $sidebar-spacing;
-            right: $sidebar-spacing;
-        };
-
-        // scroll bar
-        overflow-y: hidden;
-
-        .sidebar:hover {
-            overflow-y: auto;
-        }
-    }
-
     .sidebar section {
         margin: 0 {
             bottom: 2em;
@@ -64,7 +32,7 @@ $sidebar-spacing: 0.7em;
             }
         }
 
-        // no indent for 1st level `li`
+        // No indent for 1st level `li`
         nav > ul {
             margin: 0;
             padding: 0;
@@ -83,14 +51,14 @@ $sidebar-spacing: 0.7em;
 @media (min-width: $media-min-width) {
     .left-sidebar {
         text-align: right;
-    }
 
-    .left-sidebar nav > ul {
-        padding-right: 0;
-    }
+        nav > ul {
+            padding-right: 0;
+        }
 
-    .left-sidebar .sidebar-menu {
-        display: none;
+        .sidebar-menu {
+            display: none;
+        }
     }
 }
 
@@ -101,11 +69,11 @@ $sidebar-spacing: 0.7em;
 @media (min-width: $media-min-width) {
     .right-sidebar {
         text-align: left;
-    }
 
-    .right-sidebar ul {
-        margin: 0;
-        padding: 0 0 0 .6rem;
+        ul {
+            margin: 0;
+            padding: 0 0 0 .6rem;
+        }
     }
 }
 
