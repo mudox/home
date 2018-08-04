@@ -1,9 +1,46 @@
+// Basic
+
 html {
     font-family: Merriweather, serif;
-    font-size: 1.1rem;
+    font-size: .8rem;
+    line-height: 1.8em;
+}
 
-    code {
-        font-family: 'Roboto Mono', monospace;
-        font-size: 12px;
+.main-frame {
+    font-size: 1rem;
+}
+
+// Article
+
+.article {
+    &-title {
+        font-size: 3rem;
     }
+
+    &-date {
+        font-size: 1.05rem;
+    }
+
+    &-summary {
+        font-size: 1rem;
+    }
+
+    &-body {
+        font-size: 1rem;
+    }
+}
+
+// Code
+
+pre code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .9rem;
+}
+
+p code {
+    font-size: .8rem;
+}
+
+strong {
+    font-size: 104%;
 }

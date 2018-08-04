@@ -1,7 +1,5 @@
 code {
     // text
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
     -webkit-hyphens: none;
     hyphens: none;
 
@@ -43,9 +41,6 @@ pre {
 
 @media (min-width: $media-min-width) {
     p code {
-        // text
-        font-size: .7rem;
-
         // position
         position: relative;
         bottom: 1px;
@@ -62,9 +57,5 @@ pre {
 
         // text
         line-height: 1.1em;
-
-        code {
-            font-size: .7rem;
-        }
     }
 }
