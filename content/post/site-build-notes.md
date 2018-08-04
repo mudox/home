@@ -236,6 +236,16 @@ All tag name use normal casing like `iOS`, `Swift` etc.
 
 # Style Sheet
 
+## Fonts
+
+I only use 2 fonts for this site
+
+1. __Merriweather__ for all cases except code.
+
+1. __Roboto Mono__ for code text.
+
+All font related styles are specified collectively in `_fonts.scss`.
+
 ## Code
 
 The site use 3 kinds of code related element:
@@ -371,6 +381,21 @@ template file, on such case I often check the source template file to see if
 there is unbalanced `{{ end }}`. For example missing `{{ end }}` for `{{ block
 "main" . }}` ...
 
+---
+
+Reducing `line-hegiht` of some elements deep in the document DOM has no effect
+under certain limit.
+
+As stated on [line-height | MDN], ancestor block element's `line-height` set a
+lower bound for descendant elements. And the suggested value form is `<number>`
+(without any following units).
+
+Use browser element inspector to `line-height` inheritance relationship that
+prevents your to reduce it.
+
+My strategy is to set a lowest value (e.g. 1) at `<html>` element, then set
+effective value in elements as deep in the DOM as possible.
+
 # References
 
 [MDN Web Docs]
@@ -391,3 +416,4 @@ there is unbalanced `{{ end }}`. For example missing `{{ end }}` for `{{ block
 [JSFiddle]: jsfiddle.net
 [CodePen]: https://codepen.io
 [Parallel Desktop.app]: https://www.parallels.com/products/desktop
+[line-height | MDN]: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Values

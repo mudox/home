@@ -22,11 +22,13 @@ amazing speed and flexibility, Hugo makes building websites fun again.
 Nam pretium faucibus ipsum, sit amet tincidunt augue vulputate nec. Donec
 consectetur sit amet justo vel vehicula. Fusce quis tempor felis. Maecenas
 viverra pulvinar sodales. Cras a hendrerit libero. Sed imperdiet non mauris
-luctus facilisis. Duis at tortor id est lacinia egestas eu eget elit. Mauris
-dapibus augue ac maximus fermentum. Maecenas consectetur ligula eget egestas
-rutrum. Mauris tempor pellentesque odio, vel ornare ex rhoncus ac. Donec
-consectetur pulvinar ante, sed elementum mi consectetur id. Donec at turpis sit
-amet mauris tempus congue.
+luctus facilisis.\
+Duis at tortor id est lacinia egestas eu eget elit. Mauris dapibus augue ac
+maximus fermentum. Maecenas consectetur ligula eget egestas rutrum. Mauris
+tempor pellentesque odio, vel ornare ex rhoncus ac. Donec consectetur pulvinar
+ante, sed elementum mi consectetur id.\
+Donec at turpis sit amet mauris tempus
+congue.
 
 Nulla facilisi. Sed arcu tellus, volutpat et sollicitudin eget, varius in
 metus. Vestibulum hendrerit eu arcu a maximus. Nam arcu metus, laoreet in
@@ -53,25 +55,25 @@ and wants to have it, simply because it is pain..."
 
 Ordered list
 
-1.  **Strong Title** immediately followed by text
+1.  **Strong Title** immediately followed by text\
     Nam non pharetra lectus, gravida lacinia eros. Ut eleifend enim pulvinar
     est luctus posuere non id leo. Vivamus nibh libero, rutrum eu pretium ac,
     scelerisque ac risus. Fusce aliquam porta elementum. Quisque non nisi at
     nisl facilisis porttitor iaculis eu sapien. Ut congue lacinia posuere.
     Proin
 
-    1.  Ordered list #1 with DOM strucure `ul>(li)*2`
-    2.  Ordered list #2 with DOM strucure `ul>(li)*2`
+    1.  Ordered list #1 with DOM strucure `ul>li*2`
+    2.  Ordered list #2 with DOM strucure `ul>li*2`
 
-2.  _Itatic Title_ followed by lines  
+2.  _Itatic Title_ followed by lines
       ipsum quia dolor sit amet, consectetur
       ipsum dolor sit amet, consectetur
       ipsum quia dolor
 
-    -   Unordered list #1 with each `<li>` wrapped within a `<p>`  
+    -   Unordered list #1 with each `<li>` wrapped within a `<p>`
         DOM structure: `ul>(li>p)*2`
 
-    -   Unordered list #2 with each `<li>` wrapped within a `<p>`  
+    -   Unordered list #2 with each `<li>` wrapped within a `<p>`
         DOM structure: `ul>(li>p)*2`
 
 3.  Ordered list #1
@@ -90,7 +92,7 @@ Unordered list
     1.  Ordered list #1
     2.  Ordered list #2
 
--   _Itatic Title_ followed by lines  
+-   _Itatic Title_ followed by lines
     ipsum quia dolor sit amet, consectetur
     ipsum dolor sit amet, consectetur
     ipsum quia dolor
@@ -129,8 +131,8 @@ let observable = Driver.just(1)
 
 ## Javascript
 
-Use shortcode `{ { < highlight >  } }`, turn on line number with custom start
-number, and line highlighting.
+Use shortcode `highlight`, turn on line number with custom start number, and
+line highlighting.
 
 {{< highlight javascript "linenos=inline,hl_lines=3 8-12,linenostart=199" >}}
 $(document).ready(function() {
@@ -243,6 +245,10 @@ Some text to show that the reference links can follow later.
 
 Quote break.
 
+> This is a very long line that will still be quoted properly when it wraps. Oh
+> boy let's keep writing to make sure this is long enough to actually wrap for
+> everyone. Oh, you can _put_ **Markdown** into a blockquote.
+>
 > This is a very long line that will still be quoted properly when it wraps. Oh
 > boy let's keep writing to make sure this is long enough to actually wrap for
 > everyone. Oh, you can _put_ **Markdown** into a blockquote.
