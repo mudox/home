@@ -209,7 +209,7 @@ The `nav` element are used to add top margin under header.
     <blockquote class='article-summary'>{{ . }}</blockquote>
     {{ end }}
 
-    <div class="article-content">
+    <div class="article-body">
         {{ .Content }}
     </div>
 

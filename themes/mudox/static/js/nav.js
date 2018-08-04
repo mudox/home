@@ -12,12 +12,12 @@ $(document).ready(function() {
   seeAlso = $('.related-article-list');
   seeAlso.css('display', 'initial');
 
-  alternateMenuAndSeeAlso()
-  scrollPanes()
+  //alternateMenuAndSeeAlso()
+  //scrollPanes()
 
   $(window).scroll(function() {
-    alternateMenuAndSeeAlso()
-    scrollPanes()
+    //alternateMenuAndSeeAlso()
+    //scrollPanes()
   })
 });
 

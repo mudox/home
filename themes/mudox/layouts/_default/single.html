@@ -23,12 +23,13 @@
                 </time>
             {{ end }}
 
-            <!--Article content-->
+            <!--Summary-->
             {{ with .Description }}
                 <blockquote class='article-summary'>{{ . }}</blockquote>
             {{ end }}
 
-            <div class="article-content">
+            <!--Body-->
+            <div class="article-body">
                 {{ .Content }}
             </div>
 

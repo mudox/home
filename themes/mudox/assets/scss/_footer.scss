@@ -1,0 +1,40 @@
+.frame-footer {
+    height: 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links {
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #ccc;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    margin: 0 3px;
+    transition: color 300ms;
+    text-decoration: none;
+    color: #888;
+}
+
+.footer-links a:hover {
+    color: #222;
+}
+
+.footer-links li::before {
+    padding: 0 18px;
+    content: '•';
+}
+
+.footer-links li:first-child::before {
+    display: none;
+}
+

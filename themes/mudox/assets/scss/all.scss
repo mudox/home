@@ -11,7 +11,13 @@ $box-margin-right: 6px;
     }
 }
 
-@import "top-navbar";
+
+
+@import "main";
+
+@import "frame";
+@import "header";
+@import "footer";
 @import "sidebar";
 
 @import "article-list";
@@ -20,7 +26,3 @@ $box-margin-right: 6px;
 @import "tag";
 
 @import "home";
-
-@import "main";
-@import "frame";
-

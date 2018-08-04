@@ -1,31 +1,51 @@
 @media (min-width: $media-min-width) {
-    body > div.frame {
+    .frame {
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
 
-        header.frame-header {
+        .frame-header {
             order: 1;
+
+            flex {
+                shrink: 0;
+                grow: 0;
+            }
         }
 
-        footer.frame-footer {
+        .frame-footer {
             order: 3;
+
+            flex {
+                shrink: 0;
+                grow: 0;
+            }
+
+            margin: 0 {
+                top: auto;
+            }
         }
 
-        div.main-frame {
+        .main-frame {
             order: 2;
+
+            flex {
+                shrink: 0;
+                grow: 4;
+            }
         }
     }
 
-    body > div.frame > div.main-frame {
+    .main-frame {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
         .sidebar {
-            max-width: 30ex;
+            max-width: 15rem;
         }
 
-        aside.left-sidebar {
+        .left-sidebar {
             flex: 2;
             order: 1;
             margin: 0 {
@@ -34,7 +54,7 @@
             };
         }
 
-        aside.right-sidebar {
+        .right-sidebar {
             flex: 2;
             order: 3;
             margin: 0 {
@@ -50,7 +70,6 @@
             }
 
             order: 2;
-            box-sizing: content-box;
             max-width: 700px;
             min-width: 600px;
             margin: 0 {

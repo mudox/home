@@ -25,7 +25,6 @@ body {
 }
 
 body {
-    font-family: 'Merriweather', serif;
     -webkit-hyphens: auto;
     hyphens: auto;
 }
@@ -36,7 +35,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Merriweather', serif;
     color: #222;
 }
 
@@ -46,26 +44,19 @@ blockquote.article-summary {
     border-right: 5px solid #ccc;
 }
 
-.article-content h1:after {
+.article-body h1:after {
     background-color: #aaa;
 }
 
-.article-content h1 {
+.article-body h1 {
     margin-top: 4rem;
     margin-bottom: 1.5rem;
     border-bottom: thin solid #ccc;
 }
 
-.article-content h2 {
+.article-body h2 {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-}
-
-a:hover,
-a:active {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 img {
@@ -82,20 +73,9 @@ blockquote {
     background: #f5f5f5;
 }
 
-.frame-header {
-    padding: 5px 0;
-    border-bottom: 1px solid #eaeaea;
-    background: #f5f5f5;
-}
-
 .content {
     font-size: 16px;
     line-height: 1.8;
-    display: block;
-    max-width: 700px;
-    min-height: calc(100vh - 60px);
-    margin: 60px auto 80px;
-    padding: 0 1em;
     color: #555;
 }
 
@@ -109,7 +89,6 @@ blockquote {
 }
 
 .article-date {
-    font-family: 'Merriweather', serif;
     font-size: 16px;
     display: block;
     width: 100%;
@@ -118,33 +97,34 @@ blockquote {
     color: #ccc;
 }
 
-.article-content p {
-    margin: 1rem 0;
-}
+.article-body {
+    a {
+        padding-bottom: 2px;
+        text-decoration: none;
+        color: inherit;
+        border-bottom: thin dashed #ad810cb5;
 
-.article-content a {
-    padding-bottom: 2px;
-    text-decoration: none;
-    color: inherit;
-    border-bottom: thin dashed #ad810cb5;
-}
+        :hover,
+        :active {
+            border-bottom: medium solid #ad810cb5;
+        }
+    }
 
-.article-content a:hover,
-.article-content a:active {
-    border-bottom: medium solid #ad810cb5;
-}
+    p {
+        margin: 1rem 0;
+    }
 
-.article-content hr {
-    width: 350px;
-    height: 1px;
-    margin: 25px auto;
-    border: none;
-    border-top: 1px dashed #8c8b8b;
-    overflow: hidden;
+    hr {
+        width: 350px;
+        height: 1px;
+        margin: 25px auto;
+        border: none;
+        border-top: 1px dashed #8c8b8b;
+        overflow: hidden;
+    }
 }
 
 .article-taxonomy {
-    font-family: 'Merriweather', serif;
     font-size: 14px;
     padding-left: 0;
     list-style: none;
@@ -185,51 +165,7 @@ blockquote {
     opacity: .5;
 }
 
-.frame-footer {
-    /*font-family: 'Merriweather', serif;*/
-    font-family: serif;
-    height: 40px;
-    margin: 30px 0 0 0;
-    padding: 0;
-    text-align: center;
-}
-
-.footer-links {
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: #ccc;
-}
-
-.footer-links li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links a {
-    margin: 0 3px;
-    transition: color 300ms;
-    text-decoration: none;
-    color: #888;
-}
-
-.footer-links a:hover {
-    color: #222;
-}
-
-.footer-links li::before {
-    padding: 0 18px;
-    content: '•';
-}
-
-.footer-links li:first-child::before {
-    display: none;
-}
-
 .page-links {
-    font-family: 'Merriweather', serif;
     font-size: 16px;
     margin: 25px 0;
     padding: 0;
@@ -308,14 +244,10 @@ div.github-buttons {
 }
 
 @media (min-width: $media-min-width) {
-    .frame-header {
-        padding: 8px 0;
-    }
-
-    .content {
-        font-size: 13px;
-        line-height: 1.7;
-        margin: 50px auto;
+    .frame {
+        font-family: Merriweather, serif;
+        font-size: 1.1rem;
+        line-height: 1rem;
     }
 
     .article-title {
@@ -329,14 +261,6 @@ div.github-buttons {
 
     .article-taxonomy {
         font-size: 17px;
-    }
-
-    .footer-links {
-        font-size: .8rem;
-    }
-
-    .footer-links a {
-        margin: 0 3px;
     }
 
     .page-links {
