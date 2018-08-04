@@ -1,1 +1,3 @@
 build/
+/resources/_gen
+/themes/mudox/assets/scss/.sass-cache
