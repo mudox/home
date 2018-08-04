@@ -3,17 +3,15 @@
 @media (min-width: $media-min-width) {
     .sidebar section {
         margin: 0 {
-            bottom: 2em;
+            bottom: 2.6em;
         };
 
         h2 {
-            font-size: .8rem;
-            margin-bottom: 1em;
+            margin-bottom: 0;
         }
 
         li {
             margin-top: .5em;
-            font-size: .75rem;
             list-style: none;
 
             a {

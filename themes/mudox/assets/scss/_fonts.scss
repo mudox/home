@@ -36,7 +36,7 @@ strong {
 
     &-body {
         //font-size: 1.1rem;
-
+   
     }
 
     li {
@@ -64,4 +64,22 @@ code {
 table {
     font-size: .9rem;
     line-height: 1.5;
+}
+
+// Sidebar
+
+@media (min-width: $media-min-width) {
+    .sidebar {
+        font-size: .9rem;
+        line-height: 1.4;
+
+        h2 {
+            font-size: 1.05rem;
+        }
+
+        li {
+            font-size: .9rem;
+            line-height: 1.15;
+        }
+    }
 }
