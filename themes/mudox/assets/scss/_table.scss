@@ -1,13 +1,11 @@
 $cell-x-padding: 1em;
 
 table {
-    // text
-    font-size: .8rem;
     text-align: center;
     vertical-align: top;
 
     // box
-    @extend %inset-box;
+    @extend %article-inset-box;
 
     padding: 0;
 
