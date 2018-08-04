@@ -1,3 +1,9 @@
+/*
+    Note:
+        Use `rem` for sont-sizeing.
+        Use bare number for line-height.
+*/
+
 // Basic
 
 html {
@@ -40,12 +46,15 @@ strong {
 
 // Code
 
-pre code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: .9rem;
-    line-height: 1.7;
-}
+code {
+    p & {
+        font-family: 'Roboto Mono', monospace;
+        font-size: .9rem;
+    }
 
-p code {
-    font-size: .9rem;
+    pre & {
+        font-family: 'Roboto Mono', monospace;
+        font-size: .9rem;
+        line-height: 1.8;
+    }
 }
