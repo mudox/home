@@ -52,5 +52,6 @@ pre {
     // box
     border-radius: 0;
 
-    @extend %inset-box;
+    @extend %article-inset-box;
 }
+
