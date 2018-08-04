@@ -3,16 +3,19 @@
 html {
     font-family: Merriweather, serif;
     font-size: .8rem;
-    line-height: 1.8em;
+    line-height: 1;
 }
 
-.main-frame {
-    font-size: 1rem;
+strong {
+    font-size: 104%;
 }
 
 // Article
 
 .article {
+    font-size: 1rem;
+    line-height: 1.2;
+
     &-title {
         font-size: 3rem;
     }
@@ -22,11 +25,16 @@ html {
     }
 
     &-summary {
-        font-size: 1rem;
+        line-height: 1.8;
     }
 
     &-body {
-        font-size: 1rem;
+        //font-size: 1.1rem;
+
+    }
+
+    li {
+        line-height: 1.8;
     }
 }
 
@@ -35,12 +43,9 @@ html {
 pre code {
     font-family: 'Roboto Mono', monospace;
     font-size: .9rem;
+    line-height: 1.7;
 }
 
 p code {
-    font-size: .8rem;
-}
-
-strong {
-    font-size: 104%;
+    font-size: .9rem;
 }
