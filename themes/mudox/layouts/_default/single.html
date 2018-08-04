@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-    <!--Left sidebar-->
-    <!--Show tag list if any-->
-    {{ partial "left-sidebar.html" . }}
+    <aside class="left-sidebar">
+        {{ partial "left-sidebar.html" . }}
+    </aside>
 
-    <!--Right sidebar-->
-    <!--Show TOC if front matter `toc` not equal to `false`-->
-    {{ partial "right-sidebar.html" . }}
+    <aside class="right-sidebar">
+        {{ partial "right-sidebar.html" . }}
+    </aside>
 
     <main class="content" role="main">
         <article class="article">
@@ -20,7 +20,7 @@
                     <span class="article-date">
                         {{ .Date.Format "Updated: 2006-01-02" }}
                     </span>
-                </time> 
+                </time>
             {{ end }}
 
             <!--Article content-->

@@ -6,17 +6,21 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <div class="frame">
+
+        <header class="frame-header">
             {{ partial "top-navbar.html" . }}
         </header>
 
-        {{ block "main" . }}
-        {{ end }}
+        <div class="main-frame">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
 
-        <footer class="footer">
+        <footer class="frame-footer">
             {{ partial "bottom-navbar.html" . }}
         </footer>
+
     </div>
 </body>
 

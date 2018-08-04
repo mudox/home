@@ -1,42 +1,62 @@
-$sidebar-spacing: 8px;
-
 @media (min-width: $media-min-width) {
     body > div.frame {
         display: flex;
         flex-direction: column;
 
-        .frame-header {
+        header.frame-header {
             order: 1;
         }
 
-        .frame-footer {
+        footer.frame-footer {
             order: 3;
         }
 
-        .main-frame {
+        div.main-frame {
             order: 2;
         }
     }
 
-    body > .div.frame > div.main-frame {
-        dfisplay: flex;
+    body > div.frame > div.main-frame {
+        display: flex;
         flex-direction: row;
+        justify-content: center;
+
+        .sidebar {
+            max-width: 30ex;
+        }
 
         aside.left-sidebar {
             flex: 2;
             order: 1;
+            margin: 0 {
+                left: auto;
+                right: 1em;
+            };
         }
 
         aside.right-sidebar {
-            flex: 1;
+            flex: 2;
             order: 3;
+            margin: 0 {
+                left: 1em;
+                right: auto;
+            };
         }
 
         main.content {
-            flex: 2;
+            flex {
+                shrink: 0;
+                grow: 0;
+            }
+
             order: 2;
+            box-sizing: content-box;
             max-width: 700px;
             min-width: 600px;
+            margin: 0 {
+                top: 4em;
+                bottom: 4em;
+            };
         }
     }
 }
