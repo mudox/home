@@ -12,11 +12,11 @@ $(document).ready(function() {
   seeAlso = $('.related-article-list');
   seeAlso.css('display', 'initial');
 
-  //alternateMenuAndSeeAlso()
+  alternateMenuAndSeeAlso()
   //scrollPanes()
 
   $(window).scroll(function() {
-    //alternateMenuAndSeeAlso()
+    alternateMenuAndSeeAlso()
     //scrollPanes()
   })
 });
