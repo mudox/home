@@ -9,7 +9,8 @@
         }
 
         .main-frame {
-            min-height: calc(100vh - 100px);
+            // Extra 4px just for scroll bar to disappear completely
+            min-height: calc(100vh - 100px - 4px);
         }
 
         .frame-footer {
