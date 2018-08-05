@@ -3,7 +3,7 @@ Note:
 - Use `rem` for sont-sizeing.
 - Use bare number for line-height.
 - Only set font-family, font-size, line-height here. Set relative positioning
-  if it is tight coupled with font-size.
+if it is tight coupled with font-size.
  */
 
 // Basic
@@ -72,11 +72,10 @@ table {
         line-height: 1.4;
 
         h2 {
-            font-size: 1.05rem;
+            font-size: inherit;
         }
 
         li {
-            font-size: .9rem;
             line-height: 1.15;
         }
     }
@@ -129,4 +128,12 @@ table {
 
 .frame-footer {
     font-size: .8rem;
+}
+
+// 404
+
+.error-page {
+    &-title {
+        font-size: 76px;
+    }
 }
