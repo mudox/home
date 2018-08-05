@@ -23,7 +23,7 @@
                 transition: border-color, color 300ms;
 
                 &.current,
-                &:hover, &:active {
+                &:hover {
                     color: #666;
                     border-bottom: thin solid #606060;
                 }

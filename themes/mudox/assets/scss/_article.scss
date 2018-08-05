@@ -52,8 +52,8 @@
         color: inherit;
         border-bottom: thin dashed #ad810cb5;
 
-        :hover,
-        :active {
+        :hover
+        {
             border-bottom: medium solid #ad810cb5;
         }
     }
@@ -75,7 +75,8 @@
     border: solid 1px #e6e6e6;
 }
 
-.article-image-large:hover,
-.article-image-large:active {
+.article-image-large:hover
+ {
     opacity: .5;
 }
+
