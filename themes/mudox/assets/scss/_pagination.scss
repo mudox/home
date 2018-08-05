@@ -1,0 +1,26 @@
+.page-links {
+    margin: 25px 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        padding: 0 5px;
+        transition: color 300ms;
+        text-decoration: none;
+        color: #555;
+    }
+
+    a:hover {
+        color: #ccc;
+    }
+
+    &-active a,
+    &-disabled a {
+        text-decoration: none;
+        color: #ccc;
+    }
+}

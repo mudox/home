@@ -53,33 +53,6 @@ blockquote {
     color: #555;
 }
 
-.page-links {
-    font-size: 16px;
-    margin: 25px 0;
-    padding: 0;
-    text-align: center;
-}
-
-.page-links li {
-    display: inline-block;
-}
-
-.page-links a {
-    padding: 0 5px;
-    transition: color 300ms;
-    text-decoration: none;
-    color: #555;
-}
-
-.page-links a:hover {
-    color: #ccc;
-}
-
-.page-links-active a,
-.page-links-disabled a {
-    text-decoration: none;
-    color: #ccc;
-}
 
 .error-page-title {
     font-size: 76px;
