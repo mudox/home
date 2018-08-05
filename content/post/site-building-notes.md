@@ -237,7 +237,7 @@ There are 3 sections currently.
 
 ## Taxonomies
 
-There are kinds of Taxonomies in my site:
+There are 2 kinds of taxonomies in my site:
 
 1. __Tags__ All posts must have at least one tag, the default tags is
    __Untagged__ which is assigned by Hugo archetype at creation of the post
@@ -248,7 +248,7 @@ There are kinds of Taxonomies in my site:
    I mark them as in the same series. E.g. _Site Buiding_ series, _Awesome
    Lists_ series.
 
-All taxonomy name use normal casing like `iOS`, `Swift` etc.
+All taxonomy names use normal casing like `iOS`, `Swift` etc.
 
 
 
