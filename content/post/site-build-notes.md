@@ -33,7 +33,7 @@ __[Emmet]__ is a powerful web snippets expander to boost my html writing speed.
 __[SCSS]__ is my choose of CSS preprocessor, with [Hugo Pipes] feature automate the
 preprocessing.
 
-# Basic Page DOM
+# DOM
 
 I use 3 row layout for article page's base horizontal layout.
 
@@ -216,7 +216,7 @@ The `nav` element are used to add top margin under header.
 </article>
 ```
 
-# Content Arrangement
+# Content
 
 ## Sections
 
@@ -230,7 +230,7 @@ There are 3 sections currently.
 
 ## Taxonomies
 
-For simplicity, I only use tags.
+Currently I only use tags.
 
 All tag name use normal casing like `iOS`, `Swift` etc.
 
