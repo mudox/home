@@ -1,8 +1,9 @@
 +++
-title       = "Site Build Notes"
+title       = "Site Building - Notes"
 date        = 2018-07-30T04:39:04+08:00
 draft       = true
-tags        = ['Site Notes', 'Web']
+tags        = ['Web', 'HTML', 'CSS', 'JavaScript']
+series      = ['Site Building']
 toc         = 'true'
 pinned      = 'true'
 description = '''
@@ -12,7 +13,10 @@ designing decisions and gains during building the site.
 '''
 +++
 
-# Tools
+
+
+
+# Tooling
 
 __[Hugo]__ is the static site generator I use. It is known as programmer' s
 site generator. It renders fast while providing sufficient flexibility for users
@@ -32,6 +36,9 @@ __[Emmet]__ is a powerful web snippets expander to boost my html writing speed.
 
 __[SCSS]__ is my choose of CSS preprocessor, with [Hugo Pipes] feature automate the
 preprocessing.
+
+
+
 
 # DOM
 
@@ -230,9 +237,21 @@ There are 3 sections currently.
 
 ## Taxonomies
 
-Currently I only use tags.
+There are kinds of Taxonomies in my site:
 
-All tag name use normal casing like `iOS`, `Swift` etc.
+1. __Tags__ All posts must have at least one tag, the default tags is
+   __Untagged__ which is assigned by Hugo archetype at creation of the post
+   content file.
+
+2. __Series__ Series means a more tight relationship between articles. It is
+   optional, often I split a growing article into several related articles, then
+   I mark them as in the same series. E.g. _Site Buiding_ series, _Awesome
+   Lists_ series.
+
+All taxonomy name use normal casing like `iOS`, `Swift` etc.
+
+
+
 
 # Style Sheet
 
@@ -255,156 +274,16 @@ The site use 3 kinds of code related element:
    using markdown code fence syntax, or Hugo shortcode `highlight`.
 3. __Embedded code media__ like those from [JSFiddle], [CodePen] etc.
 
-# How-To
 
-This section contains the knowledge I've learned during the site building process.
 
----
 
-How control word casing?
+# Configurations
 
-Use `text-transform: [capitalize|uppercase|lowercase|...]` to control text
-casing. Better render the text in all lowercase from template.
+## Site configurations
 
-The `text-transform` property should be applied to the immediate containing
-element the text.
+## Front matters
 
 ---
-
-How to style a `<hr>`
-
-The horizontal ruler element is just a ordinary block element with no inner content
-(text). By default, their `border-bottom` is styled in be a `1px solid black`
-line.
-
----
-
-How to controls indentation of `<ul>`, `<ol>` lists?
-
-Change their `padding-left` CSS property.
-
----
-
-How to highlight corresponding item in the TOC when viewport scrolling.
-
-See article [Auto-highlighting TOC].
-
----
-
-How to implement fixed sidebar that stay within the viewport while the main area is scrolls?
-
-See article [Fixed Sidebar].
-
----
-
-How to align the sides of embedded medias, like YouTube video, JSFiddle and
-CodePen code box to native code box?
-
-Wrap each of them into `<div class="embedded-media-box">`. For example:
-
-```html
-<div class="embedded-media-box">
-    <script async src="//jsfiddle.net/Mudox/97zp4cry/embed/html,css,result/dark/"></script>
-</div>
-```
----
-
-How to speed up page loading?
-
-Use [Hugo Pipes] to minify and bundle assets which can reduces the size of data
-transferred as well as the number of requests.
-
----
-
-How to test site on Microsoft Edge browser on macOS?
-
-Suppose your hosting macOS was assigned IP address '192.168.0.100', and `hugo
-server` use port number '1313'.
-
-1. Install [Parallel Desktop.app].
-
-1. In 'Install Assistant' interface, choose 'Free Systems -> Modern.IE Test
-   Environment -> Microsoft Edge on Windows 10'  option, which would install a
-   trivial version of Windows 10 operating system with Edge browser installed.
-
-1. Re-run `hugo server` command with option `--bind='192.168.0.100'
-   --baseURL='192.168.0.100'`.
-
-1. Open `http://192.168.0.100:1313` in the Edge browser.
-
-
-# Issues And Solutions
-
-Here are the issues I encountered and the solution I came out.
-
----
-
-Live reloading does not bring the latest change to browser?
-
-Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
-__Disable cache__ box. Keep the window open during the testing.
-
----
-
-Sometime only the currently opened page got latest change to (e.g. css, js
-files ...), if I jump to other pages, reloading page or clear the browser cache
-does not work.
-
-Rerun the `hugo server` command with `--gc --cleanDestinationDir=true` switch.
-
----
-
-The `tags` folder got ignored by git somehow?
-
-Check following files for anywhere mentions `tags`:
-
-1.  `.gitignore` at the project root directory (the path where project's `.git` folder lies).
-1.  `.git/info/exclude` just like `.gitignore` but is not tracked by git.
-1.  Global ignore file, type `git config --get core.excludesfile` to see it.
-
----
-
-Why the `line-height` of `pre code` can not be further decreased under certain
-limit?
-
-The `line-height` value of containing block element specifies the lower bound
-of included inline elements. Set the `line-height` on the wrapping `<pre>`
-element instead.
-
----
-
-The sidebar position adjustment script run weirdly in Safari.
-
-It is a bug of Safari. Disabling scrolling inertia in _Preferences ->
-Accessibility -> Mouse & Trackpad -> Trackpad options ... -> Scrolling_
-suppresses this bug, but the system scrolling experience is totally changed.
-
-Currently, I added a `isSafari` check [from StackOverflow](https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769) in `scrollPanes` function which
-immediately return on Safari.
-
----
-
-Hugo server failed generating the site with error log __unexpected EOF__.
-
-It is usually due to the hugo template parser did not finish parsing the target
-template file, on such case I often check the source template file to see if
-there is unbalanced `{{ end }}`. For example missing `{{ end }}` for `{{ block
-"main" . }}` ...
-
----
-
-Reducing `line-hegiht` of some elements deep in the document DOM has no effect
-under certain limit.
-
-As stated on [line-height | MDN], ancestor block element's `line-height` set a
-lower bound for descendant elements. And the suggested value form is `<number>`
-(without any following units).
-
-Use browser element inspector to `line-height` inheritance relationship that
-prevents your to reduce it.
-
-My strategy is to set a lowest value (e.g. 1) at `<html>` element, then set
-effective value in elements as deep in the DOM as possible.
 
 # References
 
