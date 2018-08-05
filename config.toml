@@ -5,8 +5,9 @@ hasCJKLanguage = true
 title = 'Mudox'
 theme = 'mudox'
 
-enableGitInfo = true
+canonifyURLs = false
 
+# Code highlighting
 pygmentsCodefences = true
 pygmentsStyle = "dracula"
 

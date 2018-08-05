@@ -39,7 +39,7 @@
 <!-->>>-->
 
 <!--Favicon-->
-<link rel="icon" href="{{ .Site.BaseURL }}/images/{{ .Site.Params.favicon.url }}">
+<link rel="icon" href="/images/{{ .Site.Params.favicon.url }}">
 
 <!--{{ if .RSSLink }}-->
 <!--<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />-->
@@ -48,13 +48,13 @@
 <!-- CSS <<<-->
 
 <!--Normalize-->
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
+<link rel="stylesheet" href="/css/normalize.css">
 
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <!--Fonts-->
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
+<link rel="stylesheet" href="/css/fonts.css">
 
 <!--My scripts-->
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
