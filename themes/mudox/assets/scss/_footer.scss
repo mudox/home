@@ -1,40 +1,17 @@
 .frame-footer {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+    padding: 1em 0 0; // push site notes line down.
     text-align: center;
-}
-
-.footer-links {
-    font-size: .8rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     color: #ccc;
-}
 
-.footer-links li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
+    a {
+        margin: 0 3px;
+        transition: color 300ms;
+        text-decoration: none;
+        color: #888;
 
-.footer-links a {
-    margin: 0 3px;
-    transition: color 300ms;
-    text-decoration: none;
-    color: #888;
+        &:hover {
+            color: #222;
+        }
+    }
 }
-
-.footer-links a:hover {
-    color: #222;
-}
-
-.footer-links li::before {
-    padding: 0 18px;
-    content: '•';
-}
-
-.footer-links li:first-child::before {
-    display: none;
-}
-
