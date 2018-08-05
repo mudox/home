@@ -8,11 +8,10 @@
 
     <section class="top-navbar-left">
         <a href="{{ .Site.BaseURL }}">
-            <img class="nav-logo" src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}">
+            <img class="site-logo" src="{{ .Site.BaseURL }}/images/{{ .Site.Params.logo.url }}">
         </a>
         <a href="{{ .Site.BaseURL }}">
-            <h1 class="navbar-title">{{ upper .Site.Title }}</h1>
-            <!--<h1 class="navbar-title-alt">HOME</h1>-->
+            <h1 class="site-title">{{ upper .Site.Title }}</h1>
         </a>
     </section>
 
@@ -25,7 +24,7 @@
             {{ range .Site.Menus.main }}
             <li>
                 <a href="{{ .URL }}">
-                    <!--{{ .Pre }}-->
+                    {{ .Pre }}
                     <span>{{ upper .Name }}</span>
                 </a>
             </li>
