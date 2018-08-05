@@ -1,0 +1,20 @@
+.error-page {
+    &-title {
+        font-size: 76px;
+        text-align: center;
+    }
+
+    &-content {
+        text-align: center;
+
+        a {
+            transition: color 600ms;
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+}
