@@ -2,16 +2,16 @@
     box-sizing: border-box;
     padding: 1em 0 0; // push site notes line down.
     text-align: center;
-    color: #ccc;
+    color: $site-grey;
 
     a {
         margin: 0 3px;
         transition: color 300ms;
         text-decoration: none;
-        color: #888;
+        color: $a-grey;
 
         &:hover {
-            color: #222;
+            color: $a-hover-grey;
         }
     }
 }

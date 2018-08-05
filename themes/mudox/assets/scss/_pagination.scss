@@ -11,16 +11,17 @@
         padding: 0 5px;
         transition: color 300ms;
         text-decoration: none;
-        color: #555;
+        color: $content-grey;
     }
 
     a:hover {
-        color: #ccc;
+        color: $site-grey;
     }
 
     &-active a,
     &-disabled a {
         text-decoration: none;
-        color: #ccc;
+        color: $site-grey;
     }
 }
+

@@ -68,11 +68,11 @@
         }
 
         a {
-            color: #666;
+            color: $a-grey;
         }
 
         a:hover {
-            color: #111;
+            color: $a-hover-grey;
         }
     }
 }

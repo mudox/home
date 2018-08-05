@@ -15,7 +15,7 @@
             list-style: none;
 
             a {
-                color: #aaa;
+                color: $a-grey + #222;
 
                 // animated underline
                 text-decoration: none;
@@ -24,7 +24,7 @@
 
                 &.current,
                 &:hover {
-                    color: #666;
+                    color: $a-hover-grey;
                     border-bottom: thin solid #606060;
                 }
             }
