@@ -11,21 +11,29 @@ $media-min-width: 600px;
     width: calc(100% - 1.2em - 0.7em);
 }
 
+// Colors
+$logo-blue: #083e75;
+$logo-brown: #bd8c74;
+
+@import "fonts";
 @import "main";
 
+// Basic layouts
 @import "frame";
+
+// Pages
+@import "home";
+@import "tag-terms";
+@import "404";
+
+// Page areas
+@import "article";
 @import "sidebar";
 @import "header";
 @import "footer";
 
-@import "article";
+// Page widgets
 @import "article-list";
-
 @import "code";
 @import "table";
-@import "tag";
 @import "pagination";
-
-@import "home";
-
-@import "fonts";
