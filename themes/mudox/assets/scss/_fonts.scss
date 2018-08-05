@@ -1,8 +1,10 @@
 /*
-    Note:
-        Use `rem` for sont-sizeing.
-        Use bare number for line-height.
-*/
+Note:
+- Use `rem` for sont-sizeing.
+- Use bare number for line-height.
+- Only set font-family, font-size, line-height here. Set relative positioning
+  if it is tight coupled with font-size.
+ */
 
 // Basic
 
@@ -91,6 +93,10 @@ table {
         h2 {
             font-size: 2rem;
         }
+
+        li time {
+            font-size: .9rem;
+        }
     }
 }
 
@@ -106,6 +112,21 @@ table {
     }
 }
 
+// Pagination Control
+
 .page-links {
     font-size: 1.2rem;
+}
+
+// Frame header & footer
+
+.frame-header {
+    .top-navbar-right {
+        font-family: Lato, monospace;
+        font-size: 13px;
+    }
+}
+
+.frame-footer {
+    font-size: .8rem;
 }
