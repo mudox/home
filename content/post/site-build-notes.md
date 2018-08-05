@@ -261,6 +261,16 @@ This section contains the knowledge I've learned during the site building proces
 
 ---
 
+How control word casing?
+
+Use `text-transform: [capitalize|uppercase|lowercase|...]` to control text
+casing. Better render the text in all lowercase from template.
+
+The `text-transform` property should be applied to the immediate containing
+element the text.
+
+---
+
 How to style a `<hr>`
 
 The horizontal ruler element is just a ordinary block element with no inner content
@@ -329,7 +339,7 @@ Here are the issues I encountered and the solution I came out.
 
 ---
 
-Live reload does not bring the latest change to browser?
+Live reloading does not bring the latest change to browser?
 
 Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
 __Disable cache__ box. Keep the window open during the testing.
