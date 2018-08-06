@@ -17,11 +17,11 @@
             a {
                 text-decoration: none;
                 font-weight: bold;
-                color: $a-hover-grey;
+                color: $anchorGreyHover;
                 transition: color 300ms;
 
                 &:hover {
-                    color: $site-grey;
+                    color: $siteGrey;
                 }
             }
         }

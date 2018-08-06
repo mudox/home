@@ -1,6 +1,6 @@
 /*sidebar {{{*/
 
-@media (min-width: $media-min-width) {
+@media (min-width: $mediaMinWidth) {
     .sidebar section {
         margin: 0 {
             bottom: 2.6em;
@@ -19,7 +19,7 @@
             list-style: none;
 
             a {
-                color: $a-grey + #222;
+                color: $anchorGrey + #222;
 
                 // animated underline
                 text-decoration: none;
@@ -28,7 +28,7 @@
 
                 &.current,
                 &:hover {
-                    color: $a-hover-grey;
+                    color: $anchorGreyHover;
                     border-bottom: thin solid #606060;
                 }
             }
@@ -50,7 +50,7 @@
 
 /*left-sidebar {{{*/
 
-@media (min-width: $media-min-width) {
+@media (min-width: $mediaMinWidth) {
     .left-sidebar {
         text-align: right;
 
@@ -68,7 +68,7 @@
 
 /*right-sidebar {{{*/
 
-@media (min-width: $media-min-width) {
+@media (min-width: $mediaMinWidth) {
     .right-sidebar {
         text-align: left;
 

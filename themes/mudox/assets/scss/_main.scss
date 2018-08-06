@@ -45,12 +45,12 @@ blockquote {
     @extend %article-inset-box;
 
     padding: 1px 1em;
-    border-left: 5px solid $site-grey;
+    border-left: 5px solid $siteGrey;
     background: #f5f5f5;
 }
 
 .content {
-    color: $content-grey;
+    color: $contentGrey;
 }
 
 .github-buttons span {

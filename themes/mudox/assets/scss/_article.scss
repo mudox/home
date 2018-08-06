@@ -1,6 +1,6 @@
 .article {
     &-title {
-        color: $a-hover-grey;
+        color: $anchorGreyHover;
         margin: 1.6em 2em 0.5em;
         text-align: center;
     }
@@ -8,13 +8,13 @@
     &-date {
         display: block;
         text-align: center;
-        color: $site-grey;
+        color: $siteGrey;
     }
 
     &-summary {
         padding: 1.2em;
-        border-left: 5px solid $site-grey;
-        border-right: 5px solid $site-grey;
+        border-left: 5px solid $siteGrey;
+        border-right: 5px solid $siteGrey;
     }
 }
 
@@ -26,7 +26,7 @@
 
         // Underline
         padding: 0 0 0.35em;
-        border-bottom: thin solid $site-grey;
+        border-bottom: thin solid $siteGrey;
     }
 
     h2 {

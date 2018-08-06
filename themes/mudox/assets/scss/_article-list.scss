@@ -29,12 +29,12 @@
                 text-overflow: ellipsis;
 
                 &:hover {
-                    border-color: $a-hover-grey;
+                    border-color: $anchorGreyHover;
                 }
             }
 
             time {
-                color: $site-grey;
+                color: $siteGrey;
             }
         }
     }

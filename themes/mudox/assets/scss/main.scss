@@ -1,9 +1,5 @@
-$media-min-width: 600px;
-
-@media (min-width: $media-min-width) {
-    $main-max-width: 700px;
-    $main-min-width: 600px;
-}
+$mediaMinWidth: 900px;
+$mainWidth: 700px;
 
 %article-inset-box {
     box-sizing: border-box;
@@ -12,14 +8,14 @@ $media-min-width: 600px;
 }
 
 // Colors
-$logo-blue: #083e75;
-$logo-brown: #bd8c74;
-$site-grey: #ccc;
+$logoBlue: #083e75;
+$logoBrown: #bd8c74;
+$siteGrey: #ccc;
 
-$a-grey: #666;
-$a-hover-grey: #222;
+$anchorGrey: #666;
+$anchorGreyHover: #222;
 
-$content-grey: #555;
+$contentGrey: #555;
 
 @import "fonts";
 @import "main";
