@@ -41,14 +41,14 @@
             @extend .sidebar;
 
             position: fixed;
-            right: calc(50vw + 350px);
+            right: calc(50vw + 350px + 15px);
         }
 
         .right-sidebar {
             @extend .sidebar;
 
             position: fixed;
-            left: calc(50vw + 350px);
+            left: calc(50vw + 350px + 15px);
         }
 
         main.content {
