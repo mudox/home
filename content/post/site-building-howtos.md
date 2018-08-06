@@ -85,3 +85,25 @@ server` use port number '1313'.
    --baseURL='192.168.0.100'`.
 
 1. Open `http://192.168.0.100:1313` in the Edge browser.
+
+---
+
+How to use SCSS variables in CSS `calc` expresssions.
+
+Use the [SCSS interpolation] feature that is wrap the variable name within  a
+`#{}`, like
+
+```scss
+$mainWidth: 350px;
+$columnGap: 15px;
+
+.left-side {
+  left: calc(50vw + #{$mainWidth} / 2 + #{$columnGap});
+}
+```
+
+[SCSS interpolation]: https://sass-lang.com/documentation/file.SASS_REFERENCE.html#interpolation_
+[Parallel Desktop.app]: https://www.parallels.com/products/desktop
+[Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
+[Hugo Pipes]: https://gohugo.io/hugo-pipes/introduction
+[Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}

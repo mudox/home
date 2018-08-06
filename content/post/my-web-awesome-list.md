@@ -3,6 +3,7 @@ title       = "My Web Awesome List"
 date        = 2018-08-05T15:48:22+08:00
 draft       = true
 tags        = ['Web', 'Awesome', 'CSS', 'HTML', 'JavaScript']
+series      = ['Awesome List']
 toc         = 'true'
 pinned      = 'false'
 description = '''

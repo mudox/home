@@ -326,16 +326,12 @@ file weight then the tags, then the article title ...
 [Tmux]: https://github.com/tmux/tmux
 [iTerm2]: https://www.iterm2.com/
 [emmet]: https://emmet.io
-[Auto-highlighting TOC]: {{< relref "auto-highlighting-toc.md" >}}
-[Fixed Sidebar]: {{< relref "fixed-sidebar.md" >}}
 [MDN Web Docs]: https://developer.mozilla.org
 [Hugo]: https://gohugo.io
 [FontAwesome]: https://fontawesome.com
 [SCSS]: https://sass-lang.com
-[Hugo Pipes]: https://gohugo.io/hugo-pipes/introduction
 [JSFiddle]: jsfiddle.net
 [CodePen]: https://codepen.io
-[Parallel Desktop.app]: https://www.parallels.com/products/desktop
 [line-height | MDN]: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Values
 [JSON]: http://www.json.org
 [YAML]: http://yaml.org

@@ -1,69 +1,18 @@
 +++
-title = 'My iOS Awesome List'
-date  = 2018-07-24T01:37:35+08:00
-draft = true
-tags  = ['iOS', 'Swift', 'Awesome', 'Objective-C']
-toc   = 'true'
+title       = 'My iOS Awesome List'
+date        = 2018-07-24T01:37:35+08:00
+draft       = true
+type        = 'awesome'
+tags        = ['iOS', 'Swift', 'Objective-C']
+series      = ['Awesome List']
+toc         = 'true'
 description = '''
 The frameworks, libraries, tool and learning resources I collected and commonly
 used in iOS development.
 '''
 +++
 
-# Swift
-
-{{< github-buttons "ankurp" "Dollar" "Dollar" >}}
-A functional tool-belt for Swift Language.
-{{< /github-buttons >}}
-
-{{< github-buttons "typelift" "swiftz" "Swiftz" >}}
-Swiftz is a Swift library for functional programming.
-{{< /github-buttons >}}
-
-# Tool
-
-{{< github-buttons "realm" "jazzy" "Jazzy" >}}
-Soulful docs for Swift & Objective-C.
-{{< /github-buttons >}}
-
-{{< github-buttons "realm" "swiftlint" "SwiftLint" >}}
-A tool to enforce Swift style and conventions.
-{{< /github-buttons >}}
-
-{{< github-buttons "jintin" "swimat" "Swimat" >}}
-Swift source code formatter. Provide Xcode integration, very handy.
-{{< /github-buttons >}}
-
-
-{{< github-buttons "johnno1962" "injectionforxcode" "Injection for Xcode" >}}
-Runtime Code Injection for Objective-C & Swift.
-{{< /github-buttons >}}
-
-{{< github-buttons "facebook" "chisel" "Chisel" >}}
-A collection of LLDB commands to assist debugging iOS apps.
-{{< /github-buttons >}}
-
-{{< github-buttons "fastlane" "fastlane" "Fastlane" >}}
-The easiest way to automate building and releasing your iOS and Android apps.
-{{< /github-buttons >}}
-
-{{< github-buttons "facebook" "xctool" "xctool" >}}
-An extension for Apple's xcodebuild that makes it easier to test iOS and macOS apps.
-{{< /github-buttons >}}
-
-{{< github-buttons "facebook" "xcbuilt" "xcbuilt" >}}
-Xcode-compatible build tool.
-{{< /github-buttons >}}
-
-{{< github-buttons "supermarin" "xcpretty" "xcpretty" >}}
-Flexible and fast xcodebuild formatter.
-{{< /github-buttons >}}
-
 # Testing
-
-{{< github-buttons "quick" "quick" "Quick" >}}
-BDD testing framework.
-{{< /github-buttons >}}
 
 {{< github-buttons "quick" "nimble" "Nimble" >}}
 Matcher library that replaces XCTest `XCTAssert` family.
