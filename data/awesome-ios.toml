@@ -2,12 +2,12 @@
 
 # Swift {{{
 
-[[Swift]]
+[[Swift.items]]
 title       = "Dollar"
 description = "A functional tool-belt for Swift Language."
 url         = "https://github.com/ankurp/Dollar"
 
-[[Swift]]
+[[Swift.items]]
 title       = "Swiftz"
 description = "Swiftz is a Swift library for functional programming."
 url         = "https://github.com/typelift/swiftz"
@@ -16,52 +16,52 @@ url         = "https://github.com/typelift/swiftz"
 
 # Tool {{{
 
-[[Tool]]
+[[Tool.items]]
 title       = "Jazzy"
 description = "Soulful docs for Swift & Objective-C."
 url         = "https://github.com/realm/jazzy"
 
-[[Tool]]
+[[Tool.items]]
 title       = "SwiftLint"
 description = "A tool to enforce Swift style and conventions."
 url         = "https://github.com/realm/SwiftLint"
 
-[[Tool]]
+[[Tool.items]]
 title       = "Swimat"
 description = "Swift source code formatter. Provide Xcode integration, very handy."
 url         = "https://github.com/Jintin/Swimat"
 
-[[Tool]]
+[[Tool.items]]
 title       = "Injection for Xcode"
 description = "Runtime Code Injection for Objective-C & Swift."
 url         = "https://github.com/johnno1962/injectionforxcode"
 
-[[Tool]]
+[[Tool.items]]
 title       = "Swimat"
 description = "Swift source code formatter. Provide Xcode integration, very handy."
 url         = "https://github.com/Jintin/Swimat"
 
-[[Tool]]
+[[Tool.items]]
 title       = "Chisel"
 description = "A collection of LLDB commands to assist debugging iOS apps."
 url         = "https://github.com/facebook/chisel"
 
-[[Tool]]
+[[Tool.items]]
 title       = "Fastlane"
 description = "The easiest way to automate building and releasing your iOS and Android apps."
 url         = "https://github.com/fastlane/fastlane"
 
-[[Tool]]
+[[Tool.items]]
 title       = "xctool"
 description = " An extension for Apple's xcodebuild that makes it easier to test iOS and macOS apps.  "
 url         = "https://github.com/facebook/xctool"
 
-[[Tool]]
+[[Tool.items]]
 title       = "xcbuild"
 description = "Xcode-compatible build tool."
 url         = "https://github.com/facebook/xcbuild"
 
-[[Tool]]
+[[Tool.items]]
 title       = "xcpretty"
 description = "Flexible and fast xcodebuild formatter."
 url         = "https://github.com/supermarin/xcpretty"
@@ -70,9 +70,482 @@ url         = "https://github.com/supermarin/xcpretty"
 
 # Testing {{{
 
-[[Tool]]
-title       = "Quick"
-description = "The BDD testing framework."
-url         = "https://github.com/Jintin/Swimat"
+[[Testing.items]]
+
+title       = "Nimble"
+url         = "https://github.com/quick/nimble"
+description = """
+Matcher library that replaces XCTest `XCTAssert` family.
+"""
+
+[[Testing.items]]
+title       = "RxNimble"
+url         = "https://github.com/rxswiftcommunity/rxnimble"
+description = """
+Simplify expectation matching for RxBlocking.
+"""
+
+[[Testing.items]]
+title       = "RxSwift"
+url         = "https://github.com/rxswift/rxswift"
+description = """
+RxSwift testing framework, testing `Observable` operators, bundled with [RxSwift].
+"""
+
+[[Testing.items]]
+title       = "OHHTTPStub"
+url         = "https://github.com/alisoftware/ohhttpstub"
+description = """
+Network stubbing library.
+"""
+
+[[Testing.items]]
+title       = "SwiftCheck"
+url         = "https://github.com/typelift/swiftcheck"
+description = """
+QuickCheck for Swift.
+"""
+
+[[Testing.items]]
+title       = "Swinject"
+url         = "https://github.com/swinject/swinject"
+description = """
+Dependency injection framework for Swift with iOS/macOS/Linux.
+"""
+
+[[Testing.items]]
+title       = "EarlGrey"
+url         = "https://github.com/google/earlgrey"
+description = """
+iOS UI Automation Test Framework.
+"""
+
+[[Testing.items]]
+title       = "iOSSnapshotTestCase"
+url         = "https://github.com/uber/ios-snapshot-test-case"
+description = """
+Presentation test based on Image diff.
+"""
+
+# }}}
+
+# Networking {{{
+
+[[Networking.items]]
+title       = "Alamofire"
+url         = "https://github.com/alamofire/alamofire"
+description = """
+Provides a Swifty, modern-feeling wrapper for URLSession.
+"""
+
+[[Networking.items]]
+title       = "RxAlamofire"
+url         = "https://github.com/rxswiftcommunity/rxalamofire"
+description = """
+RxSwift community extension for [Alamofire].
+"""
+
+[[Networking.items]]
+title       = "Moya"
+url         = "https://github.com/moya/moya"
+description = """
+Wraps Alamofire to hide HTTP URLs and parameters.
+"""
+
+# }}}
+
+# Data {{{
+
+[[Data.items]]
+
+title       = "Disk"
+url         = "https://github.com/saoudrizwan/disk"
+description = """
+Simplify data access and persist by abstract away `FileManager`, data serialization logics.
+"""
+
+[[Data.items]]
+title       = "SwiftyUserDefaults"
+url         = "https://github.com/radex/swiftuserdefaults"
+description = """
+Modern Swift API for `UserDefaults` with typed, auto-completed key and settable subscription
+operators.
+"""
+
+[[Data.items]]
+title       = "SwiftyJSON"
+url         = "https://github.com/swiftyjson/swiftyjson"
+description = """
+The better way to deal with JSON data in Swift.
+"""
+
+[[Data.items]]
+title       = "Kanna"
+url         = "https://github.com/tid-kijyun/kanna"
+description = """
+XML/HTML parser for Swift.
+"""
+
+[[Relam]]
+parent      = "Data"
+
+[[Realm.items]]
+
+title       = "Realm"
+url         = "https://realm.io"
+description = "Modern, swifty Core Data thrid-party alternative."
+
+[[Realm.items]]
+title       = "RxRealm"
+url         = "https://github.com/rxswiftcommunity/rxrealm"
+description = """
+RxSwift extension for RealmSwift.
+"""
+
+[[Realm.items]]
+title       = "RxRealmDataSources"
+url         = "https://github.com/rxswiftcommunity/rxrealmdatasources"
+description = """
+RxRealm versoin of RxDataSources.
+"""
+
+# }}}
+
+# UI {{{
+
+[[UI.items]]
+
+title       = "Bartinter"
+url         = "https://github.com/maximkotliar/bartinter"
+description = """
+Dynamically changes status bar style depending on content behind it.
+"""
+
+[[UI.items]]
+title       = "IQKeybaordManager"
+url         = "https://github.com/hackiftekhar/iqkeyboardmanager"
+description = """
+Codeless drop-in universal library allows to prevent issues of keyboard\
+sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup\
+required and much more.
+"""
+
+[Text]
+parent      = "UI"
+
+[[Text.items]]
+
+title       = "StyledTextKit"
+url         = "https://github.com/githawkapp/styledtextkit"
+description = """
+Declarative building and fast rendering attributed string library.
+"""
+
+[[Text.items]]
+title       = "SwiftRichString"
+url         = "https://github.com/malcommac/swiftrichstring"
+description = """
+Swifty syntax sugar for constructing `NSAttributedString`.
+"""
+
+[Graphics]
+parent      = "UI"
+
+[[Graphics.items]]
+
+title       = "Slope"
+url         = "https://github.com/mergesort/slope"
+description = """
+A simpler way to implement simple gradients on iOS.
+"""
+
+[[Graphics.items]]
+title       = "Texture"
+url         = "https://github.com/texturegroup/texture"
+description = """
+Smooth asynchronous user interfaces for iOS apps. Formally __AsyncDisplayKit__.
+"""
+
+[[Graphics.items]]
+title       = "GPUImage3"
+url         = "https://github.com/bradlarson/gpuimage3"
+description = """
+GPUImage 3 is a BSD-licensed Swift framework for GPU-accelerated video and image processing using Metal.
+"""
+
+
+# }}}
+
+# View {{{
+
+[[View.items]]
+
+title       = "TagListView"
+url         = "https://github.com/elaworkshop/taglistview"
+description = """
+Simple and highly customizable iOS tag list view, in Swift.
+"""
+
+[[View.items]]
+title       = "SwiftEntryKit"
+url         = "https://github.com/huri000/swiftentrykit"
+description = """
+Top / bottom banner, center alert / action sheet box of modern styles.
+"""
+
+[[View.items]]
+title       = "Charts"
+url         = "https://github.com/danielgindi/charts"
+description = """
+Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.
+"""
+
+[[View.items]]
+title       = "iCarousel"
+url         = "https://github.com/nicklockwood/icarousel"
+description = """
+A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS
+"""
+
+[[View.items]]
+title       = "Sheeeeeeeeet"
+url         = "https://github.com/danielsaidi/sheeeeeeeeet"
+description = """
+A Swift library for custom action sheets.
+"""
+
+[[View.items]]
+title       = "M13Checkbox"
+url         = "https://github.com/marxon13/m13checkbox"
+description = """
+A customizeable checkbox for iOS.
+"""
+
+[[View.items]]
+title       = "Folding Cell"
+url         = "https://github.com/ramotion/folding"
+description = """
+Click the cell, it expand to details with fashion.
+"""
+
+[[View.items]]
+title       = "MJRefresh"
+url         = "https://github.com/codermjlee/mjrefresh"
+description = """
+The refresh control with 1w+ stars on GitHub.
+"""
+
+[[View.items]]
+title       = "MBProgressHUD"
+url         = "https://github.com/jdg/mbprogresshud"
+description = """
+One of the most popular HUD implementations.
+"""
+
+[[View.items]]
+title       = "NVActivityIndicatorView"
+url         = "https://github.com/ninjaprox/nvactivityindicatorview"
+description = """
+A collection of awesome loading animations
+"""
+
+[[View.items]]
+title       = "M13ProgressSuite"
+url         = "https://github.com/marxon13/m13progresssuite"
+description = """
+A suite containing many tools to display progress information on iOS.
+"""
+
+[Layout]
+parent      = "View"
+
+[[Layout.items]]
+title       = "LayoutFrameworkBenchmark"
+url         = "https://github.com/layoutbox/layoutframeworkbenchmark"
+description = """
+It lists out and compares all popular layout frameworks, can find other layout solutions in this repo.
+"""
+
+[[Layout.items]]
+title       = "SnapKit"
+url         = "https://github.com/snapkit/snapkit"
+description = """
+Just swfity wrapper over Auto Layout API.
+"""
+
+[[Layout.items]]
+title       = "PinLayout"
+url         = "https://github.com/mirego/pinlayout"
+description = """
+Very fast, `layoutSubviews` based layout system.
+"""
+
+[Animation]
+parent      = "View"
+
+[[Animation.items]]
+title       = "Sica"
+url         = "https://github.com/cats-oss/sica"
+description = """
+Simple Interface Core Animation. Run type-safe animation sequencially or parallelly.
+"""
+
+[[Animation.items]]
+title       = "Spring"
+url         = "https://github.com/mengto/spring"
+description = """
+A library to simplify iOS animations in Swift.
+"""
+
+[[Animation.items]]
+title       = "ElasticTransition"
+url         = "https://github.com/lkzhao/elastictransition"
+description = """
+A UIKit custom transition that simulates an elastic drag.
+"""
+
+[[Animation.items]]
+title       = "pop"
+url         = "https://github.com/facebook/pop"
+description = """
+An extensible iOS and OS X animation library, useful for physics-based interactions.
+"""
+
+# }}}
+
+# View Controller {{{
+
+[["View Controller".items]]
+title       = "Eureka"
+url         = "https://github.com/xmartlabs/eureka"
+description = """
+Form interface builder based on `UITableView`.
+"""
+
+[["View Controller".items]]
+title       = "Hero"
+url         = "https://github.com/lkzhao/hero"
+description = """
+Elegant transition library.
+"""
+
+# }}}
+
+# Multimedia {{{
+
+[[Multimedia.items]]
+title       = "TOCropViewController"
+url         = "https://github.com/timoliver/tocropviewcontroller"
+description = """
+A view controller that allows users to crop UIImage objects.
+"""
+
+[[Multimedia.items]]
+title       = "YPImagePicker"
+url         = "https://github.com/yummypets/ypimagepicker"
+description = """
+Instagram-like image picker & filters for iOS.
+"""
+# }}}
+
+# Architecture {{{
+
+[[Architecture.items]]
+title       = "ReactorKit"
+url         = "https://github.com/reactorkit/reactorkit"
+description = """
+A framework for a reactive and unidirectional Swift application architecture
+"""
+
+[RxSwift]
+parent      = "Architecture"
+
+[[RxSwift.items]]
+title       = "RxSwift"
+url         = "https://github.com/rxswiftcommunity/rxswift"
+description = """
+RxSwift + RxCocoa + RxTest + RxBlocking.
+"""
+
+[[RxSwift.items]]
+title       = "RxSwiftExt"
+url         = "https://github.com/rxswiftcommunity/rxswiftext"
+description = """
+Provides many useful operators.
+"""
+
+[[RxSwift.items]]
+title       = "RxOptional"
+url         = "https://github.com/rxswiftcommunity/rxoptional"
+description = """
+RxSwift extensions for Swift optionals and \"Occupiable\" types.
+"""
+
+[[RxSwift.items]]
+title       = "RxGesture"
+url         = "https://github.com/rxswiftcommunity/rxgesture"
+description = """
+RxSwift extension for `UIGestureRecognizer`.
+"""
+
+[[RxSwift.items]]
+title       = "Action"
+url         = "https://github.com/rxswiftcommunity/action"
+description = """
+Abstracts actions to be performed in RxSwift.
+"""
+
+[[RxSwift.items]]
+title       = "RxNimble"
+url         = "https://github.com/rxswiftcommunity/rxnimble"
+description = """
+Simplify expectation matching for RxBlocking.
+"""
+
+[[RxSwift.items]]
+title       = "RxAnimated"
+url         = "https://github.com/rxswiftcommunity/rxanimated"
+description = """
+Animated RxCocoa bindings.
+"""
+
+[[RxSwift.items]]
+title       = "RxTheme"
+url         = "https://github.com/rxswiftcommunity/rxtheme"
+description = """
+Theme management based on Rx.
+"""
+
+[[RxSwift.items]]
+title       = "RxDataSources"
+url         = "https://github.com/rxswiftcommunity/rxdatasoures"
+description = """
+Reactive data sources (sections, animated updates, editing ...).
+"""
+
+[[RxSwift.items]]
+title       = "RxFlow"
+url         = "https://github.com/rxswiftcommunity/rxflow"
+description = """
+Reactive scene transition.
+"""
+
+[[RxSwift.items]]
+title       = "RxCoordinator"
+url         = "https://github.com/quickbirdstudios/rxcoordinator"
+description = """
+Reactive navigation library for iOS based on the coordinator pattern.
+"""
+
+# }}}
+
+# Misc {{{
+
+[[Misc.items]]
+title       = "Open Source iOS Apps"
+url         = "https://github.com/dkhamsing/open"
+description = """
+Collaborative List of Open-Source iOS Apps.
+"""
 
 # }}}
