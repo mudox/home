@@ -1,0 +1,78 @@
+# vim: fdm=marker
+
+# Swift {{{
+
+[[Swift]]
+title       = "Dollar"
+description = "A functional tool-belt for Swift Language."
+url         = "https://github.com/ankurp/Dollar"
+
+[[Swift]]
+title       = "Swiftz"
+description = "Swiftz is a Swift library for functional programming."
+url         = "https://github.com/typelift/swiftz"
+
+# }}}
+
+# Tool {{{
+
+[[Tool]]
+title       = "Jazzy"
+description = "Soulful docs for Swift & Objective-C."
+url         = "https://github.com/realm/jazzy"
+
+[[Tool]]
+title       = "SwiftLint"
+description = "A tool to enforce Swift style and conventions."
+url         = "https://github.com/realm/SwiftLint"
+
+[[Tool]]
+title       = "Swimat"
+description = "Swift source code formatter. Provide Xcode integration, very handy."
+url         = "https://github.com/Jintin/Swimat"
+
+[[Tool]]
+title       = "Injection for Xcode"
+description = "Runtime Code Injection for Objective-C & Swift."
+url         = "https://github.com/johnno1962/injectionforxcode"
+
+[[Tool]]
+title       = "Swimat"
+description = "Swift source code formatter. Provide Xcode integration, very handy."
+url         = "https://github.com/Jintin/Swimat"
+
+[[Tool]]
+title       = "Chisel"
+description = "A collection of LLDB commands to assist debugging iOS apps."
+url         = "https://github.com/facebook/chisel"
+
+[[Tool]]
+title       = "Fastlane"
+description = "The easiest way to automate building and releasing your iOS and Android apps."
+url         = "https://github.com/fastlane/fastlane"
+
+[[Tool]]
+title       = "xctool"
+description = " An extension for Apple's xcodebuild that makes it easier to test iOS and macOS apps.  "
+url         = "https://github.com/facebook/xctool"
+
+[[Tool]]
+title       = "xcbuild"
+description = "Xcode-compatible build tool."
+url         = "https://github.com/facebook/xcbuild"
+
+[[Tool]]
+title       = "xcpretty"
+description = "Flexible and fast xcodebuild formatter."
+url         = "https://github.com/supermarin/xcpretty"
+
+# }}}
+
+# Testing {{{
+
+[[Tool]]
+title       = "Quick"
+description = "The BDD testing framework."
+url         = "https://github.com/Jintin/Swimat"
+
+# }}}
