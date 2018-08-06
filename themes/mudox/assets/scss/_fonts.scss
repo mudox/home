@@ -6,14 +6,10 @@ Note:
 if it is tight coupled with font-size.
  */
 
-$mainSerif: Merriweather, serif;
-$mainSans: Lato, sans-serif;
-$mainMonospace: Roboto, monospace;
-
 // Basic
 
 html {
-    font-family: $mainSerif;
+    font-family: $serif;
     font-size: .85rem;
     line-height: 1;
 }
@@ -49,7 +45,7 @@ strong {
 
 code {
     p & {
-        font-family: $mainMonospace;
+        font-family: $monospace;
         font-size: .9rem;
     }
 
@@ -71,7 +67,7 @@ table {
 
 @media (min-width: $mediaMinWidth) {
     .sidebar {
-        font-family: $mainSans;
+        font-family: $sans;
         font-size: .9rem;
         line-height: 1.4;
 
@@ -125,7 +121,7 @@ table {
 
 .frame-header {
     .top-navbar-right {
-        font-family: $mainSans;
+        font-family: $sans;
         font-size: 13px;
     }
 }
