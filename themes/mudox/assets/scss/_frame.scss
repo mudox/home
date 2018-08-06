@@ -22,7 +22,7 @@
     .main-frame {
         .sidebar {
             max-width: 13rem;
-            top: 110px;
+            top: $sidebarTop;
             max-height: calc(100vh - 110px - 30px);
 
             // Spacing between main area
