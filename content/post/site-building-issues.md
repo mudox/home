@@ -84,3 +84,15 @@ My strategy is to set a lowest value (e.g. 1) at `<html>` element, then set
 effective value in elements as deep in the DOM as possible.
 
 Content.
+
+# Compatibility
+
+IE 11 does not support alpha component in color hash format i.e. `#RRGGBBAA`.
+
+Use `#RGB` or `#RRGGBB` instead.
+
+---
+
+IE 11 does not support flexbox layout.
+
+Use the traditional floating or fixed positioning way or table layout.

@@ -267,9 +267,9 @@ Use the `youtube` shortcode.
 
 **Click** the URLs to check if the shortcode works.
 
--   [Absolute permalink to: iOS Awesome List]({{< ref "/post/my-ios-awesome-list.md" >}})
+-   [Absolute permalink to: Unburden View Controllers]({{< ref "/post/unburden-view-controllers.md" >}})
 
--   [Relative permalink to: iOS Awesome List]({{< relref "my-ios-awesome-list.md" >}})
+-   [Relative permalink to: Unburden View Controllers]({{< relref "unburden-view-controllers.md" >}})
 
 # Embeding
 
