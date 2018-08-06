@@ -6,10 +6,14 @@ Note:
 if it is tight coupled with font-size.
  */
 
+$mainSerif: Merriweather, serif;
+$mainSans: Lato, sans-serif;
+$mainMonospace: Roboto, monospace;
+
 // Basic
 
 html {
-    font-family: Merriweather, serif;
+    font-family: $mainSerif;
     font-size: .85rem;
     line-height: 1;
 }
@@ -45,7 +49,7 @@ strong {
 
 code {
     p & {
-        font-family: 'Roboto Mono', monospace;
+        font-family: $mainMonospace;
         font-size: .9rem;
     }
 
@@ -65,9 +69,9 @@ table {
 
 // Sidebar
 
-@media (min-width: $media-min-width) {
+@media (min-width: $mediaMinWidth) {
     .sidebar {
-        font-family: Lato, monospace;
+        font-family: $mainSans;
         font-size: .9rem;
         line-height: 1.4;
 
@@ -121,7 +125,7 @@ table {
 
 .frame-header {
     .top-navbar-right {
-        font-family: Lato, monospace;
+        font-family: $mainSans;
         font-size: 13px;
     }
 }
