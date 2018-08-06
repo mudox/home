@@ -37,6 +37,8 @@ __[Emmet]__ is a powerful web snippets expander to boost my html writing speed.
 __[SCSS]__ is my choose of CSS preprocessor, with [Hugo Pipes] feature automate the
 preprocessing.
 
+__[TOML]__ is the format I used in site and page content configuration.
+
 
 
 
@@ -279,9 +281,38 @@ The site use 3 kinds of code related element:
 
 # Configurations
 
-## Site configurations
+Hugo provides 2 configurable levels for users to flexibly tweak aspects of
+their sites. Hugo also let user to choose his preferred configuration data
+format among [JSON], [YAML], [TOML]. I use TOML.
 
-## Front matters
+## Site level configuration
+
+Hugo requires my site level configuration stays in `config.toml` under the root
+path of site.
+
+### Code highlighting
+
+I use the server side solution - [Chroma] which is recommanded by Hugo. See
+[Syntax Highlighting] for details.
+
+I use predefined theme `pygmentsStyle = "dracula"`. For completely customzation
+of the highlighted appearance, set `pygmentsUseClasses` instead of
+`pygmentsStyle` then follow [Generate Syntax Highlighter CSS] to get the
+initial CSS file to begin with the customization.
+
+### Related article list
+
+This section of configuration controls the algorithm that hugo uses to
+generates related file list for each content page.
+
+Currently the taxonomy series take the highest priority to in computing related
+file weight then the tags, then the article title ...
+
+### Menu
+
+
+
+## Content level configuration
 
 ---
 
@@ -306,3 +337,9 @@ The site use 3 kinds of code related element:
 [CodePen]: https://codepen.io
 [Parallel Desktop.app]: https://www.parallels.com/products/desktop
 [line-height | MDN]: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Values
+[JSON]: http://www.json.org
+[YAML]: http://yaml.org
+[TOML]: https://github.com/toml-lang/toml
+[Syntax Highlighting]: https://gohugo.io/content-management/syntax-highlighting/#highlight-in-code-fences
+[Chroma]: https://github.com/alecthomas/chroma
+[Generate Syntax Highlighter CSS]: https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css
