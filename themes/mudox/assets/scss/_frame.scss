@@ -41,14 +41,14 @@
             @extend .sidebar;
 
             position: fixed;
-            right: calc(50vw + 350px + 15px);
+            right: calc(50vw + #{$mainWidth} / 2 + #{$columnGap});
         }
 
         .right-sidebar {
             @extend .sidebar;
 
             position: fixed;
-            left: calc(50vw + 350px + 15px);
+            left: calc(50vw + #{$mainWidth} / 2 + #{$columnGap});
         }
 
         main.content {
