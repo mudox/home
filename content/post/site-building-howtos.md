@@ -15,6 +15,12 @@ My gains from building this personal site.
 
 ## 2018-08
 
+How to express <code>{{&lt; highlight &gt;}}</code>?
+
+Write `<code>{{&lt; highlight &gt;}}</code>`.
+
+---
+
 How control word casing?
 
 Use `text-transform: [capitalize|uppercase|lowercase|...]` to control text

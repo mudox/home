@@ -157,7 +157,13 @@ Wraps Alamofire to hide HTTP URLs and parameters.
 # Data {{{
 
 [[Data.items]]
+title       = "SwiftRandom"
+url         = "https://github.com/thellimist/SwiftRandom"
+description = """
+A tiny generator of random data for swift
+"""
 
+[[Data.items]]
 title       = "Disk"
 url         = "https://github.com/saoudrizwan/disk"
 description = """

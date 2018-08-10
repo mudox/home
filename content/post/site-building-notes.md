@@ -44,40 +44,61 @@ __[TOML]__ is the format I used in site and page content configuration.
 
 # DOM
 
+## Homepage
+
+Currently it use the same base layout as single article page below, except
+without the 2 sidebar column in middle area.
+
+The main content area only shows a article list grouped by updated month.
+
+## Single article page
+
 I use 3 row layout for article page's base horizontal layout.
 
-1.  Top navigation bar showing site logo and site main menu.
-2.  Middle is the main content area.
-3.  Bottom is a footer showing site information.
+1. __Top__ navigation bar showing site logo and site main menu.\
+1. __Middle__ the main content area.\
+1. __Bottom__ footer showing site information.
 
-The middle main content area employ 3 column layout, with both sidebar column
-fixed in the viewport.
+The middle main content area emploies 3 column layout, with both sidebar
+columns fixed in the viewport.
 
-1.  Left sidebar shows
+1. __Left sidebar__ shows:
+
     1.  Article tag list
     2.  Recently updated article list
-    3.  Navigation menu
-2.  Right sidebar shows table of contents of current article
+    3.  Site main menu
+    4.  Related article list (See Also)
 
-## Document body
+1. __Right sidebar__ shows table of contents of current article
+
+The main menu section is dynamically positioned. If the right sidebar TOC is
+too short than the left sidebar tag list and recently updated article list
+combined, show main menu statically under the TOC. else anternate the site main
+menu with left sidebar 3rd section.
+
+I use [Base Templates and Blocks] feature from Hugo to construct my single page
+template:
 
 ```html
 <body>
-    <div class="wrapper">
-        <header class="header"></header>
-        <aside class="sidebar left-sidebar"></aside>
-        <aside class="sidebar right-sidebar"></aside>
-        <main class="content">
-            <!--
-                The page's main content area, for example it shows:
-                - The paginated article list grouped by month
-                - The article content in single page
-                - Tag term list in tag terms page
-                - Article list in tag article page
-                - ...
-            -->
-        </main>
-        <footer class="footer"></footer>
+    <div class="frame">
+
+        <!--Top navbar-->
+        <header class="frame-header">
+            {{ partial "top-navbar.html" . }}
+        </header>
+
+        <!--Middle main content area-->
+        <div class="main-frame">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+
+        <!--Bottom site footer-->
+        <footer class="frame-footer">
+            {{ partial "bottom-navbar.html" . }}
+        </footer>
+
     </div>
 </body>
 ```
@@ -86,7 +107,7 @@ fixed in the viewport.
 
 This area has 2 parts:
 
-1.  Left `<nav>` floats left, show site logo and title.  
+1.  Left `<nav>` floats left, show site logo and title.
     It use flexbox layout to center the logo image and title vertically
     `position: flex; align-item: center;`
 
@@ -339,3 +360,4 @@ file weight then the tags, then the article title ...
 [Syntax Highlighting]: https://gohugo.io/content-management/syntax-highlighting/#highlight-in-code-fences
 [Chroma]: https://github.com/alecthomas/chroma
 [Generate Syntax Highlighter CSS]: https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css
+[Base Templates and Blocks]: https://gohugo.io/templates/base

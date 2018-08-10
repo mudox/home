@@ -16,6 +16,14 @@ the solutions I came out.
 
 ## 2018-08
 
+When using Hugo shortcode `highlight` to generate code blocks, there always a
+trailing empty line?
+
+Dedent the ending <code>{{&lt; / highlight &gt;}}</code> to make sure there is
+no whitespace in the head of the line.
+
+---
+
 Live reloading does not bring the latest change to browser?
 
 Google Chrome -> open __Devtools__ window -> click __Network__ tab -> check
