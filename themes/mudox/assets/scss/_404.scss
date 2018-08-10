@@ -1,12 +1,24 @@
 .error-page {
+    // Center main area
+    margin: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     &-title {
         text-align: center;
     }
 
-    &-content {
+    &-body {
         text-align: center;
 
+        .go-home-button {
+            margin: 1em 0;
+        }
+
         a {
+            // Color transition when hover
             transition: color 600ms;
             text-decoration: none;
             color: inherit;
