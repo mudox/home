@@ -8,8 +8,13 @@ theme = 'mudox'
 canonifyURLs = false
 
 # Code highlighting
+# See following links for styles demo
+# - https://xyproto.github.io/splash/docs/index.html
+# - https://xyproto.github.io/splash/docs/all.html#monokailight
 pygmentsCodefences = true
-pygmentsStyle = "dracula"
+#pygmentsStyle = "dracula"
+#pygmentsStyle = "monokai"
+pygmentsStyle = "monokailight"
 
 [permalinks]
 post = "/post/:slug/"
