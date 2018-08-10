@@ -43,16 +43,19 @@ strong {
 
 // Code
 
+pre {
+    line-height: 1.4;
+
+    code {
+        font-family: 'Roboto Mono', monospace;
+        font-size: .9rem;
+    }
+}
+
 code {
     p & {
         font-family: $monospace;
         font-size: .9rem;
-    }
-
-    pre & {
-        font-family: 'Roboto Mono', monospace;
-        font-size: .9rem;
-        line-height: 1.8;
     }
 }
 
