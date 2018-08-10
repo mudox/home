@@ -59,7 +59,7 @@ tmux new-window              \
   -d
 sleep 0.1
 tmux send-keys -t "${window}" "
-hugo server -DFE -d build/develop --gc --cleanDestinationDir=true
+hs
 "
 
 #
