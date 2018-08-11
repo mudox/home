@@ -53,10 +53,8 @@ pre {
 }
 
 code {
-    p & {
-        font-family: $monospace;
-        font-size: .9rem;
-    }
+    font-family: 'Roboto Mono', monospace;
+    font-size: .9rem;
 }
 
 // Table
