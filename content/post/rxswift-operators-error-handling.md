@@ -100,10 +100,10 @@ when converting from ordinary sequences:
 
 - `seq.asDriver(onErrorJustReturn: someValue)`
 - `seq.asDriver(onErrorDriveWith: alternativeDriver)`
-- `seq.asDriver { error -> Driver<T> in ... }`
+- `seq.asDriver(onErrorRecover: { error -> Driver<T> in ... })`
 - `seq.asSignal(onErrorJustReturn: someValue)`
 - `seq.asSignal(onErrorSignalWith: alternativeSignal)`
-- `seq.asSignal { error -> Driver<T> in ... }`
+- `seq.asSignal(onErrorRecover: { error -> Signal<T> in ... })`
 
 Sequence error catching is really useful for those `flatMap` scenarios, where
 the outer sequence would terminate if any of its inner sequence errors out
@@ -148,7 +148,7 @@ RxSwift provides 3 retry operators:
     observable, the operator wait only the first element from the trigger
     observable then retry the source sequence.
 
-    Usage #1 - Retry after incremental backoff delay
+    __Usage #1__ - Retry after incremental backoff delay
 
     ```swift
     seq.retryWhen { errorObservable -> Observable<T> in
@@ -165,7 +165,7 @@ RxSwift provides 3 retry operators:
     }
     ```
 
-    Usage #2 - Retry after pre-condition met, like waiting till the network gets
+    __Usage #2__ - Retry after pre-condition met, like waiting till the network gets
     re-connected, authentication passed, permission granted.
 
     ```swift
