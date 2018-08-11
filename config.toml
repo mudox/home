@@ -77,8 +77,8 @@ url = "/tags"
 weight = -120
 
 [[menu.main]]
-name = "Github"
-pre = "<i class='fab fa-github' data-fa-transform='down-0.5'></i>"
+#name = ""
+pre = "<i class='fab fa-github' data-fa-transform='grow-12 up-2'></i>"
 url = "https://github.com/mudox"
 weight = -90
 
