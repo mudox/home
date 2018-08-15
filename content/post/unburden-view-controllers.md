@@ -303,7 +303,7 @@ See [View Controller Containment] for a good introduction.
 
 - Manage user notification
 
-They all deserve a specific custom class / struct named like `...Service`,
+They all deserve a specific custom type (class, struct) named like `...Service`,
 `...Manager`, `...Agent` etc.
 
 # References
@@ -311,6 +311,8 @@ They all deserve a specific custom class / struct named like `...Service`,
 - [Coordinator Redux]
 - [8 Patterns to Help You Destroy Massive View Controller]
 - [View Controller Containment]
+- [iOS Architecture Patterns]
+- [Lighter View Controller]
 
 [Coordinator Redux]: http://khanlou.com/2015/10/coordinators-redux/
 [8 Patterns to Help You Destroy Massive View Controller]: http://khanlou.com/2014/09/8-patterns-to-help-you-destroy-massive-view-controller/
@@ -323,3 +325,5 @@ They all deserve a specific custom class / struct named like `...Service`,
 [RxCoordinator]: https://github.com/quickbirdstudios/RxCoordinator
 [SOLID]: https://en.wikipedia.org/wiki/SOLID
 [combinatorial explosion]: https://en.wikipedia.org/wiki/Combinatorial_explosion
+[iOS Architecture Patterns]: https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52
+[Lighter View Controller]: https://www.objc.io/issues/1-view-controllers/lighter-view-controllers

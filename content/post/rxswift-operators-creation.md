@@ -18,7 +18,7 @@ Although the RxSwift framework, combined with RxCocoa, provides a bunch of
 common and qualified predefined observables, the 2 operators in the this
 section provides the most fundamental yet flexible way to get a observable.
 
-## .create
+## +create
 
 You bury into the parameter block the sequence emitting blueprint as well as
 necessary sequence tear-down details, then on subscription the sequence gets
@@ -42,7 +42,7 @@ let seq = Observable<Int>.create { observer in
 }
 ```
 
-## .deferred
+## +deferred
 
 Before a sequence created by `Observable<T>.create` starts emitting elements,
 there are 2 relevant stages for it:
@@ -75,7 +75,7 @@ let seq = Observable<Int>.deferred { () -> Observable<Int> in
 
 # The 3 Special Convenient Operators
 
-## .error
+## +error
 
 `Observable<T>.error(someError)` it creates a sequence emitting no element, on
 subscription it emits the given error object then terminates.
@@ -84,7 +84,7 @@ It is commonly used in those operator block parameters which returns a new
 observable as its result. By `return .error(someError)`, the outer sequence
 usually gets terminated by the error object.
 
-## .empty
+## +empty
 
 `Observable<T>.empty()` it creates a sequence emitting no element, it completes
 (by emitting `.completed` event) immediately on subscription.
@@ -111,7 +111,7 @@ seq.flatMap { value in
 It achieves the same effect as the `filter` operator, but the later is
 optimized.
 
-## .never
+## +never
 
 `Observable<T>.never()` it creates a sequence that emits nothing, and never
 complete by itself. Hence the only way to terminate the sequence is by
@@ -120,9 +120,9 @@ from its subscription.
 
 # Create From Listed Elements
 
-## .just
+## +just
 
-Create a sequence containing only one element (the paramter) which is emitted
+Create a sequence containing only one element (the parameter) which is emitted
 immediately on subscription.
 
 Used to start a chain of steps
@@ -142,7 +142,16 @@ Observable<URL>
   ...
 ```
 
-## .from and .of
+## +once
+
+This operator is provides by [RxSwiftExt] community project. It is similar to
+the `.just` operator but the promise that only the first subscriber can receive
+the only element, further subscribers get an empty sequence.
+
+The created sequence acts like a shared sequence with only one element and does
+not replay element.
+
+## +from, +of
 
 Create an observable sequence from a array of elements.
 
@@ -151,33 +160,45 @@ Combine with merging operators to fire multiple sequence.
 ```swift
 Observable<T>
   .from([url_1, url_2, ..., url_n])
-  .flatMap { url in
+  .flatMap { url -> Observable<Data> in
     return request(url)
   }
 ```
 
-The `.of` operator is the variatic version of `.from` operator for convenience.
+A concurrency optimized version using `map` + `merge(maxConcurrency)`
+combination:
 
-## .from(optional:)
+```swift
+Observable<T>
+  .from([url_1, url_2, ..., url_n])
+  .map { url -> Observable<Data> in
+    return request(url)
+  }
+  .merge(macConcurrency: 4)
+```
+
+The __of__ operator is the variatic version of `.from` operator for convenience.
+
+## +from(optional:)
 
 It accepts an optional value. If the value is not nil, the sequence acts like
 `.just` of the wrapped value, otherwise it is equivalent to `.empty()`. The
 created sequence can be seen as a weakly typed `Maybe` traits.
 
-It also has a second parameter specifying the scheduler to emits the only
-value.
+It also has a second (optional) parameter specifying the scheduler to emits the
+only value.
 
 # Turn Swift Sequences Into Observable Sequences
 
-## .range
+## +range
 
 It is equivalent to `Observable<T>.from([T](start..<(start + count)))`
 
-## .repeatElement
+## +repeatElement
 
-## .generate
+## +generate
 
-# One Way More - Use Subjects To Create Observable
+# One More Way - Use Subjects To Create Observables
 
 A common way to bridge the traditional Cocoa Touch into reactive world is to
 use a subject to convert the prevalent delegate callbacks into observables.
