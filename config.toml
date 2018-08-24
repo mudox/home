@@ -59,20 +59,20 @@ pattern = "2006"
 [[menu.main]]
 name = "Resume"
 #pre = "<i class='fas fa-user-circle'></i>"
-pre = "<i class='fas fa-address-card'></i>"
+#pre = "<i class='fas fa-address-card'></i>"
 url = "/resume"
 weight = -110
 
 [[menu.main]]
 name = "Projects"
 #pre = "<i class='fas fa-code'></i>"
-pre = "<i class='fas fa-coffee'></i>"
+#pre = "<i class='fas fa-coffee'></i>"
 url = "/my-projects"
 weight = -110
 
 [[menu.main]]
 name = "Tags"
-pre = "<i class='fas fa-tag' data-fa-transform='shrink-2 down-0.5'></i>"
+#pre = "<i class='fas fa-tag' data-fa-transform='shrink-2 down-0.5'></i>"
 url = "/tags"
 weight = -120
 
