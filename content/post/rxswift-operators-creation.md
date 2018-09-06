@@ -86,8 +86,9 @@ usually gets terminated by the error object.
 
 ## +empty
 
-`Observable<T>.empty()` it creates a sequence emitting no element, it completes
-(by emitting `.completed` event) immediately on subscription.
+`Observable<T>.empty()` it creates a sequence emitting no element, that is the
+sequence completes (by emitting `.completed` event) immediately on
+subscription.
 
 Terminate a sequence silently (without by emitting an error) making the source
 sequence never errors out, just complete silently which is useful in merging
